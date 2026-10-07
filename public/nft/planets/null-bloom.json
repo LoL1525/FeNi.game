@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Null Bloom",
+  "description": "Anomalous Anomalous planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/null-bloom.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Anomalous"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Anomalous"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.01 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "-273 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "UNKNOWN"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Unknown"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/null-bloom.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

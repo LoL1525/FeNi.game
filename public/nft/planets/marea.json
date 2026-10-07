@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Marea",
+  "description": "Common Ocean planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/marea.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Ocean"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.73 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "287 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "N₂ / O₂"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Water, Silicon"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/marea.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

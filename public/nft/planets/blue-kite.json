@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Blue Kite",
+  "description": "Uncommon Ice planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/blue-kite.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.72 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "153 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "N₂ / Ne"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Ice, Nickel"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/blue-kite.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

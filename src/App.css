@@ -1,0 +1,2477 @@
+#root{min-height:100vh}.app-shell{min-height:100vh;display:flex;background:radial-gradient(ellipse at 52% -22%,rgba(68,92,143,.13),transparent 42%),var(--bg)}
+.sidebar{width:226px;flex:0 0 226px;border-right:1px solid var(--border);padding:25px 15px 17px;display:flex;flex-direction:column;background:rgba(10,15,23,.9);z-index:2}.brand{display:flex;gap:11px;align-items:center;text-decoration:none;color:var(--text);font:800 15px/1.05 var(--heading);letter-spacing:.035em;padding:0 8px}.brand-icon{width:37px;height:37px;border:1px solid rgba(138,226,204,.3);border-radius:12px;display:grid;place-items:center;color:var(--mint);background:linear-gradient(145deg,rgba(138,226,204,.12),rgba(84,114,175,.08));box-shadow:0 0 22px rgba(100,197,181,.12)}.brand-light{color:#8d98a7;font-size:10px;font-weight:600}.brand small{display:block;color:#667285;font:500 8px/1.6 var(--mono);letter-spacing:.18em;margin-top:5px}.side-caption,.eyebrow,.small-section-title{font:500 9px/1.2 var(--mono);letter-spacing:.15em;color:#78869a}.side-caption{margin:44px 11px 13px}.primary-nav{display:grid;gap:5px}.nav-link{width:100%;height:42px;display:flex;align-items:center;gap:12px;color:#929cad;background:transparent;border:1px solid transparent;border-radius:8px;padding:0 11px;cursor:pointer;text-align:left;font-size:12px;font-weight:600;transition:.18s}.nav-link:hover{color:var(--text);background:rgba(255,255,255,.035)}.nav-link.active{color:#c1efe2;background:linear-gradient(100deg,rgba(105,208,184,.12),rgba(105,208,184,.025));border-color:rgba(126,221,198,.13)}.nav-link.active svg{color:var(--mint)}.nav-link i{margin-left:auto;font:500 9px var(--mono);color:var(--mint);background:rgba(138,226,204,.12);border-radius:99px;padding:2px 7px;font-style:normal}.side-sector{margin-top:35px;padding:13px 10px;display:flex;align-items:center;gap:11px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.side-sector .side-caption{display:block;margin:0 0 5px;font-size:8px}.side-sector strong{display:block;font-size:11px;font-weight:600}.side-sector small{display:flex;align-items:center;gap:5px;font:8px var(--mono);color:#86919f;margin-top:6px}.side-sector-orbit{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%}.side-bottom{margin-top:auto}.sync-label{display:flex;align-items:center;gap:7px;color:#758193;font:9px var(--mono);padding:11px 8px}.sync-dot,.wallet-label-dot,.pulse-dot,.tiny-live{width:6px;height:6px;display:inline-block;background:var(--mint);border-radius:50%;box-shadow:0 0 9px rgba(138,226,204,.8)}.version{border-top:1px solid var(--border);color:#5e6979;font:8px var(--mono);padding:14px 8px 0;letter-spacing:.08em}.version span{float:right;color:#778294}
+.main-area{min-width:0;flex:1;display:flex;flex-direction:column}.topbar{min-height:69px;display:flex;align-items:center;justify-content:space-between;padding:0 34px;border-bottom:1px solid var(--border);background:rgba(8,12,19,.48)}.breadcrumb{display:flex;align-items:center;gap:9px;color:#7e8a9b;font:9px var(--mono);letter-spacing:.1em}.breadcrumb b{color:#c6cfda;font-weight:500}.topbar-actions{display:flex;align-items:center;gap:13px}.wallet-label{display:flex;align-items:center;gap:6px;font:8px var(--mono);color:#8490a0;letter-spacing:.08em}.wallet-label b{color:#9da9b8;font-weight:400;border:1px solid var(--border-strong);padding:3px 5px;border-radius:3px;font-size:7px}.wallet-button{display:flex;align-items:center;justify-content:center;gap:7px;border:1px solid rgba(142,183,238,.24);background:rgba(101,144,209,.08);color:#cad9ed;border-radius:7px;padding:8px 11px;min-width:131px;cursor:pointer;font-size:10px;font-weight:600;transition:.2s}.wallet-button:hover:not(:disabled){background:rgba(101,144,209,.17);border-color:rgba(142,183,238,.43)}.wallet-button:disabled{opacity:.76;cursor:not-allowed}.wallet-button.connected{min-width:auto;color:#bde9dc;border-color:rgba(138,226,204,.25);background:rgba(138,226,204,.06)}.wallet-dot{width:6px;height:6px;background:var(--mint);border-radius:50%;box-shadow:0 0 8px var(--mint)}.wallet-connected-wrap{position:relative}.network-tag{display:flex;align-items:center;gap:3px;color:#687587;font:7px var(--mono);margin-top:4px;justify-content:flex-end}.wallet-hint{position:absolute;right:0;top:100%;margin-top:9px;z-index:5;width:195px;color:#8e9aab;background:#151e2b;border:1px solid var(--border-strong);border-radius:6px;padding:9px 10px;font-size:10px;line-height:1.4;box-shadow:0 8px 24px #0005}.error-hint{color:#e5a69d}.wallet-popover{position:absolute;top:42px;right:0;width:190px;z-index:6;padding:13px;border:1px solid var(--border-strong);border-radius:8px;background:#111a26;box-shadow:0 16px 36px #0007;display:grid;gap:7px;font-size:11px}.wallet-popover button{cursor:pointer;border:1px solid var(--border);background:#ffffff08;color:#c2cedb;border-radius:5px;padding:7px;font-size:10px;text-align:left;margin-top:3px}.avatar{width:28px;height:28px;display:grid;place-items:center;color:#c1cbd7;font:600 10px var(--mono);border-radius:9px;background:linear-gradient(140deg,#35455a,#202a3b);border:1px solid #ffffff1c}.resource-strip{min-height:55px;display:flex;align-items:center;gap:8px;padding:0 34px;border-bottom:1px solid var(--border);background:rgba(16,23,34,.54)}.resource-pill{height:30px;padding:0 9px;display:flex;align-items:center;gap:7px;border:1px solid #ffffff10;border-radius:5px;background:#ffffff06;font-size:9px}.resource-symbol{width:17px;height:17px;display:grid;place-items:center;color:var(--resource-color);border:1px solid color-mix(in srgb,var(--resource-color) 40%,transparent);border-radius:4px;background:color-mix(in srgb,var(--resource-color) 11%,transparent);font:8px var(--mono)}.resource-name{color:#8793a3}.resource-pill strong{color:#e0e6ed;font:500 10px var(--mono);margin-left:3px}.strip-total{margin-left:auto;display:flex;align-items:center;gap:7px;color:#8a95a5;font:9px var(--mono)}.strip-total svg{color:var(--mint)}.strip-total span{color:#647183;font-size:8px;margin-left:1px}
+.page-content{width:min(1136px,100%);margin:0 auto;padding:34px 34px 27px;flex:1}.page-heading{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:23px;gap:14px}.eyebrow{display:flex;align-items:center;gap:8px;font-size:8px}.eyebrow-divider{color:#596575}h1,h2,h3,p{margin-top:0}h1{margin:8px 0 3px;color:#eef1f6;font:650 27px/1.2 var(--heading);letter-spacing:-.035em}.page-heading p{margin:0;color:#8792a1;font-size:11px}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:6px;border:1px solid var(--border-strong);color:#cad3df;background:#ffffff09;cursor:pointer;font-size:10px;font-weight:600;transition:.18s}.button:hover:not(:disabled){filter:brightness(1.15);transform:translateY(-1px)}.button:disabled{cursor:not-allowed;opacity:.45}.subtle-button{padding:8px 11px;font-size:9px;color:#a6b1c0}.mining-layout{display:grid;grid-template-columns:minmax(0,1fr) 244px;align-items:start;gap:15px}.mining-column{min-width:0}.space-stage{position:relative;height:339px;overflow:hidden;border:1px solid rgba(160,184,219,.17);border-radius:9px;background:radial-gradient(ellipse at 50% 66%,rgba(47,74,113,.23),transparent 35%),radial-gradient(ellipse at 78% 13%,rgba(61,53,104,.23),transparent 32%),linear-gradient(130deg,#111b2a,#0e1522 54%,#111522);box-shadow:inset 0 0 65px #02050a4d,0 7px 25px #0002}.stage-grid{position:absolute;inset:51% 0 0;opacity:.14;background:linear-gradient(#709dcc33 1px,transparent 1px),linear-gradient(90deg,#709dcc26 1px,transparent 1px);background-size:42px 24px;transform:perspective(150px) rotateX(32deg) scale(1.6);transform-origin:center top;mask-image:linear-gradient(to bottom,black,transparent)}.nebula{position:absolute;width:255px;height:100px;border-radius:50%;filter:blur(43px);opacity:.12}.nebula-one{background:#6c67be;top:46px;right:30px;transform:rotate(-24deg)}.nebula-two{background:#3a9888;bottom:26px;left:52px;opacity:.09}.star-pixel{position:absolute;width:2px;height:2px;border-radius:50%;background:#c5daf4;opacity:.7;box-shadow:0 0 6px #95b8df}.s1{left:13%;top:24%}.s2{left:69%;top:18%;width:3px;height:3px}.s3{left:82%;top:39%}.s4{left:26%;top:12%;opacity:.4}.s5{left:57%;top:32%}.s6{left:91%;top:22%;width:3px;height:3px;opacity:.35}.stage-topline,.stage-bottomline{position:absolute;left:16px;right:16px;display:flex;justify-content:space-between;font:8px var(--mono);color:#75859a;letter-spacing:.09em;z-index:1}.stage-topline{top:14px}.stage-topline>span:first-child{display:flex;gap:7px;align-items:center;color:#a6c7c2}.recording-dot{width:5px;height:5px;background:#7bd2b7;border-radius:50%;box-shadow:0 0 8px #7bd2b7;animation:breathe 1.8s infinite}.stage-bottomline{bottom:14px;align-items:center}.stage-bottomline>span:last-child{color:#99a6b5}.stage-bottomline b{color:var(--mint);font-size:13px;margin-left:5px;font-weight:400}.tiny-live{width:5px;height:5px;margin-right:5px}.stage-distance{position:absolute;top:63px;left:18px;display:grid;gap:3px;z-index:2}.stage-distance span{color:#718197;font:8px var(--mono);letter-spacing:.08em}.stage-distance strong{color:#d6e1ec;font:500 15px var(--mono)}.stage-distance i{font-size:9px;color:#8b96a6;font-style:normal}.distant-planet{position:absolute;right:15%;top:50px;opacity:.7;transform:scale(.9);filter:drop-shadow(0 0 24px #5282b32e)}.orbit-line{position:absolute;width:360px;height:104px;border:1px solid #739dcb1c;border-radius:50%;transform:rotate(-23deg);left:40%;top:40%}.orbit-two{width:280px;height:69px;left:45%;top:45%;transform:rotate(29deg);border-color:#9e85d31c}.asteroid-target{position:absolute;left:48%;top:56%;transform:translate(-50%,-50%);animation:drift 3s ease-in-out infinite;z-index:2}.asteroid-hit{width:216px;height:190px;position:relative;display:grid;place-items:center;border:0;background:transparent;cursor:crosshair}.asteroid-hit:disabled{cursor:wait}.asteroid-hit:not(:disabled):hover .asteroid-rock{filter:brightness(1.16);transform:scale(1.035) rotate(2deg)}.asteroid-glow{position:absolute;width:140px;height:110px;border-radius:50%;background:radial-gradient(ellipse,#85a6c238,transparent 67%);filter:blur(14px)}.asteroid-rock{width:115px;height:105px;position:relative;display:block;background:linear-gradient(145deg,#8995a1 5%,#626f7d 42%,#374353);clip-path:polygon(31% 3%,56% 8%,71% 3%,91% 27%,96% 50%,87% 69%,77% 87%,51% 94%,29% 91%,8% 69%,3% 45%,12% 23%);filter:drop-shadow(0 13px 13px #0006);transition:transform .12s,filter .12s}.asteroid-metallic .asteroid-rock{background:linear-gradient(145deg,#c19375 5%,#826957 42%,#463b40)}.asteroid-rare .asteroid-rock{background:linear-gradient(145deg,#a39bd4 5%,#70658e 42%,#38394f)}.asteroid-anomalous .asteroid-rock{background:linear-gradient(145deg,#80d8cd 5%,#55898c 42%,#293e57)}.asteroid-rock i,.asteroid-rock b,.asteroid-rock em,.asteroid-rock small{position:absolute;display:block;border-radius:50%;background:#18202b45}.asteroid-rock i{width:26px;height:19px;left:24px;top:23px;box-shadow:inset 3px 3px 5px #0004}.asteroid-rock b{width:18px;height:14px;right:20px;top:51px}.asteroid-rock em{width:11px;height:8px;left:55px;top:66px;background:#dfebf038}.asteroid-rock small{width:8px;height:8px;right:35px;top:22px;background:#e2ebf159}.asteroid-ring{position:absolute;width:151px;height:43px;border:1px solid #a1c1d438;border-radius:50%;transform:rotate(-18deg)}.ring-b{width:174px;height:57px;border-color:#a1c1d41a;transform:rotate(15deg)}.asteroid-health{position:absolute;bottom:8px;border-radius:4px;background:#070c14b3;border:1px solid #ffffff1a;padding:4px 7px;color:#f0f3f6;font:9px var(--mono)}.asteroid-health i{font-style:normal;color:#8794a4}.hit-flash .asteroid-rock{filter:brightness(1.8);transform:scale(.97)}.fracture-burst{position:absolute;left:48%;top:54%;transform:translate(-50%,-50%);display:grid;place-items:center;gap:6px;color:#c5f8e8;animation:fracture .75s ease forwards;z-index:4}.fracture-burst span{font:8px var(--mono);letter-spacing:.12em;white-space:nowrap}.scan-line{position:absolute;left:0;right:0;top:0;height:1px;background:#78d3c75c;box-shadow:0 0 12px #78d3c7a6;opacity:.35;animation:scan 6s linear infinite;pointer-events:none}
+.asteroid-card{display:grid;grid-template-columns:1fr 148px;gap:12px;align-items:center;padding:13px 15px;margin-top:9px;background:linear-gradient(120deg,#131c29db,#101722bd);border:1px solid var(--border);border-radius:8px}.asteroid-ident{display:flex;align-items:center;gap:10px;min-width:0}.asteroid-kind-icon{width:31px;height:31px;display:grid;place-items:center;flex:0 0 auto;border:1px solid #a8b3c130;border-radius:7px;background:#9badc014}.asteroid-kind-icon span{width:15px;height:15px;display:block;clip-path:polygon(28% 0,72% 8%,100% 45%,78% 85%,35% 100%,0 59%,6% 23%);background:#9eafbd}.kind-metallic{background:#d49a721f;border-color:#d49a7238}.kind-metallic span{background:#d49a72}.kind-rare{background:#9e91d31f;border-color:#9e91d33d}.kind-rare span{background:#a99ce2}.kind-anomalous{background:#72c4c41f;border-color:#72c4c440}.kind-anomalous span{background:#72c4c2}.asteroid-ident .eyebrow{font-size:7px}.asteroid-ident h3{margin:4px 0 2px;font:600 12px var(--heading);color:#e2e8ef}.asteroid-ident p{margin:0;color:#8592a3;font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.target-health{grid-column:2;grid-row:1;display:grid;gap:5px}.target-health>div:first-child{display:flex;justify-content:space-between;color:#79879a;font:8px var(--mono)}.target-health b{color:#dbe1e8;font:10px var(--mono)}.target-health b small{color:#8390a0;font-size:8px;font-weight:400}.health-track,.progress-track{height:4px;overflow:hidden;border-radius:9px;background:#242e3c}.health-track i,.progress-track i{height:100%;display:block;border-radius:9px;background:linear-gradient(90deg,#daaa79,#e1d29b);transition:width .25s}.mine-button{grid-column:1/-1;width:100%;height:34px;color:#071411;background:linear-gradient(95deg,#9de7d2,#8bd8c9);border:0;font-size:10px;box-shadow:0 3px 14px #75dcc226}.mine-button:hover:not(:disabled){filter:brightness(1.07);box-shadow:0 3px 22px #75dcc23d}.mine-button span{margin-left:auto;font:8px var(--mono);opacity:.66}.drop-row{display:flex;align-items:center;gap:8px;min-height:37px;border-bottom:1px solid var(--border);padding:5px 2px}.drop-row .small-section-title{font-size:7px;margin-right:6px;white-space:nowrap}.drop-chip{color:#d5e3e4;border:1px solid color-mix(in srgb,var(--resource-color) 26%,transparent);background:color-mix(in srgb,var(--resource-color) 8%,transparent);padding:3px 6px;border-radius:4px;font:8px var(--mono)}
+.right-rail{display:grid;gap:10px}.panel{background:linear-gradient(140deg,#121b28de,#0e141eed);border:1px solid var(--border);border-radius:8px;padding:13px 14px}.panel-title{display:flex;align-items:center;justify-content:space-between;color:#91a0b2;font:8px var(--mono);letter-spacing:.1em}.icon-button{width:23px;height:23px;display:grid;place-items:center;color:#8895a7;border:1px solid var(--border);border-radius:5px;background:transparent;cursor:pointer}.icon-button:hover{color:var(--mint);border-color:#8ae2cc4d}.sector-illustration{height:103px;overflow:hidden;position:relative;margin:12px -4px 10px;border-radius:5px;background:radial-gradient(ellipse at 45% 56%,#466f874a,transparent 38%),linear-gradient(135deg,#172232,#101724)}.sector-starfield{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 15% 27%,#c5d5ea,transparent),radial-gradient(1px 1px at 83% 28%,#ced9ea,transparent),radial-gradient(1px 1px at 63% 77%,#d0d9e7,transparent),radial-gradient(1px 1px at 29% 74%,#a6bfdb,transparent),radial-gradient(1px 1px at 91% 63%,#c5d5ea,transparent)}.sector-illustration>.planet-orb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}.sector-orbit{position:absolute;width:142px;height:43px;border:1px solid #8fb9dd33;border-radius:50%;left:calc(50% - 71px);top:calc(50% - 21px);transform:rotate(-24deg)}.sector-orbit.orbit-b{width:112px;height:56px;left:calc(50% - 56px);top:calc(50% - 28px);transform:rotate(34deg);border-color:#b9a3e129}.sector-scan-ring{position:absolute;left:10%;right:10%;top:50%;height:1px;background:linear-gradient(90deg,transparent,#72dcc759,transparent);box-shadow:0 0 12px #72dcc766}.sector-detail{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:5px;padding-bottom:11px;border-bottom:1px solid var(--border)}.sector-detail>div{display:grid;gap:5px}.sector-detail span{color:#687689;font:7px var(--mono);letter-spacing:.1em}.sector-detail b{font-size:9px;color:#c5ceda;font-weight:500}.sector-detail .threat-low{color:#9ad9bc}.threat-low i{width:5px;height:5px;display:inline-block;margin-right:3px;border-radius:50%;background:#8ad4ab}.text-link{display:inline-flex;align-items:center;gap:5px;border:0;background:transparent;color:#98cabb;font-size:9px;font-weight:500;cursor:pointer;padding:0}.text-link:hover{color:#c2f2e4}.sector-panel>.text-link{margin-top:10px}.progress-percent{color:#beded4;font:9px var(--mono);letter-spacing:0}.progress-track{height:5px;margin:15px 0 7px}.progress-track i{background:linear-gradient(90deg,#4f9c93,#a0dbbf)}.progress-foot{display:flex;justify-content:space-between;color:#758295;font:7px var(--mono)}.progress-reward{display:flex;align-items:center;gap:9px;margin-top:12px;padding:9px 0 0;border-top:1px solid var(--border)}.reward-icon{width:27px;height:27px;display:grid;place-items:center;color:#9fbbc9;border:1px solid var(--border);border-radius:6px;background:#789db917}.progress-reward>span:nth-child(2){display:grid;gap:2px;flex:1}.progress-reward b{font-size:9px;font-weight:500}.progress-reward small{color:#798698;font-size:8px}.progress-reward>svg{color:#687587}.collection-teaser .text-link{font-size:7px}.recent-planet{display:flex;align-items:center;gap:9px;width:100%;padding:10px 0 2px;border:0;background:transparent;text-align:left;color:var(--text);cursor:pointer}.recent-planet>span:nth-child(2){display:grid;gap:2px;flex:1}.recent-planet b{font-size:10px;font-weight:600}.recent-planet small{color:#8995a3;font-size:8px}.recent-planet>svg{color:#697587}.empty-teaser{display:grid;justify-items:center;text-align:center;padding:13px 4px 3px}.empty-orbit{display:grid;place-items:center;width:37px;height:37px;margin-bottom:6px;border:1px dashed #96acc433;border-radius:50%;color:#79899c}.empty-teaser b{font-size:9px;font-weight:500}.empty-teaser small{max-width:170px;margin-top:3px;color:#758194;font-size:8px;line-height:1.5}
+.planet-orb{position:relative;isolation:isolate;overflow:hidden;width:43px;height:43px;border-radius:50%;background:radial-gradient(circle at 29% 28%,#9db6bb,#51708a 44%,#202f48 83%);box-shadow:inset -6px -6px 12px #050a17ad,inset 2px 2px 8px #d3e8ff61,0 0 15px #6c9ec421}.planet-orb>i,.planet-orb>b,.planet-orb>span{position:absolute;display:block}.planet-orb>i{inset:0;border-radius:50%;background:linear-gradient(120deg,transparent 43%,#02071180);z-index:3}.planet-orb>span{inset:-1px;border:1px solid #d7ecff38;border-radius:50%;z-index:4}.planet-ocean{background:radial-gradient(circle at 30% 25%,#94c9d0,#3b8298 49%,#102b4b 85%)}.planet-ocean>b{width:19px;height:9px;left:5px;top:15px;border-radius:60% 40% 50% 45%;background:#a8bc9c;transform:rotate(-30deg);box-shadow:11px 10px 0 -2px #c6bb92,-2px 13px 0 -3px #8ba88a;z-index:2}.planet-rocky{background:radial-gradient(circle at 26% 24%,#d2a985,#986c62 50%,#46374c 86%)}.planet-rocky>b{inset:9px 8px;background:radial-gradient(ellipse,#533b40 20%,transparent 26%),radial-gradient(circle at 70% 70%,#483c48 0 12%,transparent 18%);z-index:2}.planet-desert{background:radial-gradient(circle at 28% 24%,#e4c591,#b48756 54%,#584147 88%)}.planet-desert>b{inset:10px 0;background:linear-gradient(165deg,transparent 25%,#70423580 27% 38%,transparent 40% 52%,#f4d59a61 53% 60%,transparent 62%);z-index:2}.planet-ice{background:radial-gradient(circle at 30% 27%,#eff3ec,#9cc4cc 52%,#4e718c 86%)}.planet-ice>b{inset:0;background:repeating-linear-gradient(145deg,transparent 0 10px,#e9fdff40 11px 13px,transparent 14px 19px);z-index:2}.planet-gas{background:radial-gradient(circle at 28% 23%,#efc988,#bb8666 52%,#654f66 86%)}.planet-gas>b{inset:7px -2px;background:repeating-linear-gradient(0deg,transparent 0 4px,#ebd6ae85 5px 7px,#9f716e5c 8px 10px);border-radius:50%;z-index:2}.planet-gas>span{border:4px solid #eac79059}.planet-volcanic{background:radial-gradient(circle at 28% 24%,#ecaa75,#a55043 48%,#3b314d 88%)}.planet-volcanic>b{inset:0;background:radial-gradient(circle at 37% 58%,#ffbb6b 0 8%,transparent 11%),linear-gradient(135deg,transparent 35%,#2322308c 37% 56%,transparent 58%);z-index:2}.planet-toxic{background:radial-gradient(circle at 27% 25%,#d3cf88,#71835a 48%,#343d4a 88%)}.planet-toxic>b{inset:0;background:radial-gradient(ellipse at 55% 48%,#c4e3708c,transparent 55%),radial-gradient(circle at 24% 66%,#433b48b3 0 12%,transparent 16%);z-index:2}.planet-anomaly{background:radial-gradient(circle at 50% 50%,#e7bbf6,#916bc1 46%,#323f76 86%);box-shadow:inset -6px -6px 12px #050a17ad,inset 2px 2px 8px #f5deff6b,0 0 22px #c27fe061}.planet-anomaly>b{inset:5px;border:2px solid #edd4ff8c;transform:rotate(45deg) scale(.78);z-index:2}.planet-anomaly>span{border:1px solid #e7cfff8c;transform:scale(.72)}.orb-large{width:86px;height:86px}.orb-large>i{box-shadow:inset -13px -11px 19px #050a1785}.orb-tiny{width:25px;height:25px}.orb-tiny>i{box-shadow:inset -4px -4px 7px #050a17ad}
+.activity-note{min-height:39px;display:flex;align-items:center;gap:7px;margin-top:13px;padding:0 4px;color:#788698;font-size:9px}.activity-note>svg{color:#8197aa}.activity-note button{margin-left:auto;display:flex;align-items:center;gap:2px;border:0;background:none;color:#91c9b7;font-size:9px;cursor:pointer}.footer{width:min(1136px,100%);margin:0 auto;padding:12px 34px 17px;border-top:1px solid var(--border);display:flex;justify-content:space-between;color:#657183;font:7px var(--mono);letter-spacing:.075em}.footer i{font-style:normal;color:#425264;padding:0 3px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:12;display:flex;align-items:center;gap:9px;padding:11px 14px;border:1px solid #8ae2cc38;border-radius:7px;background:#101d23f7;color:#c7e5dc;font-size:10px;box-shadow:0 10px 34px #0006;animation:toast-in .25s ease}.toast-mark{color:var(--mint)}
+.secondary-page{padding-top:35px}.archive-count{display:flex;align-items:center;gap:7px;padding:8px 10px;color:#9cabbc;background:#ffffff06;border:1px solid var(--border);border-radius:5px;font:8px var(--mono);letter-spacing:.04em;white-space:nowrap}.archive-count svg{color:#9bd5c2}.archive-separator{color:#6e7b8e}.case-layout{display:grid;grid-template-columns:minmax(0,1fr) 266px;gap:14px}.case-feature{height:369px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #a4b7d624;border-radius:9px;background:radial-gradient(ellipse at 50% 46%,#4771982e,transparent 38%),linear-gradient(145deg,#111a29,#0d1420)}.case-feature:after{content:'';position:absolute;inset:0;opacity:.15;background:linear-gradient(90deg,transparent 49.8%,#84a7cd21 50%,transparent 50.2%),linear-gradient(transparent 49.8%,#84a7cd21 50%,transparent 50.2%);background-size:44px 44px;mask-image:radial-gradient(ellipse,#000,transparent 74%);pointer-events:none}.case-starfield span{position:absolute;width:2px;height:2px;background:#c4d5ee;border-radius:50%;box-shadow:0 0 8px #a5c8ef}.case-starfield span:nth-child(1){top:19%;left:21%}.case-starfield span:nth-child(2){top:31%;right:20%;width:3px;height:3px}.case-starfield span:nth-child(3){bottom:22%;left:32%}.case-starfield span:nth-child(4){top:68%;right:14%}.case-starfield span:nth-child(5){top:15%;right:39%}.case-starfield span:nth-child(6){bottom:31%;right:27%}.case-scan{position:absolute;top:-3px;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#7ce0ce7a,transparent);box-shadow:0 0 15px #7ce0ce59;opacity:.55;animation:scan 8s linear infinite}.case-halo{position:absolute;width:260px;height:194px;border:1px solid #84c1ca29;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 38px #579aa61a,inset 0 0 35px #579aa612}.case-object{position:relative;z-index:1;width:95px;height:95px;display:grid;place-items:center;color:#b5e0da;border:1px solid #a3dcd05e;border-radius:26px;transform:rotate(45deg);background:linear-gradient(135deg,#72adb71f,#4b6aa421);box-shadow:0 0 47px #71c2c02b,inset 0 0 32px #9fe4d714;animation:float 3s ease-in-out infinite}.case-object>svg:first-of-type{transform:rotate(-45deg);filter:drop-shadow(0 0 9px #9fe3dc99)}.case-sparkle{position:absolute!important;right:-10px;top:-10px;transform:none!important;color:#dfce98}.case-corner{position:absolute;width:7px;height:7px;border-color:#9fe5d0;border-style:solid}.c1{top:-3px;left:-3px;border-width:1px 0 0 1px}.c2{top:-3px;right:-3px;border-width:1px 1px 0 0}.c3{bottom:-3px;left:-3px;border-width:0 0 1px 1px}.c4{right:-3px;bottom:-3px;border-width:0 1px 1px 0}.case-feature-label{z-index:1;margin-top:37px;color:#8babb6;font:8px var(--mono);letter-spacing:.18em}.case-feature-title{z-index:1;margin-top:8px;text-align:center;color:#edf0f4;font:700 20px/1.23 var(--heading);letter-spacing:.08em}.case-feature-title span{color:#92dfce}.case-feature>p{z-index:1;color:#8190a0;font-size:9px;margin:6px 0 14px}.case-open-button{z-index:1;height:35px;padding:0 16px;color:#0b1716;border:none;background:linear-gradient(100deg,#9ce8d2,#80cebf);box-shadow:0 0 20px #77d6c226}.case-opening .case-object{animation:scan-object 1.1s ease-in-out infinite}.case-opening .case-halo{animation:halo 1s ease-in-out infinite}.spin-icon{animation:spin 1.1s linear infinite}.case-aside{display:grid;align-content:start;gap:11px}.cost-panel>p{color:#8491a1;font-size:9px;line-height:1.55;margin:11px 0 12px}.cost-line{height:35px;display:flex;align-items:center;gap:8px;border-top:1px solid #ffffff0e;color:#c3cbd6;font-size:9px}.resource-dot{width:8px;height:8px;border-radius:3px;background:var(--resource-color);box-shadow:0 0 8px color-mix(in srgb,var(--resource-color) 25%,transparent)}.cost-line>span:nth-child(2){flex:1}.cost-line small{color:#7c899b;font:8px var(--mono)}.cost-line b{font:9px var(--mono);color:#bbdaca}.cost-line b i{font-style:normal;color:#778599;font-size:8px}.cost-line b.cost-missing{color:#d5a991}.cost-status{display:flex;gap:6px;align-items:center;padding-top:10px;border-top:1px solid var(--border);font-size:8px;color:#8d9bad}.status-check{width:14px;height:14px;display:grid;place-items:center;background:#84d8b729;border-radius:50%;color:#96e5c4;font-size:9px}.tiny-badge{color:#8b9bac;font:7px var(--mono);padding:3px 5px;border:1px solid var(--border);border-radius:3px}.rarity-bars{display:grid;gap:11px;margin-top:14px}.rarity-bar-line{display:grid;grid-template-columns:82px 1fr 12px;align-items:center;gap:6px;color:#91a0b0;font-size:8px}.rarity-bar-line>div{height:3px;background:#252e3c;border-radius:5px}.rarity-bar-line>div i{height:100%;display:block;border-radius:5px;background:var(--rarity-fill)}.rarity-bar-line>b{font:8px var(--mono);color:#a8b5c3}.case-safety{display:flex;gap:7px;align-items:center;color:#7f8d9d;font-size:8px;line-height:1.5;padding:0 2px}.case-safety svg{flex:0 0 auto;color:#8ca2b5}.case-history{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:22px;padding-top:17px;border-top:1px solid var(--border)}.case-history h2{font:600 14px var(--heading);margin:4px 0 0}.case-history>.text-link{align-self:end}.mini-worlds{grid-column:1/-1;display:flex;align-items:center;gap:9px;margin-top:5px}.mini-world{width:100px;display:grid;justify-items:center;gap:5px;padding:10px 4px;border:1px solid var(--border);border-radius:7px;background:#ffffff05;color:#c5cfdb;cursor:pointer}.mini-world .planet-orb{width:31px;height:31px}.mini-world>span{font-size:9px}.mini-world>small{font:7px var(--mono)}.rarity-common{color:#9bb4a5}.rarity-uncommon{color:#95c7b2}.rarity-rare{color:#9cb9ed}.rarity-epic{color:#c09fea}.rarity-legendary{color:#e6c589}.rarity-anomalous{color:#e19cd4}
+.collection-toolbar{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid var(--border);border-radius:6px;background:#ffffff06;color:#a4afbd;font-size:9px;margin:2px 0 13px}.collection-toolbar>div{display:flex;align-items:center;gap:7px}.toolbar-dot{width:6px;height:6px;border-radius:50%;background:#a3d9c0}.collection-toolbar>span{color:#718095;font:7px var(--mono);letter-spacing:.07em}.planet-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.planet-card{position:relative;min-width:0;height:175px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;border:1px solid var(--border);border-radius:7px;background:linear-gradient(155deg,#141e2cc7,#0e141ee8);cursor:pointer;color:var(--text);transition:.2s}.planet-card:hover:not(:disabled){transform:translateY(-2px);border-color:#91d4c64a;box-shadow:0 8px 22px #0002}.planet-card:disabled{cursor:default}.planet-card-orb{height:87px;display:grid;place-items:center}.planet-card .planet-orb{width:49px;height:49px}.planet-card-id{color:#738398;font:7px var(--mono);letter-spacing:.045em}.planet-card-name{margin-top:5px;color:#e2e8ef;font:600 11px var(--heading)}.undiscovered .planet-card-name{color:#667387;letter-spacing:.16em}.planet-card-type{color:#8390a0;font:7px var(--mono);margin-top:3px}.planet-card-foot{width:100%;display:flex;align-items:center;justify-content:space-between;padding:8px 9px 7px;margin-top:auto;border-top:1px solid var(--border);font:7px var(--mono)}.planet-card-foot>span:last-child{display:flex;align-items:center;gap:3px;color:#687689}.undiscovered .planet-card-orb{filter:grayscale(.72);opacity:.6}.undiscovered .planet-card-orb:after{content:'?';position:absolute;color:#a0adbb;font:600 16px var(--mono)}.discovered{border-color:#98cec52b}
+.lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.recipe-card{padding:16px;border:1px solid var(--border);border-radius:8px;background:linear-gradient(140deg,#121b28de,#0e141ee8)}.recipe-top{display:flex;align-items:center;gap:10px}.recipe-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:8px;border:1px solid #c09fea33;background:#c09fea14;color:#c0a2e2}.scanner-icon{color:#91d8cb;border-color:#91d8cb38;background:#91d8cb14}.recipe-top>div:nth-child(2){flex:1}.recipe-top .eyebrow{font-size:7px}.recipe-top h2{font:600 14px var(--heading);margin:4px 0 0}.recipe-tag{color:#b49bd0;font:7px var(--mono);letter-spacing:.07em;padding:4px 6px;border:1px solid #c09fea2e;border-radius:3px}.rare-tag{color:#95d5c7;border-color:#91d8cb33}.recipe-card>p{min-height:31px;color:#8390a1;font-size:9px;line-height:1.5;margin:13px 0}.recipe-flow{min-height:55px;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 10px;border:1px solid #ffffff0e;border-radius:5px;background:#0002;color:#78889c}.ingredients{display:flex;align-items:center;flex-wrap:wrap;gap:5px}.ingredient{display:flex;align-items:center;gap:4px;color:#bac3cf;font:8px var(--mono);padding:4px 5px;border:1px solid var(--border);border-radius:4px;background:#ffffff06}.ingredient>b{font-size:8px}.alloy-color{color:#bdadd8}.output-item{display:grid;justify-items:center;gap:3px;color:#bbabd6;font-size:8px}.output-item>b{font-weight:500;white-space:nowrap;color:#c8d0d9}.output-item>b span{color:#8894a3}.recipe-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:11px}.recipe-inventory{color:#818da0;font-size:8px}.recipe-inventory b{color:#c3ceda;font:10px var(--mono);margin-left:4px}.craft-button{padding:7px 10px;color:#bdcbd7;background:#ffffff0e;font-size:9px}.scanner-status{grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--border);border-radius:7px;background:#ffffff05}.scanner-status-icon{width:30px;height:30px;display:grid;place-items:center;color:#8394a9;background:#7c99b317;border-radius:6px}.scanner-status>span:nth-child(2){display:grid;gap:3px;flex:1}.scanner-status b{font-size:9px;font-weight:600;color:#c8d1dc}.scanner-status small{font-size:8px;color:#7a889b}.scanner-status-end{font:8px var(--mono);color:#778498}.scanner-enabled .scanner-status-icon{color:#92e1cc;background:#91d8cb17}.scanner-enabled .scanner-status-end{color:#91d7bc}
+.map-board{height:374px;position:relative;overflow:hidden;border:1px solid #a0b8db2b;border-radius:8px;background:radial-gradient(ellipse at 28% 53%,#37718630,transparent 33%),radial-gradient(ellipse at 78% 48%,#4b397038,transparent 37%),linear-gradient(135deg,#101929,#0c131f)}.map-grid{position:absolute;inset:0;opacity:.15;background:linear-gradient(#6f93b833 1px,transparent 1px),linear-gradient(90deg,#6f93b833 1px,transparent 1px);background-size:37px 37px;mask-image:linear-gradient(135deg,#000,transparent 92%)}.map-nebula{position:absolute;width:180px;height:100px;border-radius:50%;filter:blur(45px);opacity:.21}.map-nebula-a{background:#447f8e;left:9%;top:33%}.map-nebula-b{background:#77518d;right:7%;top:36%;opacity:.16}.route-line{position:absolute;height:1px;transform-origin:left;background:repeating-linear-gradient(90deg,#95c1ca80 0 5px,transparent 5px 10px);opacity:.57}.route-one{left:19%;top:54%;width:30%;transform:rotate(-39deg)}.route-two{left:20%;top:56%;width:34%;transform:rotate(18deg)}.route-three{left:51%;top:66%;width:33%;transform:rotate(-31deg);opacity:.29}.map-sector{position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;z-index:1;min-width:123px}.sector-node{width:51px;height:51px;display:grid;place-items:center;border:1px solid #8babc233;border-radius:50%;background:radial-gradient(circle,#5e8ba81c,#0d1521d6);color:#8797ad}.current-sector .sector-node{width:61px;height:61px;border-color:#8be6cb87;box-shadow:0 0 0 7px #8be6cb0e,0 0 27px #7cdac52b;color:#a3decc}.current-sector .sector-node .planet-orb{width:31px;height:31px}.map-sector>span{margin-top:6px;color:#8b9caf;font:8px var(--mono)}.map-sector>b{margin-top:3px;color:#cbd4df;font-size:9px;font-weight:600;white-space:nowrap}.map-sector>small{margin-top:4px;color:#728297;font:7px var(--mono);white-space:nowrap}.current-sector>small{color:#9bd8bf}.locked-sector{opacity:.67}.locked-sector .sector-node{border-style:dashed}.map-caption{position:absolute;left:15px;right:15px;bottom:12px;display:flex;justify-content:space-between;color:#708096;font:7px var(--mono);letter-spacing:.09em}.map-caption span{color:#596a7e}.map-footer{display:flex;align-items:center;gap:17px;padding:12px 3px;color:#8995a5;font-size:8px}.map-footer>span:last-child{margin-left:auto;color:#748195}.map-footer>div{display:flex;align-items:center;gap:6px}.map-legend{width:7px;height:7px;border-radius:50%;display:inline-block}.active-legend{background:#8adebf;box-shadow:0 0 7px #8adebf}.locked-legend{border:1px dashed #78889f}.sector-bottom-card{display:flex;align-items:center;gap:12px;margin-top:7px;padding:13px;border:1px solid var(--border);border-radius:7px;background:#121b28b3}.sector-mini-art{width:50px;height:50px;display:grid;place-items:center;border:1px solid var(--border);border-radius:7px;background:radial-gradient(ellipse,#466f8733,transparent);flex:0 0 auto}.sector-bottom-card>div:nth-child(2){flex:1}.sector-bottom-card .eyebrow{font-size:7px}.sector-bottom-card h2{font:600 12px var(--heading);margin:4px 0}.sector-bottom-card p{margin:0;max-width:380px;color:#8390a0;font-size:8px;line-height:1.45}.sector-stat{padding:0 14px;border-left:1px solid var(--border);display:grid;gap:5px}.sector-stat span{color:#788699;font:7px var(--mono)}.sector-stat b{font:11px var(--mono);color:#d1d9e2}
+.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:18px;background:#02050ac2;backdrop-filter:blur(8px);animation:fade-in .18s ease}.discovery-modal{width:min(415px,100%);position:relative;overflow:hidden;padding:24px 25px 21px;text-align:center;border:1px solid #a1d0c93b;border-radius:12px;background:radial-gradient(ellipse at 50% 21%,#58819e26,transparent 43%),linear-gradient(145deg,#121c2a,#0d141f);box-shadow:0 25px 85px #0009}.discovery-modal:before{content:'';position:absolute;top:0;left:18%;right:18%;height:1px;background:linear-gradient(90deg,transparent,#9ae3d3,transparent)}.modal-close{position:absolute;right:12px;top:12px;width:27px;height:27px;display:grid;place-items:center;color:#8d9aac;background:transparent;border:1px solid var(--border);border-radius:6px;cursor:pointer}.modal-eyebrow{display:flex;justify-content:center;align-items:center;gap:7px;color:#9ad9c7;font:8px var(--mono);letter-spacing:.14em}.modal-orb{height:119px;display:grid;place-items:center;margin-top:8px}.modal-orb .planet-orb{width:95px;height:95px;box-shadow:inset -13px -11px 19px #050a1799,inset 2px 2px 10px #dcf0ff66,0 0 33px #6c9ec43b}.modal-rarity{font:8px var(--mono);letter-spacing:.11em}.discovery-modal h2{font:650 22px var(--heading);margin:6px 0 2px}.modal-type{color:#8c9aab;font-size:9px;margin:0}.modal-id{margin-top:13px;color:#96abc0;font:8px var(--mono);letter-spacing:.06em}.modal-id span{padding:0 5px;color:#566578}.planet-stats{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:15px;text-align:left;border:1px solid var(--border);border-radius:6px;background:#0002}.planet-stats>div{min-width:0;padding:9px 11px;display:grid;gap:5px}.planet-stats>div:nth-child(odd){border-right:1px solid var(--border)}.planet-stats>div:nth-child(n+3){border-top:1px solid var(--border)}.planet-stats span{color:#728298;font:7px var(--mono);letter-spacing:.08em}.planet-stats b{font:9px var(--mono);font-weight:400;color:#c9d3de;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.planet-stats b small{font-size:7px;color:#8795a6}.planet-bonus{display:flex;align-items:center;gap:9px;text-align:left;margin-top:11px;padding:9px 10px;border:1px solid #91d8cb26;border-radius:5px;background:#91d8cb0b;color:#a5dbca}.planet-bonus>span{display:grid;gap:2px}.planet-bonus b{font-size:8px;font-weight:600}.planet-bonus small{color:#92a99f;font-size:8px}.claim-button{width:100%;height:33px;margin-top:12px;color:#99a7b7;background:#ffffff09;font-size:9px}.claim-note{margin:8px auto 0;max-width:320px;color:#748296;font-size:8px;line-height:1.45}.muted{color:#8290a1}.small{font-size:9px}
+@keyframes breathe{50%{opacity:.4;box-shadow:0 0 2px #7bd24f4d}}@keyframes drift{0%,100%{transform:translate(-50%,-50%) translateY(0)}50%{transform:translate(-50%,-50%) translateY(-7px)}}@keyframes scan{0%{transform:translateY(0)}100%{transform:translateY(360px)}}@keyframes fracture{0%{opacity:0;transform:translate(-50%,-40%) scale(.5)}25%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}75%{opacity:.9}100%{opacity:0;transform:translate(-50%,-65%) scale(.75)}}@keyframes toast-in{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -5px}}@keyframes scan-object{0%,100%{transform:rotate(45deg) scale(1)}50%{transform:rotate(45deg) scale(1.08);box-shadow:0 0 58px #71c2c057}}@keyframes halo{50%{transform:rotate(-24deg) scale(1.2);opacity:.5}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes fade-in{from{opacity:0}to{opacity:1}}
+@media(max-width:1080px){.sidebar{width:204px;flex-basis:204px}.page-content{padding-left:25px;padding-right:25px}.topbar,.resource-strip{padding-left:25px;padding-right:25px}.mining-layout{grid-template-columns:minmax(0,1fr) 220px}.asteroid-card{grid-template-columns:1fr 130px}.footer{padding-left:25px;padding-right:25px}}
+@media(max-width:820px){.sidebar{width:65px;flex-basis:65px;padding:18px 8px}.brand{padding:0;justify-content:center}.brand>span:nth-child(2),.sidebar .side-caption,.nav-link span,.nav-link i,.side-sector>div:nth-child(2),.side-bottom .version,.sync-label{display:none}.sidebar .side-sector{display:grid;place-items:center;margin-top:24px;padding:10px 0}.nav-link{justify-content:center;padding:0}.primary-nav{margin-top:38px}.side-sector-orbit{width:36px;height:36px}.side-bottom{display:none}.mining-layout{grid-template-columns:1fr}.right-rail{grid-template-columns:repeat(3,minmax(0,1fr))}.sector-illustration{height:88px}.sector-detail{grid-template-columns:1fr}.sector-detail>div:not(:first-child){display:none}.case-layout{grid-template-columns:minmax(0,1fr) 235px}.planet-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){body{min-width:360px}.topbar{min-height:59px;padding:0 14px}.resource-strip{padding:8px 12px;min-height:unset;flex-wrap:wrap;gap:5px}.resource-pill{padding:0 6px;gap:5px}.resource-name{display:none}.strip-total{font-size:8px}.strip-total span{font-size:7px}.page-content{padding:25px 13px 22px}.page-heading{align-items:flex-start;margin-bottom:17px}.page-heading h1{font-size:23px}.page-heading p{font-size:10px;max-width:255px}.page-heading>.button,.archive-count{margin-top:18px;font-size:7px;padding:7px}.topbar-actions{gap:7px}.wallet-label,.avatar{display:none}.wallet-button{min-width:unset;padding:8px;font-size:9px}.network-tag{font-size:6px}.space-stage{height:290px}.stage-distance{top:44px;left:13px}.asteroid-target{left:50%;top:58%}.distant-planet{right:5%;top:35px;transform:scale(.72)}.asteroid-card{grid-template-columns:minmax(0,1fr) 112px;padding:11px}.asteroid-ident p{max-width:143px}.right-rail{grid-template-columns:1fr}.sector-illustration{height:104px}.sector-detail{grid-template-columns:1fr 1.3fr 1fr}.sector-detail>div:not(:first-child){display:grid}.activity-note{font-size:8px;flex-wrap:wrap}.activity-note button{margin-left:auto}.footer{padding:11px 13px;gap:10px;flex-direction:column;font-size:6px}.case-layout{grid-template-columns:1fr}.case-feature{height:333px}.case-aside{grid-template-columns:1fr}.case-history{margin-top:16px}.mini-worlds{overflow-x:auto}.planet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.planet-card{height:160px}.lab-grid{grid-template-columns:1fr}.recipe-card>p{min-height:unset}.map-board{height:398px}.map-sector{min-width:94px}.map-sector>b{font-size:8px}.map-sector>small{font-size:6px}.sector-bottom-card{flex-wrap:wrap}.sector-bottom-card>div:nth-child(2){min-width:calc(100% - 64px)}.sector-stat{margin-left:10px;padding:0 7px}.map-footer{flex-wrap:wrap;gap:8px}.map-footer>span:last-child{width:100%;margin:0}.discovery-modal{padding:22px 17px 17px}.topbar .breadcrumb{font-size:8px}.strip-total svg{display:none}}
+@media(max-width:360px){body{min-width:0}.sidebar{width:52px;flex-basis:52px;padding:14px 5px}.sidebar .brand-icon{width:33px;height:33px}.nav-link{height:40px}.topbar{padding:0 8px}.breadcrumb{gap:5px;font-size:7px}.wallet-button{padding:7px;font-size:8px}.resource-strip{padding:7px}.page-content{padding:21px 9px 18px}.footer{padding-inline:9px}.asteroid-card{grid-template-columns:1fr;padding:10px}.target-health{grid-column:1;grid-row:2}.mine-button{grid-row:3}.asteroid-ident p{max-width:175px}.page-heading>.button{display:none}.archive-count{font-size:6px;padding:6px}.planet-grid{gap:5px}.map-sector{min-width:80px}.map-sector>b{font-size:7px}.map-caption{font-size:6px}.sector-stat{padding:0 4px}}
+/* Clearer labels and a thumb-friendly navigation for narrow screens. */
+.side-caption,.eyebrow,.small-section-title{font-size:10px;letter-spacing:.09em}
+.page-heading p{font-size:13px;line-height:1.5}
+.button{font-size:12px;min-height:38px}
+.resource-pill{font-size:11px}
+.resource-pill strong{font-size:12px}
+.panel-title{font-size:10px}
+.more-mobile-button{display:none}
+.secondary-nav{display:grid;gap:5px}
+.tools-caption{margin-top:28px}
+.more-backdrop{position:fixed;inset:0;z-index:15;display:flex;align-items:flex-end;justify-content:center;padding:18px;background:rgba(3,7,13,.48);backdrop-filter:blur(5px);animation:fade-in .16s ease}
+.more-sheet{width:min(420px,100%);padding:15px;border:1px solid var(--border-strong);border-radius:15px;background:#111a27;box-shadow:0 20px 60px #0009}
+.more-sheet-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;padding:0 2px 8px;color:var(--text);font-size:15px}
+.more-sheet-heading button{width:34px;height:34px;display:grid;place-items:center;color:#a8b5c5;border:1px solid var(--border);border-radius:9px;background:#ffffff08;cursor:pointer}
+.more-sheet-link{width:100%;min-height:53px;display:flex;align-items:center;gap:11px;padding:7px;border:0;border-radius:10px;background:transparent;color:var(--text);text-align:left;cursor:pointer}
+.more-sheet-link:hover{background:#ffffff0a}
+.more-sheet-link>span{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--border);border-radius:11px;color:var(--mint);background:#8ae2cc0d}
+.more-sheet-link>b{flex:1;font-size:13px}
+.more-sheet-link>svg{color:#8290a1}
+.nav-link:active,.button:active:not(:disabled),.asteroid-hit:active:not(:disabled){transform:scale(.97)}
+.hit-feedback{position:absolute;top:27px;left:calc(50% + 36px);z-index:5;color:#f1ddbb;font:700 14px var(--mono);text-shadow:0 2px 9px #000,0 0 12px #f3c98c88;pointer-events:none;animation:hit-float .48s ease-out forwards}
+.drop-chip{animation:drop-pop .28s ease-out both}
+@media(max-width:820px){
+  #root{min-height:100dvh}
+  body{min-width:0}
+  .app-shell{display:block;min-height:100dvh;padding-bottom:calc(75px + env(safe-area-inset-bottom))}
+  .main-area{width:100%;min-height:100dvh}
+  .sidebar{position:fixed;left:0;right:0;bottom:0;z-index:12;width:auto;height:calc(68px + env(safe-area-inset-bottom));flex:none;display:block;padding:5px 8px calc(5px + env(safe-area-inset-bottom));border:0;border-top:1px solid rgba(164,183,214,.16);background:rgba(8,12,19,.96);backdrop-filter:blur(16px);box-shadow:0 -8px 30px #0004}
+  .sidebar .brand,.sidebar>.side-caption,.sidebar .secondary-nav,.sidebar .side-sector,.sidebar .side-bottom{display:none}
+  .primary-nav{height:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:4px;margin:0}
+  .nav-link,.nav-link:hover{position:relative;width:100%;height:100%;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:4px 2px;border-color:transparent;border-radius:11px;background:transparent;text-align:center;color:#9ca9b9;font-size:10px;font-weight:600}
+  .nav-link.active{color:#c1efe2;border-color:rgba(126,221,198,.13);background:linear-gradient(180deg,rgba(105,208,184,.12),rgba(105,208,184,.025))}
+  .nav-link svg{flex:none;width:19px;height:19px}
+  .primary-nav .nav-link span{display:block}
+  .nav-link i{position:absolute;top:2px;right:calc(50% - 21px);margin:0;padding:1px 5px;font-size:9px}
+  .mobile-more-button{display:flex}
+  .more-backdrop{bottom:calc(68px + env(safe-area-inset-bottom));padding:10px 12px}
+  .more-sheet{margin:0 auto 2px}
+  .topbar{min-height:58px;padding:0 14px}
+  .breadcrumb{gap:6px;font-size:9px;letter-spacing:.06em}
+  .breadcrumb>span,.breadcrumb>svg{display:none}
+  .breadcrumb b:before{content:'FeNi · ';color:var(--mint)}
+  .topbar-actions{gap:8px}
+  .wallet-label{display:none}
+  .wallet-button{min-width:unset;max-width:170px;padding:9px 10px;font-size:10px;white-space:nowrap}
+  .network-tag{font-size:8px}
+  .resource-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:9px 12px;min-height:unset}
+  .resource-pill{min-width:0}
+  .resource-pill{width:100%;height:38px;justify-content:center;gap:6px;padding:0 4px}
+  .resource-name{display:none}
+  .resource-pill strong{margin-left:0}
+  .strip-total{grid-column:1/-1;justify-content:center;margin:0;font-size:9px}
+  .strip-total span{font-size:9px}
+  .page-content{padding:24px 15px 24px}
+  .page-heading{align-items:flex-start;gap:8px;margin-bottom:17px}
+  .page-heading h1{font-size:24px}
+  .page-heading p{font-size:12px;max-width:300px}
+  .page-heading>.button,.archive-count{margin-top:14px;font-size:9px;padding:7px}
+  .mining-layout{grid-template-columns:minmax(0,1fr);gap:13px}
+  .space-stage{height:clamp(300px,47vh,390px)}
+  .asteroid-card{grid-template-columns:minmax(0,1fr) 138px;gap:10px;padding:13px}
+  .asteroid-ident p{max-width:none;font-size:11px}
+  .mine-button{min-height:46px;font-size:13px}
+  .right-rail{grid-template-columns:1fr;gap:10px}
+  .sector-illustration{height:120px}
+  .sector-detail{grid-template-columns:1fr 1.3fr 1fr}
+  .sector-detail>div:not(:first-child){display:grid}
+  .activity-note{font-size:11px;line-height:1.5}
+  .footer{padding:12px 15px;gap:7px;flex-direction:column;font-size:9px;line-height:1.5}
+  .case-layout{grid-template-columns:minmax(0,1fr)}
+  .case-feature{min-height:330px}
+  .case-aside{grid-template-columns:1fr}
+  .case-history{margin-top:18px}
+  .mini-worlds{overflow-x:auto}
+  .planet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .planet-card{height:178px}
+  .collection-toolbar{font-size:11px;gap:9px}
+  .collection-toolbar>span{font-size:9px;text-align:right}
+  .lab-grid{grid-template-columns:1fr}
+  .recipe-card>p{min-height:unset}
+  .map-board{height:398px}
+  .map-sector{min-width:94px}
+  .discovery-modal{max-height:calc(100dvh - 35px);overflow:auto;padding:23px 18px 18px}
+  .modal-backdrop{padding:12px}
+}
+@media(max-width:420px){
+  .topbar{padding:0 10px}
+  .wallet-button{max-width:150px;padding:8px;font-size:9px}
+  .network-tag{font-size:7px}
+  .page-content{padding:21px 12px}
+  .page-heading h1{font-size:22px}
+  .archive-count{max-width:132px;white-space:normal;line-height:1.35;text-align:center}
+  .asteroid-card{grid-template-columns:minmax(0,1fr);padding:12px}
+  .target-health{grid-column:1;grid-row:auto}
+  .mine-button{grid-column:1;grid-row:auto}
+  .stage-topline,.stage-bottomline{left:11px;right:11px;font-size:8px}
+  .stage-distance{top:46px;left:12px}
+  .asteroid-target{left:50%;top:59%}
+  .distant-planet{right:4%;top:33px;transform:scale(.72)}
+  .planet-grid{gap:7px}
+  .planet-card{height:168px}
+  .collection-toolbar>span{max-width:44%;}
+}
+.wallet-hint{display:none}
+.wallet-connected-wrap:hover .wallet-hint,.wallet-connected-wrap:focus-within .wallet-hint,.wallet-hint.hint-open{display:block}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+@keyframes hit-float{0%{opacity:0;transform:translateY(8px) scale(.84)}20%{opacity:1}100%{opacity:0;transform:translateY(-21px) scale(1)}}
+@keyframes drop-pop{0%{opacity:0;transform:scale(.88) translateY(4px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+.rarity-common{color:#94A3B8}.rarity-uncommon{color:#75D6B0}.rarity-rare{color:#3B82F6}.rarity-epic{color:#A855F7}.rarity-legendary{color:#F59E0B}.rarity-anomalous{color:#E879F9}
+
+/* Material pictograms, desktop navigation, and sector travel. */
+.mobile-more-button{display:none}
+.resource-pill{height:35px;gap:6px;padding:0 8px}
+.resource-ingot{display:block;flex:0 0 auto;overflow:visible;filter:drop-shadow(0 2px 2px #0007)}
+.resource-symbol{display:none}
+.drop-chip{display:inline-flex;align-items:center;gap:4px}
+.asteroid-glow{background:radial-gradient(ellipse,#a545b854,transparent 68%)}
+.asteroid-rock{background:linear-gradient(145deg,#bd69c3 3%,#8b3a9b 43%,#4b125c 100%);filter:drop-shadow(0 12px 11px #0008) drop-shadow(0 0 8px #8b3a9b45)}
+.asteroid-metallic .asteroid-rock{background:linear-gradient(145deg,#c06bbf 4%,#7b318e 43%,#3d164f)}
+.asteroid-rare .asteroid-rock{background:linear-gradient(145deg,#ce80dc 3%,#8b3a9b 44%,#351545)}
+.asteroid-anomalous .asteroid-rock{background:linear-gradient(145deg,#e17be0 3%,#8a368d 45%,#311044)}
+.asteroid-rock i,.asteroid-rock b,.asteroid-rock em,.asteroid-rock small{background:#4b125ccc;box-shadow:inset 2px 2px 3px #250a33aa}
+.asteroid-rock em,.asteroid-rock small{background:#f0b5f0a8;box-shadow:none}
+.asteroid-svg{position:absolute;z-index:2;width:142px;height:128px;overflow:visible;filter:drop-shadow(0 13px 8px #0008) drop-shadow(0 0 12px #8b3a9b42);animation:asteroid-float 3.8s ease-in-out infinite;transition:filter .16s,transform .16s}
+.asteroid-hit:hover .asteroid-svg{filter:drop-shadow(0 14px 9px #0009) drop-shadow(0 0 18px var(--asteroid-accent,#9c67bd77));transform:scale(1.035)}
+.asteroid-hit.hit-flash .asteroid-svg{filter:brightness(1.5) drop-shadow(0 0 17px var(--asteroid-accent,#dba1ee))}
+.asteroid-svg path,.asteroid-svg ellipse,.asteroid-svg circle{stroke:#130f23aa;stroke-width:2;stroke-linejoin:round}
+.rock-main{fill:#8a6688}.rock-shade{fill:#503d62}.rock-light{fill:#ba92b0}.rock-crater{fill:#49384f;stroke:#34273b!important}.rock-glint{fill:#ead0e9;stroke:none!important}
+.asteroid-metallic{--asteroid-accent:#d9b4dc}.asteroid-metallic .rock-main{fill:#8b668b}.asteroid-metallic .rock-light{fill:#d4a6ca}.ore-vein{fill:none;stroke:#e8c5ec!important;stroke-width:4!important;stroke-linecap:round}.ore-vein.thin{stroke:#70537e!important;stroke-width:2!important}
+.crystal-main{fill:#825bb2}.crystal-face{fill:#553c8f}.crystal-shine{fill:#dbbaff;opacity:.83}.crystal-edge{fill:none;stroke:#f1dfff!important;stroke-width:2!important;stroke-linecap:round}
+.asteroid-crystal{--asteroid-accent:#c49bff}.asteroid-crystal .crystal-main,.asteroid-rare .crystal-main{fill:#9a78d0}.asteroid-crystal .crystal-face,.asteroid-rare .crystal-face{fill:#5e4a9d}.asteroid-crystal .crystal-shine,.asteroid-rare .crystal-shine{fill:#f0ddff}
+.rare-main{fill:#7187be}.rare-facet{fill:#485e9c}.rare-glint{fill:#e0edff}.rare-vein{fill:none;stroke:#c9daff!important;stroke-width:2!important;stroke-linecap:round;opacity:.87}
+.anomaly-main{fill:#477887}.anomaly-core{fill:#ba63b2;stroke:#f5bcff!important}.anomaly-rune{fill:none;stroke:#c6ffed!important;stroke-width:3!important;stroke-linecap:round;stroke-linejoin:round}.anomaly-dot{fill:#f6c4ff;stroke:none!important}
+.lava-main{fill:#91505f}.lava-shade{fill:#4b354f}.lava-crack{fill:none;stroke:#ffb16f!important;stroke-width:4!important;stroke-linecap:round;filter:drop-shadow(0 0 3px #ff7658)}.lava-core{fill:#ffcf73;stroke:#fb966b!important}
+.ice-main{fill:#6694a9}.ice-shade{fill:#375d80}.ice-light{fill:#b0e3e7}.ice-crack{fill:none;stroke:#e2ffff!important;stroke-width:2!important;stroke-linecap:round}
+.asteroid-common{--asteroid-accent:#b4a8ce}.asteroid-rare{--asteroid-accent:#bba3ff}.asteroid-anomalous{--asteroid-accent:#77e8d2}.asteroid-volcanic{--asteroid-accent:#ff9272}.asteroid-ice{--asteroid-accent:#83deee}
+.kind-crystal{background:#b69be61f;border-color:#b69be63d}.kind-crystal span{background:#b69be6}.kind-volcanic{background:#ee896f1f;border-color:#ee896f42}.kind-volcanic span{background:#ee896f}.kind-ice{background:#7bd2df1f;border-color:#7bd2df42}.kind-ice span{background:#7bd2df}
+@keyframes asteroid-float{0%,100%{translate:0 0;rotate:-1deg}50%{translate:0 -5px;rotate:1deg}}
+.asteroid-ring{border-color:#d28be24a}.ring-b{border-color:#a95ac42f}
+.asteroid-hit-burst{position:absolute;left:50%;top:46%;z-index:4;width:1px;height:1px;pointer-events:none}
+.ore-shard{position:absolute;left:0;top:0;width:7px;height:11px;border:1px solid #e6a0ea;border-radius:1px 4px 1px 3px;background:linear-gradient(145deg,#df8be0,#8b3a9b 60%,#4b125c);box-shadow:0 0 7px #bd62cb70;transform:rotate(var(--shard-angle)) translateY(-43px) rotate(35deg);animation:shard-burst .48s cubic-bezier(.12,.68,.3,1) both}
+.shard-2,.shard-6{width:5px;height:8px;background:linear-gradient(145deg,#f1c5f1,#a84fbc 60%,#57206a)}
+.shard-3,.shard-7{width:8px;height:6px;background:linear-gradient(145deg,#bb70cb,#672080)}
+.burst-star{position:absolute;width:11px;height:11px;background:#fff5ff;clip-path:polygon(50% 0,62% 37%,100% 50%,62% 63%,50% 100%,38% 63%,0 50%,38% 37%);filter:drop-shadow(0 0 6px #fff);animation:star-burst .44s ease-out both}
+.star-a{left:-37px;top:-31px}.star-b{left:32px;top:-17px;width:8px;height:8px;animation-delay:.04s}.star-c{left:-4px;top:35px;width:7px;height:7px;animation-delay:.07s}
+@keyframes shard-burst{0%{opacity:0;scale:.35}18%{opacity:1}100%{opacity:0;transform:rotate(var(--shard-angle)) translateY(-67px) rotate(210deg);scale:.65}}
+@keyframes star-burst{0%{opacity:0;scale:.25}22%{opacity:1;scale:1.2}100%{opacity:0;scale:.45;transform:translateY(-7px)}}
+.mini-quests-panel{padding:12px}.quest-count{color:#9bd8c4;font:8px var(--mono);letter-spacing:0}.quest-intro{margin:8px 0 10px;color:#8290a1;font-size:8px;line-height:1.45}.mini-quest-list{display:grid;gap:7px}.mini-quest{display:grid;grid-template-columns:25px minmax(0,1fr);gap:8px;padding:9px 7px;border:1px solid #ffffff0c;border-radius:6px;background:#ffffff04;transition:border-color .2s,background .2s}.mini-quest.quest-complete{border-color:#8bd8bc31;background:#8bd8bc08}.mini-quest.quest-claimed{opacity:.66}.quest-icon{width:24px;height:24px;display:grid;place-items:center;color:#9caec1;border:1px solid #ffffff16;border-radius:6px;background:#1a2635}.quest-complete .quest-icon{color:#9ce1c4;border-color:#91dcb84a}.quest-body{min-width:0}.quest-heading{display:flex;justify-content:space-between;align-items:baseline;gap:5px}.quest-heading b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#d2d9e2;font-size:8px;font-weight:600}.quest-heading>span{flex:0 0 auto;color:#8291a4;font:7px var(--mono)}.quest-body>p{margin:3px 0 6px;color:#7d8a9b;font-size:7px;line-height:1.3}.quest-progress{height:3px;overflow:hidden;border-radius:5px;background:#242e3b}.quest-progress i{height:100%;display:block;border-radius:5px;background:linear-gradient(90deg,#579e96,#a1dfc4);transition:width .25s}.quest-reward{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}.quest-reward>span,.duplicate-reward>div>span{display:inline-flex;align-items:center;gap:3px;color:#a4b2c0;font:7px var(--mono)}.quest-reward svg:first-child{color:#cfbd83}.quest-claim{grid-column:2;justify-self:start;margin-top:1px;padding:4px 8px;border:1px solid #94d9bd55;border-radius:4px;background:#7fcdae18;color:#afe6cf;font-size:7px;cursor:pointer}.quest-claim:hover:not(:disabled){background:#7fcdae2b}.quest-claim:disabled{opacity:.72;cursor:default}
+.quest-claim-count{color:#8799a8;font:7px var(--mono)}
+.case-tabs{position:absolute;z-index:3;top:14px;left:50%;display:flex;gap:3px;padding:3px;border:1px solid #a4b7d624;border-radius:7px;background:#09111dcc;transform:translateX(-50%);backdrop-filter:blur(8px)}.case-tabs button{padding:6px 11px;border:0;border-radius:4px;background:transparent;color:#8492a4;font-size:8px;white-space:nowrap;cursor:pointer;transition:.16s}.case-tabs button.active{background:#91ddc51f;color:#b5efdc;box-shadow:inset 0 0 0 1px #91ddc525}.case-feature-title{margin-top:8px}.duplicate-eyebrow{color:#edca91}.duplicate-reward{display:grid;gap:5px;margin-top:11px;padding:10px;text-align:left;border:1px solid #e2bb7c30;border-radius:6px;background:#e2bb7c0b}.duplicate-reward>b{color:#e7cc99;font-size:9px}.duplicate-reward>span{color:#8d9aa8;font-size:8px}.duplicate-reward>div{display:flex;gap:9px;flex-wrap:wrap}
+.planet-ringed{overflow:visible;background:radial-gradient(circle at 28% 24%,#e7c499,#98699b 53%,#344069 88%)}.planet-ringed:before{content:'';position:absolute;z-index:-1;left:-14%;top:35%;width:128%;height:30%;border:4px solid #e3bc8c99;border-left-color:#a77cc8;border-right-color:#c7a5e6;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 7px #e1b9d044}.planet-ringed>b{inset:9px;background:radial-gradient(ellipse at 67% 34%,#5c4163 0 12%,transparent 16%),linear-gradient(135deg,transparent 35%,#74527f 37% 52%,transparent 54%);z-index:2}
+.planet-crystal{background:radial-gradient(circle at 29% 25%,#d8c5ff,#8975bf 48%,#27345d 88%)}.planet-crystal>b{inset:0;background:linear-gradient(125deg,transparent 26%,#f0ddff75 27% 31%,transparent 32% 48%,#5bd3cf65 49% 55%,transparent 56%);clip-path:polygon(20% 0,89% 10%,100% 70%,66% 100%,0 80%);z-index:2}
+.planet-aurora{background:radial-gradient(circle at 28% 25%,#b7d889,#426b76 47%,#212c58 87%)}.planet-aurora>b{inset:7px 0;background:repeating-linear-gradient(155deg,transparent 0 8px,#9ef3cd80 9px 12px,#9971dd70 13px 16px,transparent 17px 22px);border-radius:50%;filter:blur(1px);z-index:2}
+.planet-ember{background:radial-gradient(circle at 28% 24%,#ffc77c,#c5574e 49%,#462d55 88%)}.planet-ember>b{inset:0;background:radial-gradient(circle at 37% 58%,#fff08b 0 8%,transparent 11%),radial-gradient(circle at 72% 28%,#ff9372 0 6%,transparent 9%),linear-gradient(135deg,transparent 35%,#372c4b99 37% 56%,transparent 58%);z-index:2}
+.planet-storm{background:radial-gradient(circle at 26% 22%,#e9b789,#8b6a91 47%,#283958 87%)}.planet-storm>b{inset:5px -2px;background:repeating-linear-gradient(0deg,transparent 0 5px,#ebd3b489 6px 8px,#a274ba80 9px 12px);border-radius:50%;z-index:2}.planet-storm>span{border:3px solid #d2b7e95c}
+.planet-tide{background:radial-gradient(circle at 27% 22%,#8dd6df,#287da2 49%,#192e5c 87%)}.planet-tide>b{inset:0;background:radial-gradient(ellipse at 30% 30%,#9ac68e 0 16%,transparent 18%),radial-gradient(ellipse at 69% 65%,#a1bd84 0 17%,transparent 19%),linear-gradient(145deg,transparent 42%,#d6f4f444 44% 49%,transparent 50%);z-index:2}
+.planet-luminous{background:radial-gradient(circle at 50% 48%,#f5e2ff,#b26fd5 38%,#40377b 76%);box-shadow:inset -6px -6px 12px #050a17ad,inset 2px 2px 8px #fff3ff91,0 0 21px #d582ff75}.planet-luminous>b{inset:7px;border:1px solid #fff1ffad;transform:rotate(45deg) scale(.8);z-index:2}.planet-luminous>span{border:1px solid #e7cfff9c;transform:scale(.72)}
+.explored-sector{opacity:.92}.explored-sector .sector-node{border-color:#a180cc59;color:#b295db}
+.sector-travel-card{margin-top:12px;padding:17px;border:1px solid rgba(164,183,214,.15);border-radius:9px;background:linear-gradient(135deg,#131a2c,#101522)}
+.sector-travel-heading{display:flex;align-items:center;gap:11px;margin-bottom:15px}
+.travel-gate-icon{width:39px;height:39px;display:grid;place-items:center;border:1px solid #b88fe337;border-radius:10px;background:#9e5fc015;color:#d0a7eb}
+.sector-travel-heading>div{min-width:0}.sector-travel-heading h2{margin:4px 0 2px;color:#e7eaf1;font:650 15px var(--heading)}
+.sector-travel-heading p{margin:0;color:#8290a1;font-size:9px}
+.travel-requirement-groups{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.travel-requirement-group{padding:11px;border:1px solid var(--border);border-radius:7px;background:#080c1380}
+.travel-group-title{display:block;margin-bottom:9px;color:#78869a;font:8px var(--mono);letter-spacing:.1em}
+.travel-resource-list,.travel-item-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.travel-resource,.travel-item{min-width:0;min-height:48px;display:flex;align-items:center;gap:7px;padding:6px;border:1px solid rgba(164,183,214,.1);border-radius:6px;background:#ffffff04}
+.travel-resource>span,.travel-item>span:last-child{min-width:0;display:grid;gap:3px}
+.travel-resource b,.travel-item b{overflow:hidden;color:#bec9d7;font-size:8px;font-weight:600;text-overflow:ellipsis;white-space:nowrap}
+.travel-resource small,.travel-item small{color:#7d8b9e;font:8px var(--mono)}
+.travel-resource:not(.requirement-met) small,.travel-item:not(.requirement-met) small{color:#d99a91}
+.travel-resource.requirement-met,.travel-item.requirement-met{border-color:#87d7b829;background:#87d7b80a}
+.travel-resource.requirement-met small,.travel-item.requirement-met small{color:#9bd7bd}
+.travel-item-icon{width:29px;height:29px;display:grid!important;place-items:center;flex:0 0 auto;color:#d3b3eb;border:1px solid #bb93df2a;border-radius:7px;background:#9c5bb815}
+.sector-travel-card .travel-item{min-height:0;padding:2px 0;border:0;border-radius:0;background:transparent}
+.sector-travel-card .travel-item.requirement-met{border-color:transparent;background:transparent}
+.sector-travel-card .travel-item-icon{width:20px;height:20px;border:0;border-radius:0;background:transparent}
+.sector-travel-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:13px}
+.sector-travel-footer>span{display:flex;align-items:center;gap:6px;color:#78869a;font-size:8px;line-height:1.4}
+.sector-travel-footer>span svg{flex:none}
+.travel-button{min-height:38px;padding:0 12px;color:#160d20;border:0;background:linear-gradient(105deg,#d5afe9,#a986d0);box-shadow:0 5px 18px #9662b01d;white-space:nowrap}
+.travel-button:hover:not(:disabled){filter:brightness(1.08)}
+.travel-button:disabled{filter:saturate(.4)}
+.sector-frontier{display:flex;align-items:center;gap:9px;color:#a994c0;font-size:10px}
+.sector-frontier svg{flex:none;color:#d1a9e9}
+.drill-icon{color:#d4a6e8;border-color:#c18cdf3a;background:#a459d01a}
+.drill-tag{color:#d5b1e9;border-color:#bf8cdd3b}
+.pulse-feedback{color:#91e4d0;text-shadow:0 2px 9px #000,0 0 14px #70e3c9}
+.workshop-tabs{display:flex;gap:7px;margin:0 0 13px;padding:5px;border:1px solid var(--border);border-radius:7px;background:#080d15}.workshop-tab{display:flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid transparent;border-radius:5px;background:transparent;color:#8290a2;font-size:9px;cursor:pointer}.workshop-tab.active{border-color:#91d8cb32;background:#91d8cb10;color:#a5e2d2}.workshop-tab:disabled{opacity:.5;cursor:not-allowed}
+.recycler-icon{color:#9bdcc9;border-color:#86d6c239;background:#76cfb21a}.condenser-icon{color:#f0ce89;border-color:#f0ce8940;background:#f0ce8917}
+.recycling-screen{display:grid;gap:13px}.recycler-overview{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #8bd7c82b;border-radius:8px;background:linear-gradient(110deg,#14201f,#101722)}.recycler-overview-icon{width:38px;height:38px;display:grid;place-items:center;border:1px solid #8bd7c833;border-radius:7px;background:#8bd7c812;color:#9be2d0}.recycler-overview>div{display:grid;gap:4px;flex:1}.recycler-overview .eyebrow{color:#8ebaaa}.recycler-overview b{font-size:12px;color:#d6e8e1}.recycler-overview small{color:#8b9a9e;font-size:9px}.recycler-discount{font:600 18px var(--mono);color:#9be2d0}.recycle-recipes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.recycle-card{padding:15px;border:1px solid var(--border);border-radius:8px;background:linear-gradient(140deg,#121b28de,#0e141ee8)}.recycle-card-heading{display:flex;align-items:center;gap:10px}.recycle-card-heading>div:last-child{display:grid;gap:4px}.recycle-card-heading .eyebrow{font-size:7px}.recycle-card-heading h2{margin:0;font:600 14px var(--heading)}.recycle-flow{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:15px 0 11px;padding:11px 9px;border:1px solid #ffffff0e;border-radius:5px;background:#0002}.recycle-flow>svg{flex:none;color:#8091a3}.recycle-output{display:grid;justify-items:center;gap:3px}.recycle-output b{font:600 11px var(--mono)}.recycle-output small{color:#8793a4;font-size:8px}.recycle-price{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-top:1px solid #ffffff0e;color:#7e8da0;font:7px var(--mono);letter-spacing:.06em}.recycle-price b{color:#cbd4df;font:9px var(--mono);letter-spacing:0}.recycle-price i{color:#708094;font-style:normal}.recycle-button{width:100%;height:35px;color:#0b1716;border:0;background:linear-gradient(100deg,#9ce8d2,#80cebf)}.recycle-button:disabled{color:#bdc6d1;background:#ffffff12}.recycling-note{display:flex;align-items:flex-start;gap:8px;padding:11px 12px;border:1px solid var(--border);border-radius:6px;color:#8290a2;background:#ffffff04;font-size:9px;line-height:1.5}.recycling-note svg{flex:none;color:#9bb1c5}
+@media(max-width:620px){.recycle-recipes{grid-template-columns:1fr}.workshop-tab{font-size:8px;padding:8px}.recycler-overview{align-items:flex-start}.recycler-discount{font-size:15px}.recipe-flow{gap:4px;padding:8px}}
+@media(max-width:620px){.resource-pill{height:38px;gap:4px;padding:0 3px}.resource-ingot{width:24px;height:24px}.resource-code{min-width:17px;font-size:7px}.travel-requirement-groups{grid-template-columns:1fr}.travel-resource-list,.travel-item-list{grid-template-columns:repeat(2,minmax(0,1fr))}.sector-travel-card{padding:12px}.sector-travel-footer{align-items:stretch;flex-direction:column}.travel-button{width:100%}.travel-resource,.travel-item{min-height:44px}}
+@media(max-width:820px){.mobile-more-button{display:flex}}
+.space-stage.sector-red-nebula{background:radial-gradient(ellipse at 23% 25%,#7b2c8b55,transparent 37%),radial-gradient(ellipse at 76% 62%,#45206755,transparent 42%),linear-gradient(130deg,#1c0b2d,#110d22 56%,#160e29)}
+.space-stage.sector-orion-field{background:radial-gradient(ellipse at 72% 24%,#32498755,transparent 36%),radial-gradient(ellipse at 28% 71%,#2f628255,transparent 39%),linear-gradient(130deg,#10152e,#0d1021 56%,#16142a)}
+.space-stage.sector-forgotten-systems{background:radial-gradient(ellipse at 32% 28%,#59436a50,transparent 38%),radial-gradient(ellipse at 74% 71%,#41436646,transparent 43%),linear-gradient(130deg,#17172a,#111522 56%,#1b1526)}
+.space-stage.sector-the-void{background:radial-gradient(ellipse at 48% 49%,#702b8e53,transparent 36%),radial-gradient(ellipse at 85% 16%,#3e246a50,transparent 39%),linear-gradient(130deg,#170a2a,#0c081a 58%,#170b29)}
+.asteroid-searching{position:absolute;left:50%;top:54%;z-index:5;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #7bd8ca3d;border-radius:6px;background:#09111bd9;color:#9fe4d1;transform:translate(-50%,-50%);font:8px var(--mono);letter-spacing:.08em;white-space:nowrap;box-shadow:0 0 25px #69d4bf18}.asteroid-searching>svg{animation:spin 1.2s linear infinite}.asteroid-searching i{width:30px;height:2px;background:linear-gradient(90deg,transparent,#8ce3ce,transparent);animation:scan 1s linear infinite}.sector-detail .threat-medium{color:#e5cb92}.sector-detail .threat-high{color:#ec9a9a}
+
+/* FeNi's faceted asteroid palette: flatter surfaces, less ambient decoration, clearer controls. */
+:root{--bg:#0b0714;--panel:#140e20;--panel-soft:#191126;--border:rgba(185,139,212,.17);--border-strong:rgba(205,157,231,.29);--text:#f0e9f5;--muted:#ab9bb5;--dim:#74647f;--mint:#d09be8;--blue:#ad8bd6}
+body{background:#0b0714;color:var(--text)}.app-shell{background:radial-gradient(ellipse at 53% -30%,#5828752a,transparent 49%),#0b0714}.sidebar{background:#0d0816;border-color:#362344}.topbar{background:#0d0816ed;border-color:#362344}.resource-strip{background:#110b1b;border-color:#362344}.panel,.asteroid-card,.sector-travel-card,.recipe-card,.recycle-card{background:linear-gradient(145deg,#181021,#100b18);border-color:#392747;border-radius:8px;box-shadow:0 5px 18px #0301073b}.nav-link.active{color:#f0dafa;background:#8b4ca31c;border-color:#bf86d343}.nav-link.active svg,.brand-icon{color:#dfa7f0}.brand-icon{border-color:#c388db56;background:#863ba21c;box-shadow:none}.wallet-button{border-color:#9e70bc58;background:#8a49a21a;color:#ead8f3}.button{border-color:#5a3b69;background:#20162a;color:#e8d9ef}.button:hover:not(:disabled){filter:brightness(1.12);box-shadow:0 4px 16px #0004}.language-toggle{height:33px;display:inline-flex;align-items:center;gap:6px;padding:0 9px;border:1px solid #654776;border-radius:6px;background:#1b1224;color:#e3c8ef;font:600 9px var(--mono);cursor:pointer;transition:.18s}.language-toggle:hover{border-color:#bd83d5;background:#2b1936}.language-toggle svg{color:#ce99e2}
+.page-heading h1,.sector-panel h2{color:#f3eafa}.eyebrow,.side-caption,.small-section-title{color:#a88fb4}.page-heading p{color:#a491af}.space-stage{height:322px;border-color:#563766;background:radial-gradient(ellipse at 50% 66%,#6d43842b,transparent 39%),linear-gradient(145deg,#1a1025,#100a19 68%,#170e20);box-shadow:inset 0 0 45px #08040b88}.space-stage:after{content:'';position:absolute;inset:auto 8% 17%;height:1px;background:linear-gradient(90deg,transparent,#b78aca42,transparent)}.stage-grid{opacity:.06}.stage-topline{color:#b79fc2}.recording-dot,.tiny-live{background:#d69eea;box-shadow:0 0 7px #d69eea}.asteroid-glow{background:radial-gradient(ellipse,#a962cb3d,transparent 68%)}.asteroid-ring{opacity:.38}.asteroid-card{grid-template-columns:minmax(0,1fr) 130px;gap:13px;padding:14px}.asteroid-ident .eyebrow{color:#b69ac4}.asteroid-ident h3{color:#f0e5f6}.asteroid-ident p{color:#a18cae}.target-health>div:first-child{color:#ad9bb5}.health-track{background:#33253a}.health-track i{background:linear-gradient(90deg,#8d58a4,#dfa8ef)}.mine-button{height:43px;grid-column:1/-1;color:#1c0f21;border:0;background:linear-gradient(100deg,#d9a2e7,#b77bd0)}.mine-button:hover:not(:disabled){background:linear-gradient(100deg,#e6b6ef,#c78cdb)}.drop-row{border-color:#33243d}.drop-chip{border-color:#76518a;background:#3d234d;color:#ead7f2}.right-rail{gap:10px}.sector-panel{padding:13px}.sector-panel h2{margin:10px 0 8px;font:650 15px var(--heading)}.sector-tags{display:flex;flex-wrap:wrap;gap:6px}.sector-tags>span{padding:5px 7px;border:1px solid #ffffff13;border-radius:4px;background:#ffffff05;color:#bdabc7;font:7px var(--mono);letter-spacing:.03em}.sector-tags .threat-low{color:#a9d6ba}.sector-tags .threat-medium{color:#e2c489}.sector-tags .threat-high{color:#e990a2}.sector-mark{width:36px;height:36px;display:grid;place-items:center;border:1px solid #865ca0;border-radius:8px;background:#6b337f33;color:#ddaded;font:10px var(--mono)}.side-sector{border-color:#33243d}.side-sector .side-caption{margin:0 0 5px;font-size:8px}
+.mini-quests-panel{padding:12px;border-color:#493252;background:linear-gradient(145deg,#191122,#100b18)}.quest-intro{display:none}.mini-quest{border-color:#ffffff12;background:#0f0a16}.mini-quest.quest-complete{border-color:#c995dc80;background:#a150c110}.quest-icon{border-color:#6b4a7c;background:#25172e;color:#d0a0e4}.quest-complete .quest-icon{color:#edc8f8;border-color:#c995dc}.quest-progress{background:#34253e}.quest-progress i{background:linear-gradient(90deg,#81509a,#d09be8)}.quest-tier{color:#a58caf!important}.quest-claim{border-color:#b67dc7;background:#9a4cb32a;color:#f0dafa}.quest-cooldown{border-color:#49394f;background:#0d0913}.quest-cooldown .quest-icon{color:#a68bab}.quest-timer{grid-column:2;color:#c2a7cf;font:7px var(--mono)}.quest-reward{gap:5px}.quest-claim-count{color:#d0aadf}
+.asteroid-svg-common .rock-main{fill:#9c7c99}.asteroid-svg-common .rock-light{fill:#c5a6bc}.asteroid-svg-metallic .rock-main{fill:#9f7e9e}.asteroid-svg-metallic .ore-vein{stroke:#e6c8e5!important}.asteroid-svg-rare .rare-main{fill:#8b85b7}.asteroid-svg-anomalous .anomaly-main{fill:#497e8b}.asteroid-svg-crystal .crystal-main{fill:#8e6abf}.asteroid-svg-volcanic .lava-main{fill:#98505f}.asteroid-svg-ice .ice-main{fill:#6599aa}.asteroid-glow{filter:blur(11px)}
+.case-feature{height:369px;border-color:#523360;border-radius:8px;background:radial-gradient(ellipse at 50% 48%,#6b418a25,transparent 48%),linear-gradient(145deg,#1a1026,#0f0a18)}.case-feature:after,.case-starfield,.case-scan,.case-halo{display:none}.case-tabs{top:14px;border-color:#5a3b69;background:#100a18}.case-tabs button.active{background:#9c5db02a;color:#eed8f6;box-shadow:inset 0 0 0 1px #c28add58}.case-feature-art{position:relative;width:142px;height:128px;display:grid;place-items:center;margin-top:27px}.case-feature-art .asteroid-svg{position:relative;inset:auto;filter:drop-shadow(0 12px 10px #0009) drop-shadow(0 0 14px #a450bf33)}.case-feature-title{margin-top:12px;color:#f2e8f6;font:700 17px var(--heading);letter-spacing:.025em}.case-feature>p{margin:4px 0 12px;color:#aa96b4;font-size:9px}.case-open-button{color:#1c0e20;border:0;background:linear-gradient(100deg,#d9a2e7,#b77bd0);box-shadow:none}.case-open-button:hover:not(:disabled){filter:brightness(1.08)}.case-safety{color:#94809d}.case-object{display:none}.cost-line{border-color:#ffffff13}.cost-line b{color:#e2c5ed}.cost-status{color:#a996b1}.status-check{background:#bf87d422;color:#e4b7f2}.contents-panel,.cost-panel{border-color:#402b4b}.mini-world,.planet-card{border-color:#4a3655;background:linear-gradient(150deg,#191121,#100b18)}.planet-card:hover:not(:disabled){border-color:#ba83d148;box-shadow:0 6px 18px #0004}.planet-card-name{color:#f0e5f6}.discovery-modal{border-color:#81549a;background:radial-gradient(ellipse at 50% 18%,#6b3c8126,transparent 45%),linear-gradient(145deg,#191122,#100b18)}.modal-eyebrow{color:#ddb2ea}.planet-bonus{border-color:#a875bd44;background:#6e397c15;color:#e0b8ec}.duplicate-reward{border-color:#a6854c58;background:#78602a13}.claim-button{border-color:#5a3b69;color:#b7a3c0}.sector-travel-card{background:linear-gradient(145deg,#191122,#100b18)}.travel-gate-icon{border-color:#8e5ca749;background:#7738911a;color:#d8a2e9}.travel-button{color:#200f25;border:0;background:linear-gradient(100deg,#d4a0e4,#ad75c4)}.map-board{background:radial-gradient(ellipse at 50% 55%,#613d7822,transparent 58%),linear-gradient(145deg,#170f22,#0f0a18);border-color:#493154}.map-nebula,.map-grid{opacity:.04}.route-line{background:repeating-linear-gradient(90deg,#c69bdd80 0 4px,transparent 4px 10px)}.current-sector .sector-node{border-color:#cb91df;box-shadow:0 0 0 5px #a255be12,0 0 20px #a255be26}.map-sector>small,.map-sector>b{color:#b7a5c0}.locked-sector{opacity:.48}.sector-bottom-card{border-color:#473052;background:#151020}.sector-stat{border-color:#493455}.footer{border-color:#30213c;color:#84738e}.sync-label{color:#86758e}
+.asteroid-searching{border-color:#9964aa66;background:#130d1deb;color:#e2b5ef;box-shadow:none}.asteroid-searching i{background:linear-gradient(90deg,transparent,#d6a0e5,transparent)}.fracture-burst{color:#f1cafa}.fracture-burst svg{color:#d4a0e5}
+@media(max-width:820px){.right-rail{grid-template-columns:repeat(2,minmax(0,1fr))}.mini-quests-panel{grid-column:1/-1}.sector-tags{gap:4px}}
+@media(max-width:620px){.right-rail{grid-template-columns:1fr}.mini-quests-panel{grid-column:auto}.case-feature{height:333px}.case-feature-art{margin-top:20px}.asteroid-card{grid-template-columns:minmax(0,1fr) 112px}.language-toggle{min-width:44px;justify-content:center}.topbar-actions{gap:6px}.sector-panel{order:0}.mini-quests-panel{order:1}}
+
+/* Blue storybook arcade: one combined mining panel, standalone contracts, toy-like planets. */
+:root{--bg:#071322;--panel:#0e1d31;--panel-soft:#122640;--border:rgba(100,169,232,.2);--border-strong:rgba(115,188,250,.36);--text:#eff7ff;--muted:#a1b8ce;--dim:#7189a2;--mint:#8bc9ff;--blue:#4c9ae8}
+body{background:#071322;color:var(--text)}.app-shell{background:radial-gradient(ellipse at 53% -30%,#267fc326,transparent 52%),#071322}.sidebar,.topbar{background:#09182aed;border-color:#183451}.resource-strip{background:#0d1c30;border-color:#1a3857}.panel,.sector-travel-card,.recipe-card,.recycle-card{background:linear-gradient(145deg,#132943,#0d1c30);border-color:#234767;border-radius:12px;box-shadow:0 6px 20px #02091455}.button{border-radius:9px}.nav-link.active{color:#e4f4ff;background:#3795e326;border-color:#55b5ff56}.nav-link.active svg,.brand-icon{color:#82c9ff}.brand-icon{border-color:#4c9fe96b;background:#247cbb2e}.wallet-button{border-color:#3d92d56b;background:#19679e26;color:#d7efff}.language-toggle{border-color:#376b98;background:#102640;color:#e0f3ff}.language-toggle:hover{border-color:#70baff;background:#173757}.page-heading h1,.sector-panel h2{color:#f2f8ff}.eyebrow,.side-caption,.small-section-title{color:#92b3d1}.page-heading p{color:#a1b8ce}.side-sector{border-color:#234767}.sector-mark{border-color:#3c82b7;background:#16406a;color:#b7e1ff}
+.mining-layout{grid-template-columns:minmax(0,1fr);gap:0}.mining-column{width:100%}.space-stage{height:clamp(500px,64vh,620px);border:2px solid #3979ad;border-radius:18px;background:radial-gradient(ellipse at 50% 37%,#287fbd38,transparent 43%),radial-gradient(ellipse at 12% 9%,#4b92d31c,transparent 31%),linear-gradient(155deg,#132e4c,#0c1d32 58%,#102943);box-shadow:inset 0 0 55px #020b16b0,0 11px 0 #06101d,0 14px 28px #02091478}.space-stage:after{content:'';position:absolute;inset:0;border:1px solid #9ad4ff20;border-radius:15px;pointer-events:none}.stage-grid{inset:44% 0 0;opacity:.08}.stage-stars{position:absolute;inset:0;overflow:hidden;pointer-events:none}.stage-stars i{position:absolute;width:4px;height:4px;border-radius:50%;background:#c7e9ff;box-shadow:0 0 10px #91ceff;animation:breathe 2.2s infinite}.stage-stars i:nth-child(1){left:13%;top:24%}.stage-stars i:nth-child(2){left:28%;top:16%;width:3px;height:3px;animation-delay:.6s}.stage-stars i:nth-child(3){right:15%;top:21%;animation-delay:1s}.stage-stars i:nth-child(4){right:29%;top:36%;width:3px;height:3px;animation-delay:.3s}.stage-stars i:nth-child(5){left:42%;top:27%;width:2px;height:2px;animation-delay:1.2s}.stage-stars b{position:absolute;width:10px;height:10px;background:#f1fbff;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);filter:drop-shadow(0 0 5px #8bd1ff);animation:twinkle 2s ease-in-out infinite}.stage-stars b:nth-of-type(1){left:22%;top:38%}.stage-stars b:nth-of-type(2){right:20%;top:47%;scale:.7;animation-delay:.6s}.stage-stars b:nth-of-type(3){right:37%;top:14%;scale:.55;animation-delay:1s}@keyframes twinkle{50%{opacity:.45;scale:.7}}
+.stage-topline{left:24px;right:24px;top:21px;color:#c4def5}.stage-topline>span:first-child{color:#daf3ff}.stage-topline>span:last-child{display:flex;align-items:center;gap:9px;color:#cae3fa}.stage-topline i{font-style:normal;font-size:7px;letter-spacing:.02em}.threat-low{color:#91e8cc!important}.threat-medium{color:#ffe19d!important}.threat-high{color:#ff9caa!important}.recording-dot,.tiny-live{background:#70d7ff;box-shadow:0 0 9px #70d7ff}.asteroid-target{left:50%;top:34%;animation:drift 3.2s ease-in-out infinite}.asteroid-hit{width:230px;height:180px}.asteroid-glow{width:190px;height:135px;background:radial-gradient(ellipse,#65b9ff67,transparent 68%);filter:blur(12px)}.asteroid-svg{filter:drop-shadow(0 13px 2px #06111f73) drop-shadow(0 3px 0 #0b1830);animation:asteroid-float 3.4s ease-in-out infinite}.asteroid-svg path,.asteroid-svg ellipse,.asteroid-svg circle{stroke:#182743!important;stroke-width:2.7!important;stroke-linejoin:round}.asteroid-svg-common .rock-main{fill:#6e9fca}.asteroid-svg-common .rock-light{fill:#b2dcfa}.asteroid-svg-common .rock-shade{fill:#3c6696}.asteroid-svg-common .rock-crater{fill:#39517b}.asteroid-svg-metallic .rock-main{fill:#7daecb}.asteroid-svg-metallic .rock-light{fill:#c2e5ee}.asteroid-svg-rare .rare-main{fill:#657fd0}.asteroid-svg-rare .rare-facet{fill:#374f9e}.asteroid-svg-anomalous .anomaly-main{fill:#5495be}.asteroid-svg-crystal .crystal-main{fill:#778fe0}.asteroid-svg-ice .ice-main{fill:#86c6de}.asteroid-ring{border-color:#8ad0ff67;opacity:.62}.ring-b{border-color:#b6a6ff3c}.asteroid-hit:hover .asteroid-svg{filter:drop-shadow(0 13px 2px #06111f73) drop-shadow(0 0 18px #75c7ff99);transform:scale(1.045)}.asteroid-hit.hit-flash .asteroid-svg{filter:brightness(1.45) drop-shadow(0 0 18px #b3e3ff)}
+.stage-dock{position:absolute;z-index:5;left:19px;right:19px;bottom:16px;display:grid;gap:9px;padding:12px;border:1px solid #69b5f470;border-radius:13px;background:linear-gradient(120deg,#0c1d31ee,#102944eF);box-shadow:0 5px 0 #071524,0 10px 24px #02091477;backdrop-filter:blur(8px)}.stage-asteroid-info{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(145px,205px);align-items:center;gap:12px}.stage-kind-icon{display:grid;place-items:center;width:52px;height:52px;border:2px solid #74baff76;border-radius:13px;background:linear-gradient(145deg,#244d72,#132943);box-shadow:inset 0 2px 3px #c9eaff27,0 3px 0 #09182a}.stage-kind-icon .asteroid-svg{width:49px;height:46px;animation:none;filter:drop-shadow(0 3px 2px #030a15aa)}.stage-asteroid-name{display:grid;gap:3px;min-width:0}.stage-asteroid-name .eyebrow{font-size:7px}.stage-asteroid-name>b{overflow:hidden;color:#f3f9ff;font:700 15px var(--heading);text-overflow:ellipsis;white-space:nowrap}.stage-asteroid-name>small{overflow:hidden;color:#a9c1d8;font-size:9px;text-overflow:ellipsis;white-space:nowrap}.stage-durability{display:grid;gap:7px}.stage-durability>div:first-child{display:flex;align-items:baseline;justify-content:space-between;gap:4px;color:#a2bed8;font:7px var(--mono);letter-spacing:.06em}.stage-durability b{color:#eaf6ff;font:600 11px var(--mono);white-space:nowrap}.stage-durability b small{color:#91acc5;font-size:8px;font-weight:400}.stage-durability .health-track{height:7px;border:1px solid #254a6a;border-radius:8px;background:#0a1728}.stage-durability .health-track i{border-radius:8px;background:linear-gradient(90deg,#348dd5,#6ed2ff);box-shadow:0 0 9px #46b9ff63}.stage-mine-button{height:46px;width:100%;justify-content:flex-start;padding:0 14px;border:0;border-radius:10px;color:#08203a;background:linear-gradient(105deg,#91d8ff,#65b4f5);box-shadow:0 4px 0 #347bb4,0 7px 12px #040d1d88;font-size:12px}.stage-mine-button svg{filter:drop-shadow(0 1px #fff8)}.stage-mine-button>span{margin-left:auto;color:#194a70;font:700 8px var(--mono)}.stage-mine-button:hover:not(:disabled){filter:brightness(1.08);transform:translateY(-1px)}.stage-mine-button:disabled{color:#7194b2;background:#1b3550;box-shadow:none}.fracture-burst{top:39%;color:#c4edff}.fracture-burst svg{color:#90d8ff}.asteroid-searching{top:37%;border-color:#59afe4;background:#102b46;color:#c2e9ff}.scan-line{top:5%;left:10%;right:10%;width:auto;opacity:.2;background:#82ceff;box-shadow:0 0 10px #82ceff}.drop-row{min-height:44px;margin:10px 3px 0;padding:7px 11px;border-radius:10px;border-color:#214667;background:#0e2035}.drop-chip{border-color:#397cab;background:#14395a;color:#dcefff}.drop-chip .resource-ingot{filter:drop-shadow(0 2px 2px #0007)}.mini-quests-panel{margin-top:14px;padding:16px;border:2px solid #254c70;border-radius:14px;background:linear-gradient(145deg,#122943,#0d1d31);box-shadow:0 5px 0 #06101c,0 9px 18px #02091466}.mini-quests-panel>.panel-title{font-size:10px;color:#c7e6ff}.quest-count{color:#9edbff}.mini-quest-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.mini-quest{grid-template-columns:29px minmax(0,1fr);gap:8px;padding:11px;border:1px solid #274d70;border-radius:10px;background:linear-gradient(145deg,#17314d,#10233a)}.quest-icon{width:28px;height:28px;border:1px solid #4c82ae;border-radius:9px;background:#204363;color:#bde4ff}.quest-heading b{font-size:9px}.quest-heading>span{font-size:8px}.quest-body>p{font-size:8px;color:#a2bbd2}.quest-progress{height:5px;background:#0b1a2c}.quest-progress i{background:linear-gradient(90deg,#3698dc,#83d1ff)}.quest-reward>span,.duplicate-reward>div>span{font-size:8px}.quest-tier{color:#9bcaf0!important}.quest-claim{padding:6px 10px;border-color:#5ca6dd;border-radius:7px;background:#286b9e;color:#e6f6ff;font-size:8px}.quest-claim:hover:not(:disabled){background:#3488bf}.quest-cooldown{background:linear-gradient(145deg,#10243a,#0d1d30)}.quest-timer{color:#b1d8f5;font-size:8px}
+.panel,.recipe-card,.recycle-card,.sector-travel-card{border-radius:13px;border-color:#21486c;background:linear-gradient(145deg,#142c46,#0d1c30);box-shadow:0 5px 0 #06101c,0 8px 18px #02091455}.recipe-card{position:relative;overflow:hidden;border-width:1px;border-radius:14px;padding:16px 15px 14px;box-shadow:0 5px 0 #071424,0 8px 15px #02091466}.recipe-card:before{content:'';position:absolute;right:-23px;top:-24px;width:86px;height:86px;border:1px solid #75bfff22;border-radius:50%;box-shadow:0 0 0 9px #75bfff0a,0 0 0 19px #75bfff08;pointer-events:none}.recipe-icon{width:43px;height:43px;border:2px solid #457eac;border-radius:12px;background:linear-gradient(145deg,#255078,#16314c);color:#c1e5ff;box-shadow:inset 0 2px 3px #d9efff24,0 3px 0 #09172a}.alloy-icon{color:#eed69b;border-color:#987e48;background:linear-gradient(145deg,#63533b,#392f2b)}.scanner-icon{color:#a8e8ed;border-color:#438996;background:linear-gradient(145deg,#245b70,#173648)}.drill-icon{color:#b7d5ff}.recycler-icon{color:#95e2d2;border-color:#478b87;background:linear-gradient(145deg,#20555d,#17394b)}.condenser-icon{color:#ffe094;border-color:#a87c3b;background:linear-gradient(145deg,#684a29,#392e2a)}.recipe-tag{border:1px solid #345a7a;border-radius:7px;background:#15304a;color:#b9d9f3}.recipe-flow{border-color:#264666;border-radius:10px;background:#0b1a2b}.craft-button{border:0;border-radius:8px;color:#09213b;background:linear-gradient(100deg,#8ed7ff,#63b6f4);box-shadow:0 3px 0 #3777a7}.workshop-tabs{border-color:#294c6c;border-radius:10px;background:#0b1a2b}.workshop-tab{border-radius:8px}.workshop-tab.active{border-color:#4e97d279;background:#1a48702b;color:#bde4ff}.scanner-status{border-color:#285276;border-radius:11px;background:#112842}.recycle-button{border-radius:8px;background:linear-gradient(100deg,#91d8ff,#68baf4)}
+.lab-workspace{position:relative;display:grid;grid-template-columns:128px minmax(0,1fr);align-items:center;gap:17px;min-height:148px;margin:0 0 16px;padding:15px 20px 24px;overflow:hidden;border:2px solid #3f79a9;border-radius:15px;background:radial-gradient(ellipse at 13% 42%,#56b9f126,transparent 32%),linear-gradient(110deg,#183854,#10243a 62%,#15283f);box-shadow:0 5px 0 #071423,0 10px 20px #0209146b}.lab-workspace:after{content:'';position:absolute;left:0;right:0;bottom:0;height:13px;border-top:2px solid #74b8e6;background:linear-gradient(180deg,#3b6e91,#214665);box-shadow:0 3px 0 #0c2035}.lab-workspace-window{position:relative;display:grid;place-items:center;width:108px;height:98px;overflow:hidden;border:4px solid #7296b3;border-radius:14px;background:radial-gradient(circle at 50% 48%,#1b5180,#0b1a30 70%);box-shadow:inset 0 0 0 3px #102a43,0 4px 0 #0a1a2a,0 0 20px #6abfff27}.lab-workspace-window:before{content:'';position:absolute;inset:-18px;border:1px solid #82caff38;border-radius:50%;transform:rotate(-25deg) scaleY(.45)}.lab-workspace-window .galaxy-mark{position:relative;z-index:1;width:57px;filter:drop-shadow(0 0 8px #77c8ff86)}.lab-window-orbit{position:absolute;width:67px;height:22px;border:2px solid #8cc9fa74;border-radius:50%;transform:rotate(-31deg)}.lab-window-planet{position:absolute;right:15px;top:20px;width:9px;height:9px;border:2px solid #d1edff;border-radius:50%;background:#70baff;box-shadow:0 0 10px #82ceff}.lab-window-spark{position:absolute;width:4px;height:4px;border-radius:50%;background:#e7f7ff;box-shadow:0 0 7px #8acfff}.spark-one{left:18px;top:24px}.spark-two{right:23px;bottom:21px}.lab-workspace-content{position:relative;z-index:1;min-width:0}.lab-workspace-content>.eyebrow{gap:7px;color:#a9d5f6;font-size:8px}.workbench-light{width:7px;height:7px;border-radius:50%;background:#75e1d1;box-shadow:0 0 8px #75e1d1}.lab-workspace-content h2{margin:6px 0 9px;color:#eff8ff;font:700 16px var(--heading)}.lab-tool-shelf{display:flex;flex-wrap:wrap;gap:7px}.lab-tool{display:flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #3c6689;border-radius:8px;background:linear-gradient(145deg,#1e3e5b,#132b44);color:#c5e5ff;box-shadow:0 2px 0 #0a1929}.lab-tool>span{display:grid;place-items:center;color:#94d2ff}.lab-tool>b{color:#d6ecfb;font-size:8px;font-weight:600}.lab-tool>small{color:#88aeca;font:8px var(--mono)}.tool-violet>span{color:#c5b2ff}.tool-teal>span{color:#82e0d0}.tool-gold>span{color:#f8d283}.lab-bench-edge{position:absolute;z-index:1;left:12px;right:12px;bottom:4px;display:flex;justify-content:space-between;pointer-events:none}.lab-bench-edge i{width:4px;height:4px;border-radius:50%;background:#a8d8f4;opacity:.6}
+.planet-filters{display:flex;gap:7px;margin:4px 0 15px;overflow-x:auto;padding:3px 2px 7px;scrollbar-width:thin}.planet-filter{display:inline-flex;align-items:center;gap:8px;flex:none;padding:8px 11px;border:1px solid #284e71;border-radius:10px;background:linear-gradient(145deg,#142b44,#0d1d30);color:#aac8e2;font-size:9px;cursor:pointer;transition:.16s}.planet-filter b{display:grid;place-items:center;min-width:17px;height:17px;border-radius:6px;background:#254663;color:#c8e8ff;font:8px var(--mono)}.planet-filter.active{border-color:#6ab9ef;background:#19466b;color:#e1f4ff;box-shadow:0 3px 0 #0b1b2c}.planet-filter.active b{background:#4a9bd0;color:white}.collection-empty{padding:27px;text-align:center;color:#abc9e2;border-radius:13px}
+.planet-card{border:2px solid #294d70;border-radius:13px;background:linear-gradient(150deg,#17314c,#0d1d30);box-shadow:0 4px 0 #071423,0 7px 14px #02091455}.planet-card:hover:not(:disabled){border-color:#63b3eb;box-shadow:0 5px 0 #071423,0 10px 18px #02091466;transform:translateY(-2px)}.planet-card-orb .planet-orb{border:2px solid #b9e2ff91;box-shadow:inset -6px -6px 12px #06101c99,inset 2px 2px 7px #e4f7ff78,0 3px 0 #081727,0 0 15px #68b9f12b}.planet-card.undiscovered{background:#102139}.planet-card-id,.planet-card-foot{color:#9ebbd5}.planet-card-name{color:#e6f4ff}.rarity-common{color:#a5c2da}.rarity-uncommon{color:#7de0cc}.rarity-rare{color:#65b9ff}.rarity-epic{color:#bc9bff}.rarity-legendary{color:#ffd16d}.rarity-anomalous{color:#ee9cff}
+.map-board{border:2px solid #285b83;border-radius:16px;background:radial-gradient(ellipse at 50% 45%,#14528642,transparent 54%),radial-gradient(ellipse at 17% 78%,#5365a326,transparent 30%),linear-gradient(145deg,#0a1a30,#10233c 55%,#0b192c);box-shadow:inset 0 0 45px #030b18,0 5px 0 #06101d}.map-nebula{opacity:.16;filter:blur(28px)}.map-nebula-a{background:#288fe3}.map-nebula-b{background:#655bd1}.map-grid{opacity:.08}.route-line{background:repeating-linear-gradient(90deg,#6fc6ffb0 0 5px,transparent 5px 12px);filter:drop-shadow(0 0 5px #4ca8e977)}.galaxy-mark{display:block;width:42px;height:42px;overflow:visible}.galaxy-halo{fill:currentColor;opacity:.17}.galaxy-arm{fill:none;stroke:#84cbff;stroke-width:3;stroke-linecap:round;filter:drop-shadow(0 0 2px #4ca8ff)}.galaxy-arm-b{stroke:#d3ecff;stroke-width:1.5;opacity:.82}.galaxy-core{fill:#f1fbff;stroke:#3986be;stroke-width:2;filter:drop-shadow(0 0 5px #8bd4ff)}.galaxy-star{fill:#dcf4ff;stroke:#2c5b8c;stroke-width:.7}.sector-node{display:grid;place-items:center;width:52px;height:52px;border:2px solid #4b83b0;border-radius:16px;background:linear-gradient(145deg,#183755,#10243b);box-shadow:0 4px 0 #081626}.current-sector .sector-node{border-color:#92d2ff;box-shadow:0 0 0 5px #70bfff19,0 0 21px #53b7ff5c,0 4px 0 #081626}.map-sector.explored-sector{opacity:1}.map-sector>small,.map-sector>b{color:#b8d6ee}.sector-bottom-card{border-color:#24496d;border-radius:12px;background:#10243a}.sector-stat{border-color:#2c5376}.footer{border-color:#193b5d}
+.planet-canyon{background:radial-gradient(circle at 29% 23%,#edbd91,#b97862 48%,#354870 88%)}.planet-canyon>b{inset:6px 0;background:repeating-linear-gradient(165deg,transparent 0 8px,#743e517e 9px 12px,transparent 13px 18px);clip-path:polygon(0 25%,35% 17%,48% 44%,68% 21%,100% 34%,100% 77%,71% 69%,46% 91%,24% 71%,0 83%);z-index:2}.planet-coral{background:radial-gradient(circle at 28% 23%,#abecf3,#3a9eb5 48%,#183c65 88%)}.planet-coral>b{inset:4px;background:radial-gradient(ellipse at 31% 38%,#fa987b 0 13%,transparent 15%),radial-gradient(ellipse at 72% 65%,#ffbd8e 0 15%,transparent 17%),radial-gradient(ellipse at 65% 28%,#8ce1c6 0 12%,transparent 14%);z-index:2}.planet-ribbon{background:radial-gradient(circle at 30% 22%,#b9dfff,#638fd2 45%,#35356f 86%)}.planet-ribbon>b{inset:7px -3px;background:repeating-linear-gradient(12deg,transparent 0 5px,#b9e8ffb0 6px 8px,#696bd2ac 9px 12px,transparent 13px 16px);border-radius:50%;z-index:2}.planet-ribbon>span{border:3px solid #b2d7ff66;transform:rotate(-22deg)}.planet-moss{background:radial-gradient(circle at 27% 23%,#dbeca1,#78a77c 48%,#23465c 88%)}.planet-moss>b{inset:0;background:radial-gradient(ellipse at 35% 35%,#c8df8d 0 17%,transparent 20%),radial-gradient(ellipse at 68% 65%,#9cc87b 0 18%,transparent 21%),radial-gradient(circle at 24% 70%,#315b67 0 9%,transparent 11%);z-index:2}.planet-geode{background:radial-gradient(circle at 30% 22%,#d9f0ff,#898ee2 48%,#303e77 89%)}.planet-geode>b{inset:4px;background:repeating-conic-gradient(from 15deg at 50% 50%,#f4d9ff75 0 12deg,#77cbff68 13deg 23deg,transparent 24deg 45deg);clip-path:polygon(49% 3%,68% 17%,94% 35%,82% 67%,66% 93%,33% 85%,11% 59%,17% 27%);z-index:2}.planet-comet{background:radial-gradient(circle at 35% 35%,#f3ffff,#8bd3ef 42%,#3c6097 84%)}.planet-comet>b{inset:-5px;background:linear-gradient(145deg,transparent 26%,#eaffff 35%,#8fdfffba 42%,#496bb000 59%);transform:rotate(11deg);z-index:2}.planet-clockwork{background:radial-gradient(circle at 28% 23%,#e0c790,#927b70 48%,#343a5b 87%)}.planet-clockwork>b{inset:11px;border:4px dotted #f2d78e;border-radius:50%;background:radial-gradient(circle,#f3dc9f 0 13%,#805f57 15% 24%,transparent 27%);z-index:2}.planet-eclipse{background:radial-gradient(circle at 34% 32%,#bddfff,#347ab2 42%,#111c4e 84%)}.planet-eclipse>b{inset:-14px -3px;background:radial-gradient(ellipse at 63% 47%,transparent 0 30%,#99ddff 32% 36%,transparent 38%);transform:rotate(-24deg);z-index:2}.planet-eclipse>span{border:2px solid #b1dfff70}
+@media(max-width:820px){.mini-quest-list{grid-template-columns:repeat(2,minmax(0,1fr))}.mini-quest:last-child:nth-child(odd){grid-column:1/-1}}
+@media(max-width:620px){.space-stage{height:clamp(474px,74vh,560px);border-radius:14px}.stage-topline{left:13px;right:13px;top:14px;font-size:7px}.stage-topline>span:last-child{gap:4px}.asteroid-target{top:30%}.asteroid-hit{width:190px;height:162px}.stage-dock{left:9px;right:9px;bottom:10px;padding:9px;gap:8px}.stage-asteroid-info{grid-template-columns:43px minmax(0,1fr);gap:8px}.stage-kind-icon{width:42px;height:42px;border-radius:11px}.stage-kind-icon .asteroid-svg{width:42px;height:39px}.stage-asteroid-name>b{font-size:12px}.stage-asteroid-name>small{font-size:8px}.stage-durability{grid-column:1/-1;grid-template-columns:1fr;gap:5px}.stage-durability>div:first-child{font-size:7px}.stage-mine-button{height:43px;padding-inline:10px;font-size:10px}.stage-mine-button>span{font-size:7px}.mini-quests-panel{padding:12px}.mini-quest-list{grid-template-columns:1fr}.mini-quest:last-child:nth-child(odd){grid-column:auto}.lab-workspace{grid-template-columns:82px minmax(0,1fr);gap:11px;padding:12px 12px 22px;min-height:142px}.lab-workspace-window{width:75px;height:80px;border-width:3px}.lab-workspace-window .galaxy-mark{width:46px}.lab-workspace-content h2{font-size:13px}.lab-tool-shelf{gap:5px}.lab-tool{gap:4px;padding:5px 6px}.lab-tool>b{font-size:7px}.lab-tool>span svg{width:14px}.planet-filters{margin-bottom:10px}.planet-filter{padding:8px;font-size:8px}.planet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.map-board{height:398px}.galaxy-mark{width:35px;height:35px}.sector-node{width:45px;height:45px;border-radius:14px}}
+
+.planet-loadout{margin:4px 0 14px;padding:13px 15px;border:2px solid #2c6089;border-radius:13px;background:linear-gradient(135deg,#153653,#10243b);box-shadow:0 4px 0 #071423,0 8px 16px #02091450}.planet-loadout-heading{display:flex;align-items:center;justify-content:space-between;color:#dbf1ff;font-size:11px;font-weight:700}.planet-loadout-heading>span{display:flex;align-items:center;gap:7px}.planet-loadout-heading svg{color:#8bd5ff}.planet-loadout-heading>b{padding:4px 8px;border:1px solid #478bb7;border-radius:7px;background:#0c1c30;color:#bce7ff;font:600 10px var(--mono)}.planet-loadout>p{margin:5px 0 10px;color:#a4c1d9;font-size:9px}.planet-loadout-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.planet-loadout-slot{display:grid;grid-template-columns:32px minmax(0,1fr);align-items:center;column-gap:8px;min-height:46px;padding:6px 8px;border:1px dashed #46769b;border-radius:9px;color:#89a9c3;background:#0b1c30}.planet-loadout-slot.filled{border-style:solid;border-color:#4885ae;color:#e3f4ff;background:linear-gradient(110deg,#19436a,#112b45)}.planet-loadout-slot>.planet-orb{grid-row:span 2;width:29px;height:29px}.planet-loadout-slot>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px;font-weight:700}.planet-loadout-slot>small{overflow:hidden;color:#9dc2df;text-overflow:ellipsis;white-space:nowrap;font-size:7px}.planet-entry{display:flex;min-width:0;flex-direction:column;gap:5px}.planet-entry .planet-card{width:100%;height:175px;flex:1}.planet-equip-button{display:flex;align-items:center;justify-content:center;gap:5px;min-height:29px;padding:4px 7px;border:1px solid #3d7299;border-radius:8px;background:linear-gradient(145deg,#143858,#0e243a);color:#b8ddf7;font-size:8px;font-weight:700;cursor:pointer;transition:.15s}.planet-equip-button:hover:not(:disabled){border-color:#78c7f4;background:#1c527a;color:#eefaff}.planet-equip-button.equipped{border-color:#56a890;background:linear-gradient(110deg,#1b5c65,#153f53);color:#b1f1dc}.planet-equip-button:disabled{opacity:.48;cursor:not-allowed}.wallet-popover{border-color:#3479a7;background:linear-gradient(145deg,#122b44,#0b1b2c);color:#e5f3ff}.wallet-picker{width:205px}.wallet-popover .wallet-choice{display:flex;align-items:center;gap:7px;margin-top:0;border-color:#28567a;background:#102740;color:#d3eaff}.wallet-popover .wallet-choice:hover:not(:disabled){border-color:#67bafa;background:#19446a}.claim-button{height:auto;min-height:39px;border-color:#488db9!important;border-radius:9px!important;background:linear-gradient(105deg,#91d8ff,#65b4f5)!important;color:#092440!important;font-weight:800!important}.claim-button:disabled{opacity:.45;cursor:not-allowed}.claim-note{max-width:340px;color:#9bb6cb}.claim-error{margin:9px 0 0;padding:8px 10px;border:1px solid #b76b6b6b;border-radius:8px;background:#53263145;color:#ffc0c0;font-size:9px;line-height:1.5;overflow-wrap:anywhere}.nft-claimed-panel{display:flex;align-items:center;gap:8px;margin-top:12px;padding:10px;border:1px solid #50b69571;border-radius:9px;background:#1a59442e;color:#aaf0d7;text-align:left}.nft-claimed-panel>span{display:grid;gap:4px;min-width:0;flex:1}.nft-claimed-panel b{font-size:9px}.nft-claimed-panel small{overflow:hidden;color:#a3c4bc;font:8px var(--mono);text-overflow:ellipsis;white-space:nowrap}.nft-claimed-panel>a,.nft-signature-link{display:inline-flex;align-items:center;gap:4px;color:#a5ddff;text-decoration:none;font-size:8px}.nft-signature-link{margin:8px 0 0}.discovery-modal{max-height:min(90vh,760px);overflow:auto;scrollbar-width:thin}.planet-entry .planet-card.undiscovered{height:175px}
+@media(max-width:620px){.planet-loadout{padding:11px}.planet-loadout-slots{grid-template-columns:1fr}.planet-loadout-slot{min-height:39px}.planet-entry .planet-card{height:160px}.wallet-popover{right:-2px}.discovery-modal{max-height:92vh}}
+@media(max-width:390px){.stage-topline>span:last-child{font-size:6px}.stage-topline i{font-size:6px}.stage-asteroid-name>small{max-width:205px}.stage-dock{left:7px;right:7px;padding:8px}.stage-mine-button{font-size:9px}.lab-tool>b{max-width:65px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+.case-feature{border:2px solid #316b9b;border-radius:16px;background:radial-gradient(ellipse at 50% 43%,#327dbb38,transparent 48%),linear-gradient(145deg,#15304c,#0c1d31);box-shadow:0 5px 0 #06101c,0 9px 20px #02091466}.case-tabs{border-color:#2c5b83;border-radius:9px;background:#0a1a2ddd}.case-tabs button.active{background:#2a78af4d;color:#d7efff;box-shadow:inset 0 0 0 1px #79c5fa80}.case-feature-title{color:#eff8ff}.case-feature>p{color:#acc7df}.case-open-button{color:#08203a;border:0;border-radius:9px;background:linear-gradient(100deg,#91d8ff,#66b8f4);box-shadow:0 4px 0 #347bb4}.case-safety{color:#a4bfd7}.cost-line{border-color:#274663}.cost-line b{color:#d6ebfa}.cost-status{color:#abc6dd}.status-check{background:#69c7a822;color:#83e2c5}.contents-panel,.cost-panel{border-color:#244a6d}.discovery-modal{border-color:#4b8bb8;border-radius:17px;background:radial-gradient(ellipse at 50% 18%,#3585b52a,transparent 45%),linear-gradient(145deg,#152d46,#0c1b2e);box-shadow:0 7px 0 #06101c,0 18px 50px #0009}.modal-eyebrow{color:#a8d8fb}.planet-bonus{border-color:#4592bd60;background:#16527236;color:#c2efff}.claim-button{border-color:#39709a;color:#b2cfe6}.duplicate-reward{border-color:#a6854c58;background:#78602a13}.travel-gate-icon{border-color:#4b95c54a;background:#1b5b871f;color:#a9ddff}.travel-button{color:#08203a;background:linear-gradient(100deg,#91d8ff,#68baf4);box-shadow:0 3px 0 #3477a8}
+
+/* Shared violet nebula backdrop */
+html,
+body {
+  min-height: 100%;
+  background: #0a0615;
+}
+
+.app-shell {
+  background:
+    radial-gradient(ellipse at 12% 8%, #762c8540, transparent 38%),
+    radial-gradient(ellipse at 77% 34%, #30206442, transparent 43%),
+    radial-gradient(ellipse at 45% 100%, #3c14552b, transparent 48%),
+    linear-gradient(135deg, #160d27 0%, #0b0918 52%, #10081e 100%);
+}
+
+.main-area,
+.page-content,
+.secondary-page {
+  background: transparent;
+}
+
+.sidebar,
+.topbar {
+  background: #0d0919e8;
+  border-color: #39264b;
+  backdrop-filter: blur(16px);
+}
+
+.space-stage {
+  border-color: #67417b80;
+  background:
+    radial-gradient(ellipse at 18% 26%, #842d8045, transparent 36%),
+    radial-gradient(ellipse at 75% 59%, #39266c50, transparent 39%),
+    radial-gradient(ellipse at 50% 105%, #42185435, transparent 44%),
+    linear-gradient(145deg, #1b102b, #0e0a1b 57%, #130a20);
+  box-shadow: inset 0 0 75px #06030c9c, 0 7px 25px #0004;
+}
+
+.stage-grid {
+  background-image: linear-gradient(#bd8dd51b 1px, transparent 1px), linear-gradient(90deg, #bd8dd514 1px, transparent 1px);
+}
+
+.stage-stars i,
+.stage-stars b {
+  box-shadow: 0 0 8px #e8caff, 0 0 18px #b567dc77;
+}
+
+.stage-dock {
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-color: #8e61a570;
+  background: linear-gradient(120deg, #171126ed, #211333ee);
+  box-shadow: 0 5px 0 #0a0612, 0 10px 24px #0008;
+}
+
+.stage-mine-button {
+  display: none;
+}
+
+.stage-asteroid-info {
+  min-height: 54px;
+}
+
+.stage-mining-power {
+  color: #c29ad8 !important;
+  font: 7px var(--mono) !important;
+}
+
+.stage-durability > div:first-child {
+  color: #c3a9d1;
+}
+
+.stage-durability .health-track {
+  border-color: #58396e;
+  background: #100a1c;
+}
+
+.stage-durability .health-track i {
+  background: linear-gradient(90deg, #a64fc0, #e2a5ff);
+  box-shadow: 0 0 9px #c96dea70;
+}
+
+.case-feature {
+  border-color: #67417b99;
+  background:
+    radial-gradient(ellipse at 50% 45%, #823c9a43, transparent 48%),
+    radial-gradient(ellipse at 12% 7%, #62276c38, transparent 46%),
+    linear-gradient(145deg, #1b102b, #0e0a1b 65%, #150b23);
+}
+
+.case-feature:after {
+  background-image: radial-gradient(circle, #e8d6ff 1px, transparent 1.6px);
+  background-size: 73px 67px;
+  opacity: .23;
+  mask-image: radial-gradient(ellipse, #000, transparent 82%);
+}
+
+.case-tabs {
+  z-index: 2;
+}
+
+.case-feature-art {
+  z-index: 1;
+  width: 160px;
+  height: 128px;
+  margin-top: 22px;
+}
+
+.case-chest {
+  --chest-light: #e1a95c;
+  --chest-mid: #9c5b36;
+  --chest-dark: #572e37;
+  position: relative;
+  width: 148px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 13px 9px #05030b99);
+  animation: chest-float 3.1s ease-in-out infinite;
+}
+
+.case-chest-advanced {
+  --chest-light: #c89bff;
+  --chest-mid: #7653b5;
+  --chest-dark: #3c2c73;
+}
+
+.case-chest-aura {
+  position: absolute;
+  inset: 16px 8px 4px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #f5b96147, #a74ed52c 40%, transparent 72%);
+  filter: blur(8px);
+  transition: transform .35s, opacity .35s;
+}
+
+.case-chest-advanced .case-chest-aura {
+  background: radial-gradient(ellipse, #caa6ff69, #7944e745 42%, transparent 72%);
+}
+
+.case-chest-shadow {
+  position: absolute;
+  bottom: 10px;
+  width: 104px;
+  height: 15px;
+  border-radius: 50%;
+  background: #05030caa;
+  filter: blur(5px);
+}
+
+.case-chest-lid {
+  position: absolute;
+  z-index: 2;
+  left: 23px;
+  top: 25px;
+  width: 102px;
+  height: 36px;
+  border: 4px solid #21192e;
+  border-radius: 15px 15px 5px 5px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--chest-light), white 17%), var(--chest-mid));
+  box-shadow: inset 0 4px 0 #ffffff35, 0 3px 0 #311f3e;
+  transform-origin: 50% 100%;
+  transition: transform .48s cubic-bezier(.2,.85,.3,1.2);
+}
+
+.case-chest-lid:before,
+.case-chest-lid:after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  width: 13px;
+  height: 7px;
+  border: 3px solid #21192e;
+  border-top: 0;
+  background: var(--chest-mid);
+}
+
+.case-chest-lid:before { left: 9px; border-radius: 0 0 5px 5px; }
+.case-chest-lid:after { right: 9px; border-radius: 0 0 5px 5px; }
+
+.case-chest-lid i {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 8px;
+  height: 4px;
+  border-radius: 5px;
+  background: #ffe0a870;
+}
+
+.case-chest-lid b {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff2c9;
+  box-shadow: 0 0 8px #fff1bd;
+}
+
+.case-chest-body {
+  position: absolute;
+  z-index: 1;
+  left: 27px;
+  top: 56px;
+  width: 94px;
+  height: 43px;
+  border: 4px solid #21192e;
+  border-top: 0;
+  border-radius: 4px 4px 13px 13px;
+  background: repeating-linear-gradient(90deg, transparent 0 23px, #311d3b 24px 28px), linear-gradient(145deg, var(--chest-light), var(--chest-mid) 66%, var(--chest-dark));
+  box-shadow: inset 0 -5px 0 #311e3b78, inset 0 3px 0 #ffe2a94a;
+}
+
+.case-chest-band {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 39px;
+  width: 12px;
+  border-right: 3px solid #21192e;
+  border-left: 3px solid #21192e;
+  background: linear-gradient(90deg, #f4d58c, #a56a43);
+  box-shadow: inset 1px 0 #fff5d45c;
+}
+
+.case-chest-lock {
+  position: absolute;
+  left: 36px;
+  top: -1px;
+  z-index: 1;
+  width: 18px;
+  height: 22px;
+  border: 3px solid #34223d;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #ffe09a, #c68645);
+  box-shadow: 0 2px 0 #21152b;
+}
+
+.case-chest-lock:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -10px;
+  width: 7px;
+  height: 9px;
+  border: 3px solid #edc77d;
+  border-bottom: 0;
+  border-radius: 7px 7px 0 0;
+}
+
+.case-chest-lock i {
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 3px;
+  height: 5px;
+  border-radius: 3px;
+  background: #583448;
+}
+
+.case-chest-rivet {
+  position: absolute;
+  top: 20px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffe2a7;
+  box-shadow: 0 0 3px #fff2c8;
+}
+
+.rivet-left { left: 5px; }
+.rivet-right { right: 5px; }
+
+.case-chest-spark {
+  position: absolute;
+  z-index: 3;
+  color: #ffedbe;
+  opacity: 0;
+  text-shadow: 0 0 10px #ffc56c;
+}
+
+.spark-one { left: 13px; top: 42px; }
+.spark-two { right: 12px; top: 32px; font-size: 20px; }
+.spark-three { right: 24px; bottom: 25px; font-size: 11px; }
+
+.case-chest.is-opening .case-chest-lid {
+  transform: translate(-5px, -18px) rotate(-31deg);
+}
+
+.case-chest.is-opening .case-chest-aura {
+  transform: scale(1.55);
+  opacity: 1;
+  animation: chest-glow .7s ease-in-out infinite alternate;
+}
+
+.case-chest.is-opening .case-chest-spark {
+  animation: chest-spark .8s ease-out infinite;
+}
+
+.case-chest.is-opening .spark-two { animation-delay: .17s; }
+.case-chest.is-opening .spark-three { animation-delay: .32s; }
+
+.case-feature.opening .case-chest {
+  animation: chest-open-shake .16s ease-in-out infinite alternate;
+}
+
+.case-feature.opening .case-feature-title {
+  text-shadow: 0 0 16px #dfadff88;
+}
+
+.case-feature.opening .case-open-button {
+  filter: brightness(1.12);
+}
+
+.case-feature.opening .case-chest-advanced .case-chest-lid {
+  box-shadow: inset 0 4px 0 #ffffff6b, 0 0 22px #c990ffab;
+}
+
+.case-open-button {
+  color: #20102c;
+  background: linear-gradient(100deg, #e3b0ff, #ae72dd);
+  box-shadow: 0 4px 0 #623b86, 0 0 22px #bd71ed2c;
+}
+
+.case-tabs button.active {
+  background: #713d8d5c;
+  box-shadow: inset 0 0 0 1px #dc9cff84;
+}
+
+.lab-workspace {
+  border-color: #72563f;
+  background:
+    radial-gradient(ellipse at 15% 28%, #f1aa4a35, transparent 29%),
+    radial-gradient(ellipse at 76% 18%, #367dbb24, transparent 34%),
+    linear-gradient(110deg, #273347, #182338 62%, #273348);
+}
+
+.lab-workspace:after {
+  height: 16px;
+  border-color: #d49a57;
+  background: linear-gradient(180deg, #9c633e, #5e3a35);
+  box-shadow: inset 0 3px 0 #f0bd7461, 0 3px 0 #0c1524;
+}
+
+.lab-workspace-window {
+  display: block;
+  border-color: #977052;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #324458 0%, #1b2a3b 68%, #342a35 100%);
+  box-shadow: inset 0 0 0 3px #182536, 0 4px 0 #0a1726, 0 0 20px #e9a65924;
+}
+
+.lab-workspace-window:before { display: none; }
+.lab-workshop-scene { display: none; }
+
+.workshop-forge-glow {
+  position: absolute;
+  left: 31px;
+  top: 25px;
+  width: 40px;
+  height: 37px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffcc725e, #ee743226 48%, transparent 74%);
+  filter: blur(3px);
+}
+
+.workshop-rune {
+  position: absolute;
+  right: 11px;
+  top: 9px;
+  color: #b9d6ff;
+  font-size: 10px;
+  text-shadow: 0 0 8px #78bcff;
+}
+
+.workshop-shelf {
+  position: absolute;
+  left: 11px;
+  top: 20px;
+  width: 77px;
+  height: 5px;
+  border-radius: 2px;
+  background: #8a593c;
+  box-shadow: 0 2px 0 #3e2e35;
+}
+
+.workshop-shelf i {
+  position: absolute;
+  bottom: 4px;
+  width: 8px;
+  height: 12px;
+  border: 1px solid #d19b66;
+  border-radius: 3px 3px 1px 1px;
+  background: linear-gradient(90deg, #75c0d1, #3b718d);
+}
+
+.workshop-shelf i:nth-child(1) { left: 8px; height: 10px; }
+.workshop-shelf i:nth-child(2) { left: 31px; background: linear-gradient(90deg, #c9a9f5, #805aaf); }
+.workshop-shelf i:nth-child(3) { right: 8px; height: 14px; background: linear-gradient(90deg, #e8bd69, #af713b); }
+
+.workshop-hammer {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top: 39px;
+  width: 5px;
+  height: 31px;
+  border: 1px solid #352b36;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #bd8456, #68463b);
+  transform: rotate(35deg);
+  transform-origin: center top;
+}
+
+.workshop-hammer:before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -4px;
+  width: 17px;
+  height: 8px;
+  border: 2px solid #273447;
+  border-radius: 3px;
+  background: linear-gradient(#b7c7d4, #667a91);
+}
+
+.workshop-hammer i { display: none; }
+
+.workshop-tongs {
+  position: absolute;
+  left: 74px;
+  top: 32px;
+  width: 3px;
+  height: 37px;
+  border-radius: 3px;
+  background: #8fa6b9;
+  transform: rotate(-22deg);
+  box-shadow: 5px 2px 0 #596e83;
+}
+
+.workshop-anvil {
+  position: absolute;
+  z-index: 2;
+  left: 31px;
+  bottom: 17px;
+  width: 45px;
+  height: 19px;
+  background: linear-gradient(180deg, #b9c9d4, #52677e);
+  clip-path: polygon(14% 0, 87% 0, 100% 30%, 72% 47%, 63% 100%, 37% 100%, 29% 47%, 0 31%);
+  filter: drop-shadow(0 2px 0 #172232);
+}
+
+.workshop-bench {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 9px;
+  height: 8px;
+  border: 1px solid #3c2830;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #d39a5d, #75443a);
+  box-shadow: 0 3px 0 #1a202d;
+}
+
+.workshop-bench i {
+  position: absolute;
+  top: 6px;
+  width: 4px;
+  height: 10px;
+  background: #62403b;
+}
+
+.workshop-bench i:first-child { left: 8px; }
+.workshop-bench i:last-child { right: 8px; }
+
+.lab-workspace-content>.eyebrow { color: #f0c587; }
+.workbench-light { background: #ffbd65; box-shadow: 0 0 9px #ffb75c; }
+.lab-tool-shelf { position: relative; z-index: 2; }
+.lab-tool { border-color: #66513e; background: linear-gradient(145deg, #34445a, #202d40); }
+
+@keyframes chest-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes chest-open-shake {
+  from { transform: translateX(-1px) rotate(-.5deg); }
+  to { transform: translateX(1px) rotate(.5deg); }
+}
+
+@keyframes chest-glow {
+  from { opacity: .7; filter: blur(8px); }
+  to { opacity: 1; filter: blur(13px); }
+}
+
+@keyframes chest-spark {
+  0% { opacity: 0; transform: translateY(9px) scale(.5); }
+  45% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-23px) scale(1.3); }
+}
+
+@media (max-width: 620px) {
+  .stage-dock { gap: 0; }
+  .stage-asteroid-info { grid-template-columns: 43px minmax(0, 1fr); }
+  .stage-durability { grid-column: 1 / -1; }
+  .stage-mining-power { font-size: 6px !important; }
+  .case-feature-art { margin-top: 16px; }
+  .lab-workspace-window { width: 75px; height: 80px; }
+  .workshop-shelf { transform: scale(.77); transform-origin: left top; }
+  .workshop-hammer { transform: rotate(35deg) scale(.82); transform-origin: left top; }
+  .workshop-tongs { transform: rotate(-22deg) scale(.82); transform-origin: left top; }
+  .workshop-anvil { transform: scale(.82); transform-origin: bottom left; }
+}
+
+.workshop-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100%;
+}
+
+.workshop-page-backdrop {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  border: 1px solid #98714a44;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #1d2638, #171523 70%, #24192a);
+  pointer-events: none;
+}
+
+.workshop-page-backdrop:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #100c19c9 0%, #100c19a8 55%, #100c1980 100%),
+    linear-gradient(180deg, #100c1978 0%, transparent 34%, #100c1963 100%);
+}
+
+.workshop-page-backdrop svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  opacity: .76;
+}
+
+.workshop-page > :not(.workshop-page-backdrop) {
+  position: relative;
+  z-index: 1;
+}
+
+.lab-grid > .recipe-card:last-child,
+.lab-grid > .recipe-card.condenser-recipe-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .9fr);
+  align-items: center;
+  column-gap: 20px;
+}
+
+.lab-grid > .recipe-card:last-child .recipe-top,
+.lab-grid > .recipe-card.condenser-recipe-card .recipe-top,
+.lab-grid > .recipe-card:last-child > p,
+.lab-grid > .recipe-card.condenser-recipe-card > p {
+  grid-column: 1;
+}
+
+.lab-grid > .recipe-card:last-child > p,
+.lab-grid > .recipe-card.condenser-recipe-card > p {
+  margin: 10px 0 0;
+}
+
+.lab-grid > .recipe-card:last-child .recipe-flow,
+.lab-grid > .recipe-card.condenser-recipe-card .recipe-flow {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin: 0;
+}
+
+.lab-grid > .recipe-card:last-child .recipe-bottom,
+.lab-grid > .recipe-card.condenser-recipe-card .recipe-bottom {
+  grid-column: 1 / -1;
+}
+
+.lab-grid + .scanner-status {
+  margin-top: 12px;
+}
+
+@media (max-width: 620px) {
+  .lab-grid > .recipe-card:last-child,
+  .lab-grid > .recipe-card.condenser-recipe-card {
+    display: block;
+  }
+
+  .lab-grid > .recipe-card:last-child > p {
+    margin: 13px 0;
+  }
+
+  .lab-grid > .recipe-card.condenser-recipe-card > p {
+    margin: 13px 0;
+  }
+
+  .lab-grid > .recipe-card:last-child .recipe-flow,
+  .lab-grid > .recipe-card.condenser-recipe-card .recipe-flow {
+    margin: 15px 0 11px;
+  }
+
+  .workshop-page-backdrop {
+    border-radius: 12px;
+  }
+}
+
+/* A shared surface language: group related content, then separate it with hairlines. */
+.app-shell {
+  background:
+    radial-gradient(ellipse at 12% 8%, #762c8540, transparent 38%),
+    radial-gradient(ellipse at 77% 34%, #30206442, transparent 43%),
+    radial-gradient(ellipse at 45% 100%, #3c14552b, transparent 48%),
+    linear-gradient(135deg, #160d27 0%, #0b0918 52%, #10081e 100%);
+}
+
+.resource-strip {
+  gap: 0;
+  background: #100c1dc9;
+}
+
+.resource-pill {
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding-inline: 15px;
+}
+
+.resource-pill + .resource-pill:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 22px;
+  background: #cdb3e51f;
+  transform: translateY(-50%);
+}
+
+.strip-total {
+  min-height: 25px;
+  padding-left: 18px;
+  border-left: 1px solid #cdb3e51f;
+}
+
+.panel,
+.sector-travel-card,
+.planet-loadout,
+.mini-quests-panel,
+.scanner-status,
+.drop-row,
+.collection-toolbar,
+.case-history,
+.case-aside,
+.lab-grid,
+.recycle-recipes,
+.planet-grid {
+  border-color: #d6c1f21c;
+  box-shadow: none;
+}
+
+.panel,
+.sector-travel-card,
+.planet-loadout,
+.mini-quests-panel,
+.scanner-status {
+  background: #171220a6;
+}
+
+.drop-row {
+  border: 0;
+  border-bottom: 1px solid #d6c1f21c;
+  border-radius: 0;
+  background: transparent;
+  padding-inline: 4px;
+}
+
+.stage-kind-icon {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+.lab-grid {
+  gap: 0;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px solid #d6c1f226;
+  border-radius: 14px;
+  background: #171220a8;
+}
+
+.lab-grid > .recipe-card {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 18px;
+}
+
+.lab-grid > .recipe-card:before {
+  display: none;
+}
+
+.lab-grid > .recipe-card:not(:last-child) {
+  border-bottom: 1px solid #d6c1f21c;
+}
+
+.lab-grid > .recipe-card:nth-child(odd):not(:last-child) {
+  border-right: 1px solid #d6c1f21c;
+}
+
+.recipe-flow {
+  border-color: transparent;
+  background: #0c09151c;
+}
+
+.ingredient {
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding-inline: 1px;
+}
+
+.ingredients {
+  gap: 11px;
+}
+
+.ingredient + .ingredient:before {
+  content: '+';
+  position: absolute;
+  left: -9px;
+  color: #9f8aaa;
+}
+
+.lab-tool {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  padding-inline: 4px;
+}
+
+.lab-tool + .lab-tool {
+  border-left: 1px solid #d6c1f21c;
+  padding-left: 12px;
+}
+
+.mini-quests-panel {
+  border-width: 1px;
+  border-radius: 13px;
+  background: #171220b8;
+}
+
+.mini-quest-list {
+  gap: 0;
+}
+
+.mini-quest {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 13px 5px;
+}
+
+.mini-quest + .mini-quest {
+  border-top: 1px solid #d6c1f21c;
+}
+
+.mini-quest.quest-cooldown,
+.mini-quest.quest-complete {
+  background: transparent;
+}
+
+.quest-icon {
+  border: 0;
+  background: transparent;
+}
+
+.case-aside {
+  display: grid;
+  gap: 0;
+  padding: 13px 15px;
+  border: 1px solid #d6c1f226;
+  border-radius: 13px;
+  background: #171220b8;
+}
+
+.case-aside .cost-panel,
+.case-aside .contents-panel {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 12px 1px;
+}
+
+.case-aside .cost-panel {
+  border-bottom: 1px solid #d6c1f226;
+}
+
+.case-aside .case-safety {
+  border-top: 1px solid #d6c1f226;
+  padding: 10px 1px 0;
+}
+
+.recycle-recipes {
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid #d6c1f226;
+  border-radius: 13px;
+  background: #171220a8;
+}
+
+.recycle-card {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.recycle-card + .recycle-card {
+  border-left: 1px solid #d6c1f21c;
+}
+
+.recycle-flow {
+  border-color: transparent;
+  background: #0c09151c;
+}
+
+.planet-loadout-slots {
+  border-top: 1px solid #d6c1f21c;
+  border-bottom: 1px solid #d6c1f21c;
+  gap: 0;
+}
+
+.planet-loadout-slot,
+.planet-loadout-slot.filled {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.planet-loadout-slot + .planet-loadout-slot {
+  border-left: 1px solid #d6c1f21c;
+}
+
+.collection-toolbar {
+  border: 0;
+  border-bottom: 1px solid #d6c1f21c;
+  border-radius: 0;
+  background: transparent;
+  padding-inline: 2px;
+}
+
+.planet-grid {
+  gap: 0;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px solid #d6c1f226;
+  border-radius: 14px;
+  background: #171220a8;
+}
+
+.planet-entry {
+  padding: 7px;
+  border-right: 1px solid #d6c1f21c;
+  border-bottom: 1px solid #d6c1f21c;
+}
+
+.planet-entry:nth-child(4n) {
+  border-right: 0;
+}
+
+.planet-card,
+.planet-card.undiscovered {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.planet-card:hover:not(:disabled) {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.planet-entry:hover .planet-card-name {
+  color: #f2d6ff;
+}
+
+.planet-filter {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.planet-filter.active {
+  border-color: transparent;
+  border-bottom: 1px solid #dda4fb;
+  border-radius: 0;
+  background: #a654c21b;
+  box-shadow: none;
+}
+
+.stage-dock,
+.scanner-status,
+.mini-quests-panel,
+.planet-loadout,
+.lab-grid,
+.recycle-recipes,
+.planet-grid,
+.case-aside {
+  box-shadow: none;
+}
+
+.workshop-page-stars {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.workshop-page-stars i,
+.workshop-page-stars b {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: #f2e8ff;
+  box-shadow: 0 0 7px #dfc5ffb8;
+}
+
+.workshop-page-stars i { width: 2px; height: 2px; opacity: .7; }
+.workshop-page-stars i:nth-child(1) { left: 8%; top: 12%; }
+.workshop-page-stars i:nth-child(2) { left: 28%; top: 8%; width: 3px; height: 3px; }
+.workshop-page-stars i:nth-child(3) { left: 47%; top: 19%; }
+.workshop-page-stars i:nth-child(4) { left: 68%; top: 9%; width: 3px; height: 3px; }
+.workshop-page-stars i:nth-child(5) { left: 91%; top: 22%; }
+.workshop-page-stars i:nth-child(6) { left: 18%; top: 38%; }
+.workshop-page-stars i:nth-child(7) { left: 58%; top: 39%; }
+.workshop-page-stars i:nth-child(8) { left: 83%; top: 48%; width: 3px; height: 3px; }
+.workshop-page-stars i:nth-child(9) { left: 36%; top: 63%; }
+.workshop-page-stars b { width: 7px; height: 7px; background: #fff; clip-path: polygon(50% 0, 62% 39%, 100% 50%, 62% 61%, 50% 100%, 38% 61%, 0 50%, 38% 39%); }
+.workshop-page-stars b:nth-of-type(1) { left: 72%; top: 30%; }
+.workshop-page-stars b:nth-of-type(2) { left: 11%; top: 55%; transform: scale(.7); }
+.workshop-page-stars b:nth-of-type(3) { left: 94%; top: 66%; transform: scale(.55); }
+
+@media (max-width: 1080px) {
+  .planet-entry:nth-child(4n) { border-right: 1px solid #d6c1f21c; }
+  .planet-entry:nth-child(3n) { border-right: 0; }
+}
+
+@media (max-width: 620px) {
+  .resource-pill { padding-inline: 7px; }
+  .strip-total { padding-left: 0; border-left: 0; }
+  .lab-grid > .recipe-card:not(:last-child),
+  .lab-grid > .recipe-card:nth-child(odd):not(:last-child) { border-right: 0; }
+  .lab-grid > .recipe-card + .recipe-card { border-top: 1px solid #d6c1f21c; }
+  .recycle-card + .recycle-card { border-top: 1px solid #d6c1f21c; border-left: 0; }
+  .planet-entry:nth-child(3n) { border-right: 1px solid #d6c1f21c; }
+  .planet-entry:nth-child(2n) { border-right: 0; }
+  .planet-loadout-slot + .planet-loadout-slot { border-left: 0; border-top: 1px solid #d6c1f21c; }
+}
+
+/* The star map uses a quieter plum-and-stone palette instead of the global blue. */
+.map-board {
+  border-color: #65476c;
+  background:
+    radial-gradient(ellipse at 27% 43%, #8d3e7825, transparent 38%),
+    radial-gradient(ellipse at 78% 54%, #64508a22, transparent 42%),
+    linear-gradient(145deg, #17111d, #100d18 55%, #17101d);
+  box-shadow: inset 0 0 45px #08050d, 0 5px 0 #09060e;
+}
+.map-nebula-a { background: #a34a81; }
+.map-nebula-b { background: #78629d; }
+.map-nebula, .map-grid { opacity: .1; }
+.route-line {
+  background: repeating-linear-gradient(90deg, #c49bc880 0 5px, transparent 5px 12px);
+  filter: drop-shadow(0 0 5px #a76caa55);
+}
+.map-board .galaxy-arm { stroke: #d2a1d1; filter: drop-shadow(0 0 2px #a96caa); }
+.map-board .galaxy-arm-b { stroke: #f0d9df; }
+.map-board .galaxy-core { stroke: #a979a8; filter: drop-shadow(0 0 5px #c18bc5); }
+.map-board .galaxy-star { stroke: #705176; }
+.sector-node {
+  border-color: #775e7e;
+  background: linear-gradient(145deg, #302536, #17131d);
+  box-shadow: 0 4px 0 #0a0710;
+}
+.current-sector .sector-node {
+  border-color: #d5a2d9;
+  box-shadow: 0 0 0 5px #bb75c117, 0 0 21px #b771c148, 0 4px 0 #0a0710;
+}
+.map-sector > span, .map-sector > b { color: #d1c2d3; }
+.map-sector > small { color: #93859b; }
+.current-sector > small { color: #d3a7d7; }
+.map-caption, .map-caption span { color: #918397; }
+.map-footer { color: #b4a8b8; }
+.locked-legend { border-color: #9a85a1; }
+.sector-bottom-card {
+  border-color: #503a55;
+  background: #17121c;
+}
+.sector-stat { border-color: #503a55; }
+.sector-travel-card {
+  border-color: #503a55;
+  background: linear-gradient(145deg, #19131f, #100d17);
+}
+.travel-gate-icon {
+  border-color: #93699b;
+  background: #603a681f;
+  color: #d4a5d8;
+}
+.travel-requirement-group {
+  border-color: #503a55;
+  background: #100d16;
+}
+.travel-resource, .travel-item {
+  border-color: #49364e;
+  background: #17121d;
+}
+.travel-item-icon, .sector-upgrade-icon {
+  border-color: #674d70;
+  background: #39283f;
+  color: #d0a3d6;
+}
+.sector-upgrade-checklist {
+  margin-top: 12px;
+  padding: 12px 0 2px;
+  border-top: 1px solid #503a55;
+}
+.sector-upgrade-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sector-upgrade-heading > b {
+  color: #e0c4e2;
+  font: 10px var(--mono);
+}
+.sector-upgrade-checklist > p {
+  margin: 6px 0 10px;
+  color: #a89bac;
+  font-size: 9px;
+}
+.sector-upgrade-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+.sector-upgrade {
+  display: flex;
+  min-width: 0;
+  min-height: 52px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #63496966;
+  color: #8b7f90;
+}
+.sector-upgrade > span:nth-child(2) { display: grid; gap: 4px; min-width: 0; }
+.sector-upgrade > span:nth-child(2) b { overflow: hidden; color: #d4c9d7; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.sector-upgrade > span:nth-child(2) small { color: #94899a; font: 8px var(--mono); }
+.sector-upgrade > svg { flex: 0 0 auto; margin-left: auto; color: #84778b; }
+.sector-upgrade.requirement-met > svg { color: #9ed9b9; }
+.sector-upgrade.requirement-met .sector-upgrade-icon { color: #a8d7b7; border-color: #52785d; background: #2d4b342b; }
+.travel-button {
+  color: #241c25;
+  background: linear-gradient(100deg, #e2c6a0, #c99e7c);
+  box-shadow: 0 3px 0 #805b48;
+}
+@media (max-width: 620px) {
+  .sector-upgrade-list { grid-template-columns: 1fr; gap: 0; }
+  .sector-upgrade { min-height: 46px; }
+}
+
+/* Section art direction: a shared starfield, with a distinct mood for each activity. */
+.app-shell { --section-accent: #8ad9c2; --section-glow: #8ad9c21a; }
+.app-shell.screen-cases { --section-accent: #e5b66f; --section-glow: #d9903f20; }
+.app-shell.screen-collection { --section-accent: #d1a0e4; --section-glow: #a95bc523; }
+.app-shell.screen-lab { --section-accent: #e5ae66; --section-glow: #c77b3c24; }
+.app-shell.screen-map { --section-accent: #d59bd0; --section-glow: #a2529d22; }
+.app-shell .nav-link.active {
+  color: color-mix(in srgb, var(--section-accent) 86%, white);
+  border-color: color-mix(in srgb, var(--section-accent) 27%, transparent);
+  background: linear-gradient(100deg, var(--section-glow), transparent 92%);
+}
+.app-shell .nav-link.active svg,
+.app-shell .breadcrumb b { color: var(--section-accent); }
+.app-shell .page-heading { position: relative; padding-bottom: 13px; border-bottom: 1px solid #d6c1f218; }
+.app-shell .page-heading:after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 46px;
+  height: 2px;
+  background: var(--section-accent);
+  box-shadow: 0 0 12px var(--section-glow);
+  content: '';
+}
+.app-shell .page-heading .eyebrow { color: color-mix(in srgb, var(--section-accent) 68%, #b2a7bf); }
+
+/* Mining feels like a quiet asteroid field, with the target kept as the focus. */
+.mining-page {
+  background:
+    radial-gradient(ellipse at 56% 19%, #69348b16, transparent 42%),
+    radial-gradient(ellipse at 10% 58%, #3b8e8220, transparent 33%);
+}
+.mining-page .space-stage {
+  border-color: #654a78a6;
+  border-radius: 15px;
+  box-shadow: inset 0 0 80px #08040e9c, 0 12px 34px #05030c70;
+}
+.mining-page .asteroid-glow { background: radial-gradient(ellipse, #d69bfa30, #78519d15 42%, transparent 70%); }
+.mining-page .stage-topline { color: #b9a7c4; }
+.mining-page .right-rail .panel {
+  border-color: #54405d;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1b1424e8, #100e18ed);
+}
+.mining-page .right-rail .panel-title { color: #c5afce; }
+.mining-page .progress-track i { background: linear-gradient(90deg, #9c61bd, #e5a9dd); }
+.mining-page .drop-row { border-color: #d2a0e426; }
+.mining-page .mini-quests-panel { border-color: #665078; background: linear-gradient(115deg, #1c1524, #13111b); }
+
+/* Cases use warm brass light so opening a chest feels like a small ritual. */
+.cases-page {
+  background:
+    radial-gradient(ellipse at 26% 25%, #b8783417, transparent 39%),
+    radial-gradient(ellipse at 79% 61%, #74428d17, transparent 42%);
+}
+.cases-page .case-feature {
+  border-color: #8d674d;
+  border-radius: 17px;
+  box-shadow: inset 0 0 65px #120918a8, 0 12px 30px #05030b80, 0 0 34px #c1844e0d;
+}
+.cases-page .case-feature:before {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: min(70%, 390px);
+  height: 170px;
+  border: 1px solid #dbad6d35;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #e3ab5423, transparent 66%);
+  box-shadow: 0 0 45px #d88b4621, inset 0 0 33px #b0703820;
+  content: '';
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(-12deg);
+}
+.cases-page .case-chest { filter: drop-shadow(0 14px 11px #05030bba) drop-shadow(0 0 16px #e6a85028); }
+.cases-page .case-open-button {
+  color: #28180e;
+  background: linear-gradient(105deg, #f1d398, #d49a5d);
+  box-shadow: 0 4px 0 #805439, 0 0 18px #e9ac5b25;
+}
+.cases-page .case-aside {
+  border-color: #72513e;
+  background: linear-gradient(145deg, #1e1720, #121019);
+}
+.cases-page .case-history {
+  border-color: #6a4a3b;
+  background: linear-gradient(100deg, #1a141dba, transparent);
+}
+.cases-page .page-heading:after { display: none; }
+.cases-page .archive-count { border-color: #806043; color: #dfc89f; }
+.cases-page .archive-count svg { color: #e8b871; }
+
+/* The collection is presented as a celestial atlas with room to browse. */
+.collection-page {
+  background:
+    radial-gradient(ellipse at 81% 11%, #874b9e1c, transparent 42%),
+    radial-gradient(ellipse at 17% 68%, #4c57951b, transparent 38%);
+}
+.collection-page .collection-toolbar { color: #c4afcf; border-color: #d4a0e42b; }
+.collection-page .toolbar-dot { background: #d59be2; box-shadow: 0 0 10px #d59be2; }
+.collection-page .planet-loadout {
+  border-color: #70517f;
+  background: linear-gradient(115deg, #24182d, #15111f 74%);
+  box-shadow: inset 0 1px #f0d7ff0b, 0 12px 26px #06040b55;
+}
+.collection-page .planet-loadout-heading { color: #ecd8f2; }
+.collection-page .planet-loadout-heading svg { color: #e0a8ee; }
+.collection-page .planet-loadout-heading > b { border-color: #795c88; background: #17101f; color: #e4c3ec; }
+.collection-page .planet-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  overflow: visible;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.collection-page .planet-entry {
+  position: relative;
+  overflow: hidden;
+  padding: 7px;
+  border: 1px solid #584463;
+  border-radius: 13px;
+  background: linear-gradient(150deg, #20182b, #13111d 78%);
+  box-shadow: 0 5px 0 #090610, 0 10px 22px #05030b50;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.collection-page .planet-entry:before {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  width: 130px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #a85fc326, transparent 72%);
+  content: '';
+  pointer-events: none;
+}
+.collection-page .planet-entry:hover {
+  z-index: 1;
+  border-color: #b986cb;
+  box-shadow: 0 7px 0 #090610, 0 14px 30px #09040d9c, 0 0 22px #a653b51c;
+  transform: translateY(-3px);
+}
+.collection-page .planet-entry .planet-card {
+  position: relative;
+  z-index: 1;
+  height: 174px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+}
+.collection-page .planet-entry .planet-card-orb { height: 65px; }
+.collection-page .planet-card-bonus { width: calc(100% - 20px); margin-top: 4px; overflow: hidden; color: #c6a9d2; font: 6px/1.3 var(--mono); text-overflow: ellipsis; white-space: nowrap; }
+.collection-page .planet-card:hover:not(:disabled) { transform: none; }
+.collection-page .planet-card-orb .planet-orb { box-shadow: inset -6px -6px 12px #06101c99, inset 2px 2px 7px #fff9, 0 0 18px #a856c02b; }
+.collection-page .planet-card-id { color: #a795ae; }
+.collection-page .planet-card-name { color: #f2e8f4; }
+.collection-page .planet-card-foot { border-color: #654d704d; }
+.collection-page .planet-equip-button { border-color: #654b75; background: #24182e; color: #d3b3df; }
+.collection-page .planet-equip-button:hover:not(:disabled) { border-color: #bb88cc; background: #382444; }
+.collection-page .planet-equip-button.equipped { border-color: #659778; background: #1b3128; color: #b4e3c4; }
+.collection-page .planet-filter { color: #c4adc9; }
+.collection-page .planet-filter.active { border-color: #dcafe7; background: #8b4da92a; color: #f1dafa; }
+.collection-page .planet-filter b { background: #41294d; color: #e7cbed; }
+
+/* The workshop takes on a warm forge tone; the recipes remain one readable bench. */
+.workshop-page {
+  background: radial-gradient(ellipse at 75% 31%, #b06b3820, transparent 42%);
+}
+.workshop-page .page-heading .eyebrow { display: none; }
+.workshop-page-backdrop { border-color: #8a60474d; background: linear-gradient(145deg, #332534, #1b1720 70%, #2b1d21); }
+.workshop-page-backdrop:after {
+  background:
+    linear-gradient(90deg, #100c19d9 0%, #100c19bb 55%, #100c1999 100%),
+    linear-gradient(180deg, #100c1988 0%, transparent 34%, #100c1978 100%);
+}
+.workshop-page-backdrop svg { opacity: .56; filter: saturate(.78) sepia(.12); }
+.workshop-page .lab-workspace {
+  border-color: #9a704e;
+  background: radial-gradient(ellipse at 12% 42%, #eea6502a, transparent 34%), linear-gradient(110deg, #302431, #201822 64%, #302126);
+  box-shadow: 0 5px 0 #100a11, 0 13px 28px #08040b77;
+}
+.workshop-page .lab-grid {
+  border-color: #73533f;
+  border-radius: 15px;
+  background: linear-gradient(130deg, #1d1720e8, #15121beF);
+}
+.workshop-page .lab-grid > .recipe-card + .recipe-card { border-color: #8b674133; }
+.workshop-page .recipe-tag { border-color: #816246; background: #453324; color: #e2c48c; }
+.workshop-page .recipe-flow { border-color: #75553c; background: #100d15a8; }
+.workshop-page .craft-button,
+.workshop-page .recycle-button {
+  color: #291b12;
+  background: linear-gradient(100deg, #eed098, #cf955f);
+  box-shadow: 0 3px 0 #775039;
+}
+.workshop-page .workshop-tabs { border-color: #765a42; background: #16111be8; }
+.workshop-page .workshop-tab.active { border-color: #c28b52; background: #8c543126; color: #f0d3a0; }
+.workshop-page .scanner-status { border-color: #765b42; background: #211921d9; }
+.workshop-page .recycle-recipes { border-color: #73533f; background: #1a151de8; }
+.workshop-page .recycle-card + .recycle-card { border-color: #795d424f; }
+.workshop-page .recycler-overview { border-color: #927047; background: linear-gradient(110deg, #34271f, #1b1720); }
+
+/* Navigation and map form one connected explorer's chart. */
+.map-page { background: radial-gradient(ellipse at 44% 50%, #7b488b12, transparent 58%); }
+.map-page .page-heading .archive-count { border-color: #65476c; color: #d4bdd9; }
+.map-page .page-heading .archive-count svg { color: #d59bd0; }
+.map-page .sector-bottom-card,
+.map-page .sector-travel-card { box-shadow: 0 9px 24px #05030a55; }
+
+/* Achievements are a browsable journal; local unlocks are never labelled as chain proofs. */
+.app-shell.screen-achievements { --section-accent: #dfb66e; --section-glow: #bd82321d; }
+.achievements-page {
+  background:
+    radial-gradient(ellipse at 78% 12%, #a35f9820, transparent 39%),
+    radial-gradient(ellipse at 10% 76%, #b6873b12, transparent 42%);
+}
+.achievements-page .page-heading .eyebrow svg { color: #e3b971; }
+.achievements-page .archive-count { border-color: #745b3d; color: #e0c99f; }
+.achievements-page .archive-count svg { color: #edc478; }
+.achievement-proof-note {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin: 2px 0 17px;
+  padding: 13px 15px;
+  border: 1px solid #80634680;
+  border-radius: 12px;
+  background: linear-gradient(105deg, #33271dba, #1c1720ed 58%, #17121c);
+  box-shadow: 0 8px 24px #06040a44;
+}
+.achievement-proof-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #b68b5378;
+  border-radius: 10px;
+  background: #94602b24;
+  color: #e6bf7b;
+}
+.achievement-proof-note b { display: block; color: #f1dfbd; font-size: 10px; }
+.achievement-proof-note p { margin: 4px 0 0; color: #baad9d; font-size: 9px; line-height: 1.5; }
+.achievement-wallet-state {
+  padding: 6px 8px;
+  border: 1px solid #665b4b;
+  border-radius: 6px;
+  color: #bfb09a;
+  font: 7px var(--mono);
+  letter-spacing: .05em;
+  white-space: nowrap;
+}
+.achievement-wallet-state.wallet-ready { border-color: #4e826a; color: #a9d9bd; }
+.achievement-progress-summary { margin: 0 2px 19px; }
+.achievement-progress-summary > div:first-child { display: flex; justify-content: space-between; color: #afa2b5; font-size: 9px; }
+.achievement-progress-summary b { color: #e4c99b; font: 10px var(--mono); }
+.achievement-progress-track,
+.achievement-card-progress { height: 4px; overflow: hidden; border-radius: 9px; background: #ffffff13; }
+.achievement-progress-track { margin-top: 8px; }
+.achievement-progress-track i,
+.achievement-card-progress i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #a8658f, #e4bc72); box-shadow: 0 0 8px #c68a6152; transition: width .3s ease; }
+.achievement-group { margin-top: 20px; }
+.achievement-group-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; padding-bottom: 7px; border-bottom: 1px solid #d6c1f21c; color: #d6c2a0; font: 8px var(--mono); letter-spacing: .15em; }
+.achievement-group-heading small { color: #928697; font: 8px var(--mono); letter-spacing: 0; }
+.achievement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; }
+.achievement-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 39px minmax(0, 1fr) minmax(34px, auto);
+  grid-template-rows: auto 4px;
+  align-items: center;
+  column-gap: 10px;
+  min-height: 81px;
+  padding: 10px 3px 10px 4px;
+  border-bottom: 1px solid #d5c3dc1e;
+  color: #a79aaa;
+}
+.achievement-card-icon { grid-row: 1 / span 2; width: 37px; height: 37px; display: grid; place-items: center; border: 1px solid #624c6c; border-radius: 11px; background: linear-gradient(145deg, #33263a, #1a1521); color: #9c88a5; }
+.achievement-card-copy { min-width: 0; align-self: end; }
+.achievement-card-copy h2 { margin: 0 0 3px; overflow: hidden; color: #e2d7e5; font: 600 10px var(--heading); text-overflow: ellipsis; white-space: nowrap; }
+.achievement-card-copy p { margin: 0; color: #988b9b; font-size: 8px; line-height: 1.4; }
+.achievement-lock { grid-column: 3; grid-row: 1; color: #766a7d; }
+.achievement-card-progress { grid-column: 2; grid-row: 2; width: 100%; align-self: end; }
+.achievement-card-progress i { background: linear-gradient(90deg, #725d7f, #b089c3); box-shadow: none; }
+.achievement-card-count { grid-column: 3; grid-row: 2; justify-self: end; align-self: end; color: #a59ba8; font: 7px var(--mono); white-space: nowrap; }
+.achievement-proof-tag { grid-column: 2 / 4; grid-row: 3; margin-top: 5px; color: #7f7385; font: 6px var(--mono); letter-spacing: .08em; }
+.achievement-unlocked .achievement-card-icon { border-color: #8e6a73; background: linear-gradient(145deg, #49343c, #241b25); color: #f0c983; box-shadow: 0 0 18px #d6a25319; }
+.achievement-unlocked .achievement-card-copy h2 { color: #f0dfbd; }
+.achievement-unlocked .achievement-lock { color: #d6b16d; }
+.achievement-unlocked .achievement-card-progress i { background: linear-gradient(90deg, #bb806c, #efc777); box-shadow: 0 0 8px #d8ad623d; }
+.achievement-unlocked .achievement-proof-tag { color: #d4a86d; }
+.achievement-group-cases .achievement-group-heading { color: #deb978; }
+.achievement-group-exploration .achievement-group-heading { color: #c89edb; }
+
+@media (max-width: 900px) {
+  .collection-page .planet-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .app-shell .page-heading { padding-bottom: 10px; }
+  .collection-page .planet-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .collection-page .planet-entry { padding: 5px; }
+  .collection-page .planet-entry .planet-card { height: 160px; }
+  .achievement-proof-note { grid-template-columns: 35px minmax(0, 1fr); gap: 9px; padding: 11px; }
+  .achievement-wallet-state { grid-column: 2; justify-self: start; }
+  .achievement-grid { grid-template-columns: 1fr; gap: 5px; }
+}
+
+/* FeNi identity: a readable crystal-and-orbit mark paired with a compact wordmark. */
+.brand-logo { display: block; width: 43px; height: 43px; flex: 0 0 auto; object-fit: contain; filter: drop-shadow(0 3px 9px #b777cf20); }
+.brand-wordmark { display: inline-flex; align-items: baseline; gap: 0; color: #f0e7f4; font: 800 16px/1 var(--heading); letter-spacing: -.045em; }
+.brand-wordmark span:last-child { color: #c99bdd; }
+.topbar-mobile-logo { display: none; width: 27px; height: 27px; flex: 0 0 auto; padding: 0; border: 0; background: none; cursor: pointer; }
+.topbar-mobile-logo img { display: block; width: 100%; height: 100%; }
+.footer-brand { display: inline-flex; align-items: center; gap: 5px; }
+.footer-brand img { display: block; width: 19px; height: 19px; }
+.footer-brand b { color: #d9c5e4; font: 800 9px/1 var(--heading); letter-spacing: .04em; }
+@media (max-width: 620px) {
+  .topbar-mobile-logo { display: block; }
+  .breadcrumb { gap: 6px; }
+  .breadcrumb b:before { content: none; }
+  .brand-logo { width: 37px; height: 37px; }
+}
+
+.loot-popup {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 48%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid #d7b0e65c;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #21152deF, #100c19ed);
+  box-shadow: 0 9px 26px #08040c80, 0 0 17px #c994e326;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  animation: loot-float 2.8s cubic-bezier(.2,.7,.25,1) forwards;
+}
+.loot-popup-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #f4eafb;
+  white-space: nowrap;
+}
+.loot-popup-item svg { filter: drop-shadow(0 2px 3px #0008); }
+.loot-popup-item b { color: var(--loot-color); font: 700 11px var(--mono); }
+.loot-popup-item small { color: #c6b7cd; font: 8px var(--mono); }
+.loot-popup-item.relay-energy-loot { color: #e0b4f2; }
+.loot-popup-item.relay-energy-loot svg { color: #dda7ef; }
+@keyframes loot-float {
+  0% { opacity: 0; transform: translate(-50%, 14px) scale(.88); }
+  12% { opacity: 1; transform: translate(-50%, 0) scale(1); }
+  70% { opacity: 1; transform: translate(-50%, -17px) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -40px) scale(.94); }
+}
+@media (max-width: 620px) {
+  .loot-popup { top: 40%; left: 50%; gap: 4px; padding: 6px 8px; }
+  .loot-popup-item svg { width: 21px; height: 21px; }
+  .loot-popup-item b { font-size: 10px; }
+}
+
+/* The case price now lives inside the expanded case display. */
+.cases-page .case-layout { grid-template-columns: minmax(0, 1fr); }
+.cases-page .case-feature {
+  height: auto;
+  min-height: 610px;
+  justify-content: flex-start;
+  padding: 58px 30px 22px;
+}
+.cases-page .case-feature:before { top: 29%; width: min(58%, 600px); height: 180px; }
+.cases-page .case-cost-inline {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 850px);
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #8d674d75;
+}
+.case-cost-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; color: #d9c29f; font: 8px var(--mono); letter-spacing: .1em; }
+.case-cost-heading small { color: #9a8a7d; font: 7px var(--mono); }
+.case-cost-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 10px; }
+.case-cost-item { min-width: 0; min-height: 42px; display: grid; grid-template-columns: 9px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 0 10px; border: 1px solid #ffffff13; border-radius: 9px; background: #09081155; }
+.case-cost-name { min-width: 0; overflow: hidden; color: #d4c9d7; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.case-cost-name small { margin-left: 4px; color: #9f91a6; font: 8px var(--mono); }
+.case-cost-item>b { display: flex; align-items: baseline; gap: 4px; color: #a99bb0; font: 9px var(--mono); white-space: nowrap; }
+.case-cost-item>b i { color: #7f7187; font-size: 8px; font-style: normal; }
+.case-cost-current { color: #d7eadf; font: inherit; }
+.case-cost-item.cost-missing .case-cost-current { color: #e9ad91; }
+@media (max-width: 620px) {
+  .cases-page .case-feature { min-height: 610px; padding: 54px 14px 16px; }
+  .cases-page .case-feature:before { top: 27%; width: min(78%, 430px); height: 150px; }
+  .case-cost-items { gap: 6px; }
+  .case-cost-item { gap: 6px; padding: 0 7px; }
+  .case-cost-name { font-size: 9px; }
+}
+@media (max-width: 420px) {
+  .case-cost-items { grid-template-columns: 1fr; }
+  .cases-page .case-feature { min-height: 650px; }
+}
+
+/* Keep the resource balances and account controls inside one shared app bar. */
+.topbar {
+  min-height: 72px;
+  gap: 18px;
+  padding: 0 34px;
+  border-bottom: 1px solid #39264b;
+  background: #0d0919e8;
+}
+.topbar .resource-strip {
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  scrollbar-width: none;
+}
+.topbar .resource-strip::-webkit-scrollbar { display: none; }
+.topbar .resource-pill { flex: 0 0 auto; height: 40px; padding-inline: 14px; }
+.topbar .topbar-actions { flex: 0 0 auto; margin-left: auto; }
+
+@media (max-width: 960px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "actions actions" "resources resources";
+    gap: 8px 10px;
+    min-height: 0;
+    padding: 10px 16px 11px;
+  }
+  .topbar .topbar-mobile-logo { display: none; }
+  .topbar .topbar-actions { grid-area: actions; justify-self: end; }
+  .topbar .resource-strip {
+    grid-area: resources;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    overflow: visible;
+    padding: 0;
+  }
+  .topbar .resource-pill { width: 100%; min-width: 0; height: 38px; justify-content: center; gap: 5px; padding-inline: 4px; }
+  .topbar .resource-pill + .resource-pill:before { display: none; }
+}
+@media (max-width: 620px) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "logo actions" "resources resources";
+    gap: 8px 10px;
+    padding: 9px 12px 10px;
+  }
+  .topbar .topbar-mobile-logo { grid-area: logo; display: block; }
+  .topbar .topbar-actions { gap: 7px; }
+  .topbar .resource-strip { gap: 3px; }
+  .topbar .resource-pill { gap: 3px; padding-inline: 2px; }
+}
+
+/* Sector travel requirements read as one checklist, with two clear categories. */
+.sector-travel-card .travel-requirement-groups {
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid #503a55;
+  border-radius: 11px;
+  background: linear-gradient(145deg, #15101b, #100d17);
+}
+.sector-travel-card .travel-requirement-group {
+  min-width: 0;
+  padding: 13px 14px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.sector-travel-card .travel-requirement-group + .travel-requirement-group {
+  border-left: 1px solid #503a55;
+}
+.relay-gate-requirements { grid-template-columns: minmax(0, 1fr); }
+.relay-energy-panel,
+.relay-travel-energy {
+  display: grid;
+  gap: 7px;
+  padding: 10px 12px;
+  border: 1px solid #9662a84d;
+  border-radius: 8px;
+  background: linear-gradient(110deg, #24152e, #15101f);
+}
+.relay-energy-panel { margin-top: 10px; }
+.relay-travel-energy { margin-top: 10px; }
+.relay-energy-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.relay-energy-heading > span { display: inline-flex; align-items: center; gap: 6px; color: #c39bd0; font: 8px var(--mono); letter-spacing: .08em; }
+.relay-energy-heading > span svg { color: #dda7ef; }
+.relay-energy-heading > b { color: #f0dcf7; font: 10px var(--mono); white-space: nowrap; }
+.relay-energy-track { height: 5px; overflow: hidden; border-radius: 5px; background: #0c0811; }
+.relay-energy-track > i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #89509b, #dda7ef); box-shadow: 0 0 9px #d18ae688; transition: width .25s ease; }
+.relay-energy-panel > small,
+.relay-travel-energy > small { color: #a38fae; font-size: 8px; line-height: 1.4; }
+.relay-energy-panel.relay-online { border-color: #b47ac966; }
+.relay-icon { color: #e3b2f2; border-color: #b974cf66; background: linear-gradient(145deg, #633b73, #36213f); }
+@media (max-width: 620px) {
+  .sector-travel-card .travel-requirement-groups { grid-template-columns: minmax(0, 1fr); }
+  .sector-travel-card .travel-requirement-group + .travel-requirement-group {
+    border-top: 1px solid #503a55;
+    border-left: 0;
+  }
+  .relay-energy-panel,
+  .relay-travel-energy { padding: 9px 10px; }
+}
+
+.map-current-title {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 23px;
+  display: grid;
+  gap: 5px;
+  pointer-events: none;
+}
+.map-current-title > span {
+  color: #a894aa;
+  font: 7px var(--mono);
+  letter-spacing: .14em;
+}
+.map-current-title > b {
+  color: #f0e5f2;
+  font: 600 13px var(--heading);
+}
+.map-routes {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.map-routes > line {
+  fill: none;
+  stroke: #d1a9d8a8;
+  stroke-width: 1.25px;
+  stroke-dasharray: 5 8;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 0 3px #a76caa55);
+}
+.map-starfield { position: absolute; z-index: 0; inset: 0; pointer-events: none; }
+.map-star { position: absolute; width: 12px; height: 12px; opacity: .72; filter: drop-shadow(0 0 5px #cba2e755); }
+.map-star-1 { left: 8%; top: 27%; width: 10px; height: 10px; }
+.map-star-2 { left: 25%; top: 79%; }
+.map-star-3 { left: 29%; top: 15%; width: 9px; height: 9px; }
+.map-star-4 { left: 48%; top: 16%; }
+.map-star-5 { left: 58%; top: 84%; width: 10px; height: 10px; }
+.map-star-6 { left: 69%; top: 14%; width: 9px; height: 9px; }
+.map-star-7 { left: 82%; top: 78%; }
+.map-star-8 { left: 94%; top: 43%; width: 10px; height: 10px; }
+.map-star-9 { left: 41%; top: 83%; width: 8px; height: 8px; }
+.map-planets { position: absolute; z-index: 1; inset: 0; pointer-events: none; }
+.map-floating-planet { position: absolute; display: grid; width: 29px; height: 29px; place-items: center; transform: translate(-50%, -50%); filter: drop-shadow(0 0 9px #b887ca55); }
+.map-floating-planet::before { content: ''; position: absolute; inset: 5px -6px; border: 1px solid #c7a4ce54; border-radius: 50%; transform: rotate(-27deg); }
+.map-floating-planet .planet-orb { width: 21px; height: 21px; }
+.map-floating-planet:nth-child(1) { transform: translate(-50%, -50%) scale(.78); filter: drop-shadow(0 0 8px #9acde655); }
+.map-floating-planet:nth-child(1)::before { transform: rotate(21deg); border-color: #a8d3e15c; }
+.map-floating-planet:nth-child(2) { transform: translate(-50%, -50%) scale(.94); filter: drop-shadow(0 0 9px #ba8dca55); }
+.map-floating-planet:nth-child(2)::before { inset: 4px -8px; transform: rotate(-39deg); border-color: #c49bd15c; }
+.map-floating-planet:nth-child(3) { transform: translate(-50%, -50%) scale(1.12); filter: drop-shadow(0 0 10px #d6a76b55); }
+.map-floating-planet:nth-child(3)::before { inset: 7px -8px; transform: rotate(14deg); border-color: #e3c58c66; }
+.map-floating-planet:nth-child(4) { transform: translate(-50%, -50%) scale(.86); filter: drop-shadow(0 0 9px #83c8cb55); }
+.map-floating-planet:nth-child(4)::before { inset: 6px -8px; transform: rotate(-32deg); border-color: #9bd9d05c; }
+.map-floating-planet:nth-child(5) { transform: translate(-50%, -50%) scale(.9); filter: drop-shadow(0 0 9px #d2b17e55); }
+.map-floating-planet:nth-child(5)::before { inset: 6px -7px; transform: rotate(37deg); border-color: #d9c2945c; }
+.map-floating-planet:nth-child(6) { transform: translate(-50%, -50%) scale(.82); filter: drop-shadow(0 0 9px #d78e7855); }
+.map-floating-planet:nth-child(6)::before { inset: 5px -8px; transform: rotate(-18deg); border-color: #dfa18b5c; }
+.map-board .map-grid { opacity: .12; background-size: 52px 52px; }
+.map-board .map-nebula { opacity: .16; }
+.map-board .map-nebula-a { left: 7%; top: 32%; width: 34%; height: 38%; background: #983d782c; filter: blur(48px); }
+.map-board .map-nebula-b { right: 4%; top: 23%; width: 38%; height: 48%; background: #62509a28; filter: blur(52px); }
+.map-sector[data-sector="solar-fringe"] { --sector-accent: #91c8cd; --sector-haze: #4d9fa522; --sector-ring: #91c8cd48; --sector-orbit: -27deg; }
+.map-sector[data-sector="red-nebula"] { --sector-accent: #d69bd5; --sector-haze: #b84f9828; --sector-ring: #d69bd548; --sector-orbit: 17deg; }
+.map-sector[data-sector="orion-field"] { --sector-accent: #a4b8e2; --sector-haze: #596db32b; --sector-ring: #a4b8e24a; --sector-orbit: -8deg; }
+.map-sector[data-sector="forgotten-systems"] { --sector-accent: #c1b18b; --sector-haze: #8d76502b; --sector-ring: #c1b18b45; --sector-orbit: 31deg; }
+.map-sector[data-sector="the-void"] { --sector-accent: #a99ae2; --sector-haze: #684ca62b; --sector-ring: #a99ae24a; --sector-orbit: -39deg; }
+.map-region {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 25px;
+  width: clamp(150px, 22vw, 300px);
+  height: clamp(105px, 26vh, 220px);
+  border-radius: 50%;
+  background: radial-gradient(ellipse, var(--sector-haze) 0%, transparent 72%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+.map-region-art { display: block; width: 100%; height: 100%; overflow: visible; opacity: .85; }
+.map-region .region-line { fill: none; stroke: var(--sector-accent); stroke-width: 1.15; opacity: .32; }
+.map-region .region-soft { fill: none; stroke: var(--sector-accent); stroke-width: 8; opacity: .1; filter: blur(5px); }
+.map-region .region-dust { fill: var(--sector-accent); opacity: .58; }
+.map-region .region-cloud { fill: var(--sector-haze); stroke: var(--sector-ring); stroke-width: 1; opacity: .9; }
+.map-region .region-node { fill: var(--sector-accent); opacity: .68; filter: drop-shadow(0 0 4px var(--sector-accent)); }
+.map-region .region-ruin { fill: none; stroke: var(--sector-ring); stroke-width: 1.2; }
+.map-region .region-ruin-inner { stroke-dasharray: 2 7; opacity: .8; }
+.map-region .region-ruin-break { fill: none; stroke: var(--sector-accent); stroke-width: 1; stroke-dasharray: 28 13 49 19; opacity: .3; }
+.map-region .region-black-hole { fill: #0b0912; stroke: var(--sector-ring); stroke-width: 5; opacity: .68; filter: drop-shadow(0 0 14px var(--sector-haze)); }
+.map-region .region-singularity { fill: #07060c; stroke: var(--sector-accent); stroke-width: 1; opacity: .7; }
+.map-region .region-lens { fill: none; stroke: var(--sector-accent); stroke-width: 1; opacity: .33; }
+.map-region::before {
+  content: '';
+  position: absolute;
+  inset: 15% 8%;
+  border: 1px solid var(--sector-ring);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px var(--sector-haze));
+  transform: rotate(var(--sector-orbit));
+}
+.map-region::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--sector-accent);
+  box-shadow: 0 0 9px var(--sector-accent);
+  opacity: .55;
+}
+.map-sector[data-sector="solar-fringe"] .map-region::before { border-style: dashed; inset: 18% 5%; }
+.map-sector[data-sector="red-nebula"] .map-region::before { border-style: solid; inset: 13% 15% 20%; }
+.map-sector[data-sector="orion-field"] .map-region::before { border-style: dotted; inset: 10% 12%; }
+.map-sector[data-sector="forgotten-systems"] .map-region::before { border-style: dashed; inset: 20% 10% 9%; }
+.map-sector[data-sector="the-void"] .map-region::before { border-top-color: transparent; border-right-color: transparent; inset: 12% 6% 16%; }
+.map-board .map-sector .sector-node {
+  border-color: color-mix(in srgb, var(--sector-accent) 56%, #775e7e);
+  color: var(--sector-accent);
+}
+.map-board .map-sector.current-sector .sector-node {
+  border-color: var(--sector-accent);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--sector-accent) 13%, transparent), 0 0 23px color-mix(in srgb, var(--sector-accent) 31%, transparent), 0 4px 0 #0a0710;
+}
+.map-board .map-sector .galaxy-arm { stroke: var(--sector-accent); filter: drop-shadow(0 0 3px var(--sector-haze)); }
+.map-board .map-sector .galaxy-arm-b { stroke: color-mix(in srgb, var(--sector-accent) 48%, #f0d9df); }
+.map-board .map-sector .galaxy-core { stroke: color-mix(in srgb, var(--sector-accent) 78%, #a979a8); }
+.map-board .map-sector > b { color: color-mix(in srgb, var(--sector-accent) 23%, #d1c2d3); }
+.map-board .map-sector > small { color: color-mix(in srgb, var(--sector-accent) 38%, #93859b); }
+.map-board .map-sector.current-sector > small { color: var(--sector-accent); }
+.map-board .sector-node { position: relative; overflow: visible; }
+.sector-emblem { display: block; width: 43px; height: 43px; overflow: visible; filter: drop-shadow(0 0 7px var(--sector-haze)); }
+.sector-emblem .emblem-orbit,
+.sector-emblem .emblem-constellation,
+.sector-emblem .emblem-nebula,
+.sector-emblem .emblem-broken-orbit,
+.sector-emblem .emblem-accretion { fill: none; stroke: var(--sector-accent); stroke-width: 1.45; }
+.sector-emblem .emblem-orbit { opacity: .88; }
+.sector-emblem .emblem-orbit-front { stroke: color-mix(in srgb, var(--sector-accent) 58%, #f0e5f2); stroke-width: 1.1; stroke-dasharray: 17 48; }
+.sector-emblem .emblem-body { fill: color-mix(in srgb, var(--sector-accent) 38%, #221a2a); stroke: color-mix(in srgb, var(--sector-accent) 64%, #f0e5f2); stroke-width: 1.1; }
+.sector-emblem .emblem-surface { fill: none; stroke: #f0e5f2; stroke-width: 1; opacity: .42; }
+.sector-emblem .emblem-debris,
+.sector-emblem .emblem-dust { fill: var(--sector-accent); opacity: .82; }
+.sector-emblem .emblem-nebula { stroke-width: 3.4; stroke-linecap: round; opacity: .86; filter: drop-shadow(0 0 3px var(--sector-accent)); }
+.sector-emblem .emblem-nebula-thin { stroke-width: 1; opacity: .58; filter: none; }
+.sector-emblem .emblem-core { fill: #f3e8f4; stroke: var(--sector-accent); stroke-width: 1.4; }
+.sector-emblem .emblem-constellation { fill: none; stroke-width: 1; stroke-dasharray: 2 2.5; opacity: .82; }
+.sector-emblem .emblem-constellation-inner { stroke-dasharray: 1 3; opacity: .45; }
+.sector-emblem .emblem-star-node { fill: var(--sector-accent); stroke: #f0e5f2; stroke-width: .65; }
+.sector-emblem .emblem-relic { fill: #211a27; stroke: var(--sector-accent); stroke-width: 1.5; }
+.sector-emblem .emblem-relic-inner { fill: none; stroke: color-mix(in srgb, var(--sector-accent) 55%, #e9dfe8); stroke-width: 1; opacity: .8; }
+.sector-emblem .emblem-broken-orbit { fill: none; stroke: var(--sector-accent); stroke-width: 1; stroke-dasharray: 20 8 10 15; opacity: .7; }
+.sector-emblem .emblem-relay { fill: #17121d; stroke: var(--sector-accent); stroke-width: 1.4; }
+.sector-emblem .emblem-accretion { stroke-width: 2.1; filter: drop-shadow(0 0 3px var(--sector-accent)); }
+.sector-emblem .emblem-accretion-inner { stroke: #f0e5f2; stroke-width: .8; opacity: .65; filter: none; }
+.sector-emblem .emblem-black-hole { fill: #08070d; stroke: #08070d; stroke-width: 2; }
+.sector-emblem .emblem-horizon { fill: none; stroke: var(--sector-accent); stroke-width: .8; opacity: .56; }
+.sector-locked-badge { position: absolute; top: -3px; right: -3px; display: grid; width: 17px; height: 17px; place-items: center; border: 1px solid var(--sector-ring); border-radius: 50%; background: #140f1b; color: var(--sector-accent); }
+.map-sector.locked-sector { opacity: 1; }
+.map-sector.locked-sector .sector-node { opacity: .72; }
+.map-sector.locked-sector .map-region { opacity: .56; }
+.map-sector.locked-sector > span { color: #8e8292; }
+.map-sector.locked-sector > b { color: #9c8da0; }
+.map-sector.locked-sector > small { color: #716778; }
+@media (max-width: 620px) {
+  .map-region { width: 160px; height: 130px; }
+  .map-current-title { top: 14px; left: 15px; gap: 4px; }
+  .map-current-title > b { font-size: 11px; }
+}
+
+.app-shell { --sidebar-size: 257px; }
+.sidebar {
+  position: fixed;
+  z-index: 3;
+  inset: 0 auto 0 0;
+  width: var(--sidebar-size);
+  flex: 0 0 var(--sidebar-size);
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #39264b transparent;
+}
+.app-shell > .main-area { margin-left: var(--sidebar-size); }
+@media (max-width: 1080px) {
+  .app-shell { --sidebar-size: 255px; }
+}
+@media (max-width: 820px) {
+  .app-shell { --sidebar-size: 82px; }
+}
+@media (max-width: 360px) {
+  .app-shell { --sidebar-size: 63px; }
+}
+@media (max-height: 820px) and (min-width: 821px) {
+  .sidebar { padding: 16px 13px 12px; }
+  .side-caption { margin-top: 23px; margin-bottom: 9px; }
+  .primary-nav { gap: 3px; }
+  .nav-link { height: 37px; }
+  .side-sector { margin-top: 19px; padding-block: 9px; }
+  .side-sector-orbit { width: 34px; height: 34px; }
+  .sync-label { padding-block: 8px; }
+  .version { padding-top: 10px; }
+}
+@media (max-height: 620px) and (min-width: 821px) {
+  .sidebar { padding: 11px 12px 9px; }
+  .brand-logo { width: 32px; height: 32px; }
+  .side-caption { margin-top: 14px; margin-bottom: 7px; }
+  .primary-nav { gap: 1px; }
+  .nav-link { height: 33px; }
+  .side-sector { margin-top: 10px; padding-block: 6px; }
+  .side-sector-orbit { width: 30px; height: 30px; }
+  .sync-label { padding-block: 6px; }
+  .version { padding-top: 7px; }
+}
+
+.workshop-page .workshop-tabs {
+  position: sticky;
+  z-index: 5;
+  top: 72px;
+  width: fit-content;
+  max-width: 100%;
+  background: #16111bf2;
+  box-shadow: 0 8px 18px #08050c44;
+  backdrop-filter: blur(12px);
+}
+@media (max-width: 960px) {
+  .workshop-page .workshop-tabs { top: 120px; }
+}
+@media (max-width: 620px) {
+  .workshop-page .workshop-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .workshop-page .workshop-tab {
+    flex: 1 1 auto;
+    justify-content: center;
+    min-width: 0;
+  }
+}
+
+/* Dark graphite palette is scoped to navigation; page panels retain their own themes. */
+.app-shell .sidebar {
+  background: #09080f;
+  border-color: #211925;
+}
+.sidebar .brand { color: #eee8f1; }
+.sidebar .side-caption { color: #827b8b; }
+.sidebar .nav-link {
+  color: #8d8797;
+  border-color: #1e1924;
+  background: #100d16;
+}
+.sidebar .nav-link svg { color: #81798b; }
+.sidebar .nav-link:hover {
+  color: #d6c9dc;
+  border-color: #33263c;
+  background: #17111c;
+}
+.app-shell .sidebar .nav-link.active {
+  color: #e1cce8;
+  border-color: #493653;
+  background: linear-gradient(100deg, #211729, #17111d);
+  box-shadow: none;
+}
+.app-shell .sidebar .nav-link.active svg { color: #c494d0; }
+.sidebar .nav-link i {
+  color: #d4b3de;
+  border: 1px solid #47344f;
+  background: #211729;
+}
+.sidebar .side-sector { border-color: #29212f; }
+.sidebar .sector-mark {
+  color: #cbb6d4;
+  border-color: #42334a;
+  background: #17121c;
+}
+.sidebar .side-sector strong { color: #e6dfe9; }
+.sidebar .version { border-color: #211925; color: #706979; }
+@media (max-width: 820px) {
+  .app-shell .sidebar {
+    background: rgba(9, 8, 15, .97);
+    border-top-color: #29212f;
+  }
+  .sidebar .nav-link,
+  .sidebar .nav-link:hover {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+  .app-shell .sidebar .nav-link.active {
+    color: #e1cce8;
+    border-color: #493653;
+    background: linear-gradient(180deg, #211729, #17111d);
+    box-shadow: none;
+  }
+}
+.main-area > .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #09080f;
+  border-color: #211925;
+}
+.main-area > .topbar .language-toggle,
+.main-area > .topbar .wallet-button {
+  color: #d2c9d8;
+  border-color: #2a2331;
+  background: #100d16;
+}
+.main-area > .topbar .language-toggle svg { color: #b18abd; }
+.main-area > .topbar .language-toggle:hover,
+.main-area > .topbar .wallet-button:hover:not(:disabled) {
+  color: #eee5f1;
+  border-color: #40344a;
+  background: #17121d;
+}
+.main-area > .topbar .wallet-button.connected {
+  color: #b9d8c6;
+  border-color: #304338;
+  background: #111610;
+}
+
+@media (min-width: 621px) {
+  .cases-page {
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
+  .cases-page .page-heading { margin-bottom: 14px; }
+  .cases-page .case-feature {
+    height: auto;
+    min-height: clamp(350px, 42vh, 410px);
+    padding: 44px 24px 12px;
+  }
+  .cases-page .case-feature:before {
+    top: 42%;
+    width: min(58%, 520px);
+    height: 145px;
+  }
+  .cases-page .case-feature-art {
+    width: 136px;
+    height: 100px;
+    margin-top: 5px;
+    transform: scale(.84);
+  }
+  .cases-page .case-feature-title { margin-top: 5px; font-size: 17px; }
+  .cases-page .case-feature > p { margin: 4px 0 9px; }
+  .cases-page .case-open-button { min-height: 40px; }
+  .cases-page .case-cost-inline {
+    width: min(100%, 900px);
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .cases-page .case-cost-heading { margin-bottom: 6px; }
+  .cases-page .case-cost-item { min-height: 34px; }
+  .cases-page .case-history { margin-top: 12px; padding-top: 10px; gap: 7px; }
+  .cases-page .mini-worlds { margin-top: 2px; gap: 7px; }
+  .cases-page .mini-world { padding: 7px 4px; gap: 3px; }
+}
+
+/* Faceted, shaded star sprites share the illustrated finish of planets and asteroids. */
+.app-shell {
+  position: relative;
+  isolation: isolate;
+}
+.app-shell > .global-starfield {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.app-shell > .sidebar {
+  z-index: 3;
+}
+.app-shell > .main-area {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 820px) {
+  .app-shell > .sidebar { z-index: 12; }
+}
+.celestial-star {
+  display: block;
+  overflow: visible;
+  --star-outline: #d6a7e8;
+}
+.celestial-star[data-tone="ice"] {
+  --star-outline: #a7def0;
+}
+.celestial-star-outline { fill: none; stroke: var(--star-outline); stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
+
+.global-star {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  opacity: .42;
+  filter: none;
+  animation: star-drift 7s ease-in-out infinite;
+}
+.global-star-1 { left: 7%; top: 16%; width: 14px; height: 14px; }
+.global-star-2 { left: 17%; top: 61%; width: 18px; height: 18px; animation-delay: -2s; }
+.global-star-3 { left: 26%; top: 29%; width: 13px; height: 13px; animation-delay: -4s; }
+.global-star-4 { left: 37%; top: 81%; width: 16px; height: 16px; animation-delay: -1s; }
+.global-star-5 { left: 49%; top: 17%; width: 19px; height: 19px; animation-delay: -3s; }
+.global-star-6 { left: 61%; top: 55%; width: 14px; height: 14px; animation-delay: -5s; }
+.global-star-7 { left: 72%; top: 12%; width: 15px; height: 15px; animation-delay: -2.5s; }
+.global-star-8 { left: 82%; top: 73%; width: 18px; height: 18px; animation-delay: -4.5s; }
+.global-star-9 { left: 94%; top: 38%; width: 14px; height: 14px; animation-delay: -1.5s; }
+.global-star-10 { left: 4%; top: 82%; width: 12px; height: 12px; animation-delay: -3.5s; }
+.global-star-11 { left: 87%; top: 19%; width: 13px; height: 13px; animation-delay: -5.5s; }
+.global-star-12 { left: 56%; top: 87%; width: 15px; height: 15px; animation-delay: -6s; }
+@keyframes star-drift { 0%, 100% { translate: 0 0; } 50% { translate: 0 -4px; } }
+
+.stage-stars .stage-star {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  filter: none;
+  animation: star-drift 4s ease-in-out infinite;
+}
+.stage-stars .stage-star-1 { left: 13%; top: 24%; width: 20px; height: 20px; }
+.stage-stars .stage-star-2 { left: 28%; top: 16%; width: 13px; height: 13px; animation-delay: -.6s; }
+.stage-stars .stage-star-3 { right: 15%; top: 21%; width: 17px; height: 17px; animation-delay: -1s; }
+.stage-stars .stage-star-4 { right: 29%; top: 36%; width: 14px; height: 14px; animation-delay: -.3s; }
+.stage-stars .stage-star-5 { left: 42%; top: 27%; width: 12px; height: 12px; animation-delay: -1.2s; }
+.stage-stars .stage-star-6 { left: 22%; top: 38%; width: 16px; height: 16px; animation-delay: -.9s; }
+.stage-stars .stage-star-7 { right: 20%; top: 47%; width: 13px; height: 13px; animation-delay: -1.5s; }
+.stage-stars .stage-star-8 { right: 37%; top: 14%; width: 11px; height: 11px; animation-delay: -.4s; }
+
+.workshop-page-stars .workshop-star {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  opacity: .7;
+  filter: none;
+  animation: star-drift 6s ease-in-out infinite;
+}
+.workshop-page-stars .workshop-star:nth-child(1) { left: 8%; top: 12%; }
+.workshop-page-stars .workshop-star:nth-child(2) { left: 28%; top: 8%; width: 17px; height: 17px; }
+.workshop-page-stars .workshop-star:nth-child(3) { left: 47%; top: 19%; }
+.workshop-page-stars .workshop-star:nth-child(4) { left: 68%; top: 9%; width: 16px; height: 16px; }
+.workshop-page-stars .workshop-star:nth-child(5) { left: 91%; top: 22%; }
+.workshop-page-stars .workshop-star:nth-child(6) { left: 18%; top: 38%; width: 13px; height: 13px; }
+.workshop-page-stars .workshop-star:nth-child(7) { left: 58%; top: 39%; }
+.workshop-page-stars .workshop-star:nth-child(8) { left: 83%; top: 48%; width: 17px; height: 17px; }
+.workshop-page-stars .workshop-star:nth-child(9) { left: 36%; top: 63%; }
+.workshop-page-stars .workshop-star:nth-child(10) { left: 72%; top: 30%; width: 18px; height: 18px; }
+.workshop-page-stars .workshop-star:nth-child(11) { left: 11%; top: 55%; width: 12px; height: 12px; }
+.workshop-page-stars .workshop-star:nth-child(12) { left: 94%; top: 66%; width: 11px; height: 11px; }
+
+.case-chest-spark {
+  width: 20px;
+  height: 20px;
+  filter: none;
+}
+.spark-two { width: 17px; height: 17px; }
+.spark-three { width: 12px; height: 12px; }
+.asteroid-hit-burst .burst-star {
+  border: 0;
+  background: none;
+  clip-path: none;
+  filter: none;
+}
+.asteroid-hit-burst .burst-star::after {
+  content: none;
+}
+.galaxy-star { overflow: visible; filter: none; }
+@media (prefers-reduced-motion: reduce) {
+  .global-star,
+  .stage-stars .stage-star,
+  .workshop-page-stars .workshop-star { animation: none; }
+}
+
+/* Remove repeated page-heading labels and separator accents across tabs. */
+.app-shell .page-heading .eyebrow { display: none; }
+.app-shell .page-heading { padding-bottom: 0; border-bottom: 0; }
+.app-shell .page-heading:after { display: none; }
+.collection-filter-row { display: flex; align-items: center; gap: 10px; margin: 4px 0 15px; }
+.collection-filter-row .planet-filters { flex: 1 1 auto; min-width: 0; margin: 0; }
+.collection-filter-row > .archive-count { flex: 0 0 auto; margin: 0; transform: none; }
+@media (max-width: 620px) {
+  .collection-filter-row { gap: 6px; }
+  .collection-filter-row > .archive-count { max-width: 120px; padding: 6px; font-size: 6px; }
+}
+
+/* Keep the fixed navigation and the content column in sync at windowed sizes. */
+@media (min-width: 821px) and (max-width: 1080px) {
+  .app-shell { --sidebar-size: 76px; }
+  .app-shell > .sidebar {
+    width: var(--sidebar-size);
+    flex-basis: var(--sidebar-size);
+    padding: 20px 8px 12px;
+  }
+  .sidebar .brand { justify-content: center; padding: 0; }
+  .sidebar .brand > span,
+  .sidebar > .side-caption,
+  .sidebar .nav-link span,
+  .sidebar .nav-link i,
+  .sidebar .side-sector > div:nth-child(2),
+  .sidebar .side-bottom { display: none; }
+  .sidebar .primary-nav { margin-top: 30px; }
+  .sidebar .nav-link { justify-content: center; padding-inline: 0; }
+  .sidebar .side-sector { display: grid; place-items: center; margin-top: 20px; padding: 10px 0; }
+  .app-shell > .main-area { margin-left: var(--sidebar-size); min-width: 0; }
+  .page-content { padding-left: 20px; padding-right: 20px; }
+}
+
+@media (max-width: 820px) {
+  body { min-width: 0; }
+  #root { min-height: 100dvh; }
+  .app-shell {
+    display: block;
+    min-height: 100dvh;
+    padding-bottom: 0;
+  }
+  .app-shell > .main-area {
+    width: 100%;
+    min-width: 0;
+    min-height: 100dvh;
+    margin-left: 0;
+  }
+  .app-shell .page-content { padding-bottom: calc(95px + env(safe-area-inset-bottom)); }
+  .app-shell > .sidebar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 12;
+    display: block;
+    width: auto;
+    height: calc(68px + env(safe-area-inset-bottom));
+    min-height: 0;
+    flex: none;
+    overflow: visible;
+    padding: 5px 8px calc(5px + env(safe-area-inset-bottom));
+    border: 0;
+    border-top: 1px solid #29212f;
+    background: rgba(9, 8, 15, .97);
+    box-shadow: 0 -8px 30px #0004;
+  }
+  .sidebar .brand,
+  .sidebar > .side-caption,
+  .sidebar .secondary-nav,
+  .sidebar .side-sector,
+  .sidebar .side-bottom { display: none; }
+  .sidebar .primary-nav {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 4px;
+    margin: 0;
+  }
+  .sidebar .nav-link,
+  .sidebar .nav-link:hover {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 2px;
+    border-color: transparent;
+    border-radius: 11px;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+    color: #9ca9b9;
+    font-size: 10px;
+  }
+  .sidebar .nav-link.active {
+    color: #e1cce8;
+    border-color: #493653;
+    background: linear-gradient(180deg, #211729, #17111d);
+  }
+  .sidebar .nav-link svg { flex: none; width: 19px; height: 19px; }
+  .sidebar .primary-nav .nav-link span { display: block; }
+  .sidebar .nav-link i { position: absolute; top: 2px; right: calc(50% - 21px); margin: 0; padding: 1px 5px; }
+  .sidebar .mobile-more-button { display: flex; }
+  .topbar { position: sticky; top: 0; z-index: 10; }
+}
+
+.scanner-durability-track {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #080b12;
+}
+.scanner-durability-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #4a9f9c, #8bdccc);
+  transition: width .2s ease;
+}
+.scanner-durability-track.scanner-durability-low i {
+  background: linear-gradient(90deg, #b46c72, #e9a083);
+}
+.case-cost-item { grid-template-columns: 24px minmax(0, 1fr) auto; }
+.case-cost-item > .resource-ingot { width: 22px; height: 22px; }
+.recycle-output b { display: flex; align-items: center; gap: 4px; }
+.recycle-price b { display: inline-flex; align-items: center; gap: 5px; }
+.recycle-price b > span { display: inline-flex; align-items: center; gap: 3px; }
+
+.server-auth-gate{min-height:calc(100vh - 66px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:32px;color:#cfb1dc;text-align:center}.server-auth-gate>svg{color:#d5a4e4}.server-auth-gate h1{margin:0;color:#f1e9f4;font:650 22px var(--heading)}.server-auth-gate p{max-width:480px;margin:0;color:#9b8da5;font-size:12px;line-height:1.6}.server-auth-gate .button{margin-top:6px}

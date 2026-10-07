@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Khepri",
+  "description": "Common Desert planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/khepri.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Desert"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.48 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "331 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "CO₂ / Ne"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Copper, Silicon"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/khepri.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Caelune",
+  "description": "Epic Desert planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/caelune.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Desert"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.94 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "279 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "Ne / Ar"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Crystal, Silicon"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/caelune.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

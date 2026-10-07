@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Ecliptica",
+  "description": "Legendary Gas Giant planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/ecliptica.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Gas Giant"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "18.6 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "119 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "H₂ / He / Xe"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Gold, Helium"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/ecliptica.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

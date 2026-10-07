@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Emberfall",
+  "description": "Rare Volcanic planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/emberfall.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Volcanic"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "1.77 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "478 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "SO₂ / CO₂"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Iron, Sulfur"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/emberfall.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

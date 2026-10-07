@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Aureate",
+  "description": "Rare Gas Giant planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/aureate.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Gas Giant"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "11.3 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "187 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "H₂ / He / Kr"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Helium, Crystal"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/aureate.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Afterglow",
+  "description": "Anomalous Anomalous planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/afterglow.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Anomalous"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Anomalous"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.03 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "-181 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "IONIZED"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Unknown, Crystal"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/afterglow.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

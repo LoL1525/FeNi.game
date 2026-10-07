@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Mirrorglass",
+  "description": "Epic Rocky planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/mirrorglass.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Rocky"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "1.31 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "222 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "Ar / N₂"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Nickel, Crystal"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/mirrorglass.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Umbra",
+  "description": "Rare Toxic planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/umbra.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Toxic"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "1.52 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "265 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "Cl₂ / N₂"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Nickel, Silicon"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/umbra.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

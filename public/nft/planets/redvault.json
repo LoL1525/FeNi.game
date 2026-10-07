@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Redvault",
+  "description": "Common Rocky planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/redvault.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Rocky"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "0.93 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "267 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "CO₂ / Ar"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Iron, Gold"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/redvault.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

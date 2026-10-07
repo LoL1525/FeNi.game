@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Heliograph",
+  "description": "Epic Gas Giant planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/heliograph.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Gas Giant"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "14.7 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "156 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "H₂ / He / Ne"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Helium, Silicon"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/heliograph.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

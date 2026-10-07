@@ -1,0 +1,48 @@
+{
+  "name": "FeNi · Cinderwake",
+  "description": "Legendary Volcanic planet discovered in the FeNi cosmic collection. undefined",
+  "image": "https://feni-game.example/nft/planets/cinder.svg",
+  "external_url": "https://feni-game.example",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Volcanic"
+    },
+    {
+      "trait_type": "Mass",
+      "value": "2.41 Earth"
+    },
+    {
+      "trait_type": "Temperature",
+      "value": "613 K"
+    },
+    {
+      "trait_type": "Atmosphere",
+      "value": "SO₂ / Ar"
+    },
+    {
+      "trait_type": "Sector",
+      "value": "Solar Fringe"
+    },
+    {
+      "trait_type": "Resources",
+      "value": "Gold, Sulfur"
+    },
+    {
+      "trait_type": "Bonus"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://feni-game.example/nft/planets/cinder.svg",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+}

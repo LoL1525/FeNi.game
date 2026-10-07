@@ -1,0 +1,38 @@
+{
+  "name": "cosmic-miner",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "predev": "node scripts/generate-nft-metadata.mjs && npm run build:server",
+    "dev": "node scripts/dev.mjs",
+    "prebuild": "node scripts/generate-nft-metadata.mjs",
+    "build": "tsc -b && vite build && npm run build:server",
+    "build:server": "tsc --project tsconfig.server.json && vite build --config vite.server.config.ts",
+    "start": "node server-dist/server.js",
+    "test:integration": "npm run build:server && node --test scripts/tests/dev-session-persistence.test.mjs",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata-kit": "^0.0.3",
+    "@solana-program/token": "^0.17.0",
+    "@solana/kit": "^8.4.0",
+    "@solana/kit-plugin-rpc": "^0.19.0",
+    "@solana/kit-plugin-wallet": "^0.20.0",
+    "@solana/react": "^8.4.0",
+    "lucide-react": "^1.49.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
