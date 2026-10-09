@@ -1,30 +1,23 @@
-# iDos: publishing and integration notes
+# iDos publishing and integration notes
 
-## What the linked listing says
+## Superteam Kazakhstan × iDos Games side track
 
-The [Superteam Kazakhstan × iDos Games Side Track](https://superteam.fun/earn/listing/superteam-kazakhstan-x-idos-games-side-track) is a Superteam Earn side-track listing. Its visible requirements are regional eligibility (Kazakhstan), a submission to the current Solana Global Hackathon side track, and a design skill focus. The page is not an iDos SDK setup guide and does not describe an upload API or deployment credentials. It lists the winner announcement for October 27, 2026.
+The [side-track listing](https://superteam.fun/earn/listing/superteam-kazakhstan-x-idos-games-side-track/) describes a $5,000 USDG prize pool and eligibility for builders in Kazakhstan. It asks for a working game created using iDos Games AI, a meaningful Solana integration, and a hackathon submission. The listing asks projects to provide a playable product, demo, project link, and short description. Its judging categories include creativity, gameplay and UX, Solana integration, and execution.
 
-## The two iDos paths are different
+The current FeNi repository is a React + TypeScript + Vite browser game with a Node API. It has an optional Solana Devnet wallet and planet NFT flow, but no documented iDos Games AI or iDos Unity Engine integration. Treat FeNi's existing code and Solana features as project status; do not describe the iDos requirement as completed until the submission route has been confirmed and the relevant integration exists.
 
-### iDos Games Engine
+## iDos Games Engine
 
-The [official iDos Games documentation](https://docs.idosgames.com/) describes a cross-platform game engine, a Unity SDK, and WebGL support. Its [Unity quick start](https://docs.idosgames.com/start/quick-start-unity-sdk) requires importing the iDos Unity SDK and configuring a title. The docs also say the engine's modules can be enabled or disabled.
+The [iDos Games documentation](https://docs.idosgames.com/) describes a cross-platform engine with a Unity SDK and WebGL support. The [Unity quick start](https://docs.idosgames.com/start/quick-start-unity-sdk) describes configuring a Unity project. FeNi is not a Unity project, and this repository does not include iDos SDK configuration. The available documentation does not establish that an arbitrary React/Vite app can be uploaded as an iDos Engine title.
 
-This project is a React + TypeScript + Vite browser game. The published docs do not describe a native React SDK or a direct upload flow for an arbitrary Vite `dist` directory. A native engine integration therefore needs either an iDos-approved way to host a regular web app, or a Unity/WebGL port. Neither has been configured in the local project.
+Before investing in a port, confirm with iDos whether the side track accepts an independently hosted web game or requires a game built in its engine/AI workflow. If a Unity project is required, FeNi needs a Unity implementation or a separately scoped integration; changing the app stack is not a documentation-only task.
 
-### iDos Games public launchpad
+## iDos public launchpad
 
-The [public iDos Games FAQ](https://idosgames.com/) describes creating a dApp by describing the game and its token, connecting a crypto wallet, then publishing. It says each game has its own tradable token on a bonding curve. That is a different path from simply hosting this static game.
+The [iDos Games site](https://idosgames.com/) describes a public launch flow that includes a game token. That is separate from the engine and from hosting a conventional web game. FeNi currently has no fungible token, token sale, paid advantage, or mainnet transaction. No token has been created or published from this repository.
 
-Launching there would introduce a game token and require a wallet-signed publish action. The current game brief explicitly excludes a token, financial promises, and paid advantage, so no token was created and no publish transaction was initiated.
+Do not treat token creation as a prerequisite for using Solana in FeNi: the existing optional Devnet NFT flow is a separate integration. Any decision to use a token launchpad would change the project's current product boundary and require an explicit design for the token and the wallet-signed transaction.
 
-## Current local deliverable
+## Current deployment state
 
-The working game is in this folder and builds to `dist/` with `npm run build`. Gameplay and saves remain off-chain; the optional browser wallet is configured for Solana Devnet. The game has not been uploaded to iDos or submitted to the Superteam listing.
-
-## Decision needed for a true iDos deployment
-
-1. **Preserve the no-token requirement:** use the iDos Games Engine route, but first confirm whether iDos accepts this React/WebGL output. If it requires Unity, the game needs a Unity port and an iDos title/project configuration.
-2. **Use the public launchpad:** explicitly authorize the platform's token-based publishing flow and provide/choose the publishing wallet. That changes the earlier no-token requirement and must include the wallet's review of the exact on-chain transaction.
-
-The safer default is to preserve the no-token rule and verify the React/WebGL hosting path before changing the game stack.
+The game can be run locally with `npm run dev` and built with `npm run build`. Wallet and NFT flows target Solana Devnet. The project has not been uploaded to iDos or submitted to the side track by this repository. See [the README](../README.md) for setup and [the roadmap](ROADMAP.md) for proposed work.
